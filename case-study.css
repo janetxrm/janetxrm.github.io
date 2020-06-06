@@ -1,0 +1,340 @@
+/*						 										LINKING THE CONTENT TO THE SIDE BAR STARTS HERE*/
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.side li.active > a {
+    color: black;
+    font-weight: 300;
+}
+
+.side a {
+    text-decoration: none;
+    display: block;
+    color: grey;
+    transition: all 100ms ease-in-out; /* eases transition to active state */
+}
+
+.side a:hover {
+    color: black;
+}
+
+
+body {
+    font-family: 'Roboto';
+    display: flex;
+  	flex-direction: row;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+		
+/*              				 													 	SIDEBAR STYLING*/
+	
+/*grey sidebar itself*/
+.side {
+   background-color: #F9F9F9;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: expand 1s ease forwards;
+}
+
+/*have side bar slide in from left*/
+@keyframes expand {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} 
+
+
+/*sidebar text itself*/
+#sidetext {
+    position: fixed;
+    top: 30px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    display: block;
+    margin-top: 30px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*all link styling, including sidebar text*/
+a {
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    display: block;
+    margin-top: 30px;
+}
+   
+
+a:hover {
+  	color: #3B3B3B;
+    cursor: pointer;
+}
+
+#desc {
+    line-height: 45%;
+    color: #3B3B3B;
+}
+
+#desc:hover {
+    cursor: default;
+}
+
+/*NOTICE that the html name of this class is sidebar-item active. Looks like you have to add period here.*/
+#sidetext-active {
+    color: #3B3B3B;
+}
+
+
+/*																									GENERAL CONTENT STYLING*/
+
+/*current side bar width is: 20%, so this width is 100 minus that plus margins*/
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #515151;
+    /*align-items: center;*/
+}
+
+p {
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 30px; /*between paragraph height*/
+}
+
+h3 {      /*case study title*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#top-desc {
+    margin-bottom: 0px;
+}
+
+#hero-img {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+
+section {
+    padding-bottom: 124px;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 30px; /*between paragraph height*/
+}
+
+
+img {
+    width: 100%;
+}
+
+li {
+	list-style-type: none;
+	line-height: 150%;
+}
+
+
+#footer {
+    text-align:center;
+    padding-top: 200px;
+}
+
+/*                                                              PAN specific styling*/
+#intextlink {   /*thanks to mike*/
+    display: inline;
+    text-decoration: underline;
+    transition: all 0.15s ease;
+    color: #515151;
+}
+
+.roadmap {
+    display: flex;
+    flex-direction: row;
+    padding-bottom:30px;
+}
+
+#dotline {
+   width: 1%;
+   height: 700px;
+   margin-top: 30px;
+   margin-bottom: 40px;
+
+}
+
+.roadtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+/*                                                              berkeleytime specific styling*/
+span {
+    font-weight: bold;
+    background-color: #F3F0EF;
+}
+
+
+#quote-face {
+    display: flex;
+    flex-direction: row;
+}
+
+#person {
+    width:20%; 
+    height:20%;
+
+
+}
+
+.quotes-faces {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15%;
+}
+
+#quote {
+    padding-top:50px;
+    padding-right:100px;
+    padding-bottom:50px;
+    font-style: italic;
+    width: 100%;
+}
+
+.all-greygifs {
+
+}
+
+.grey-with-gif {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+#grey{
+    background-color: #FBFAFB;
+    padding: 60px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bt-gif {
+  max-width:300px;
+  max-height:570px;
+  width: auto;
+  height: auto;
+  padding-left: 60px;
+}
+
+
+/*                                                                  doordash specific styling*/
+
+#app-triangle {
+    display: flex;
+    flex-direction: row;
+}
+
+#triangle {
+  max-width:300px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+  padding-left: 60px;
+}
+
+.task-prompt {
+    display: flex;
+    flex-direction: row;
+}
+
+#col1 {
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#col2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#caption{
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#problem {
+    padding-right: 60px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 20;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+#filter-arrow {
+  max-width:900px;
+  max-height:570px;
+  width: auto;
+  height: auto;
+}
+
+#dd-img {
+  max-width:700px;
+  max-height:570px;
+  width: auto;
+  height: auto; 
+}
+
+#dd-gif {
+  max-width:700px;
+  max-height:570px;
+  width: auto;
+  height: auto; 
+  padding-left: 100px;
+}
+
+
+
