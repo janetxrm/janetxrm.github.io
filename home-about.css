@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto';
+    display: flex;
+  	flex-direction: row;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*                                                                                  SIDEBAR STYLING*/
+
+/*grey sidebar itself*/
+.side {
+    background-color: #F9F9F9;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: expand 1s ease forwards;
+}
+
+/*have side bar slide in from left*/
+@keyframes expand {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} 
+
+/*sidebar text itself*/
+#sidetext {
+    position: fixed;
+    top: 30px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    display: block;
+    margin-top: 30px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/*                                                                  all link styling, including sidebar text*/
+a {
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    display: block;
+    margin-top: 30px;
+}
+   
+
+a:hover {
+  	color: #3B3B3B;
+    cursor: pointer;
+}
+
+/*NOTICE that the html name of this class is sidebar-item active. Looks like you have to add period here.*/
+#sidetext-active {
+    color: #3B3B3B;
+}
+
+
+/*                                                                                  GENERAL CONTENT STYLING*/
+/*current side bar width is: 20%, so this width is 100 minus that plus margins*/
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #515151;
+    /*align-items: center;*/
+}
+
+p {
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 30px; /*between paragraph height*/
+}
+
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 30px; /*between paragraph height*/
+}
+
+img {
+    width: 100%;
+}
+
+#footer {
+    text-align:center;
+    margin-top: 100px;
+}
+
+
+/*HOME CONTENT SYLING*/
+
+/*.def {
+    background-color: green;
+}*/
+
+    #header {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #italic {
+        font-style: italic;
+    }
+
+    #green {
+        font-style: italic;
+        color:green;
+    }
+
+    #similar {
+        width: 60%;
+    }
+
+    #proj {
+    /*position: relative;*/
+    padding-top:50px;
+    margin-left: -10% ;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+    #proj:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    }
+
+    .proj-container {
+        margin-top: 50px;
+        margin-left:;
+    }
+
+
+/*ABOUT CONTENT SYLING*/
+
+#about-pic {
+	width: 100%;
+	padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+#abouttextcontainer {
+    width: 100%;
+}
+
+
+li {
+	list-style-type: none;
+	line-height: normal;
+}
+
+.lists {
+	margin-top: 50px;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+li {
+    list-style-type: none;
+    line-height: 150%;
+}
+
+#list-header {
+    font-size: 20px;
+    padding-bottom:;
+}
+
+#list {
+    text-align: left;
+    line-height: 16px;
+    /*margin-bottom: 30px;*/ /*between paragraph height*/
+}
+
+
+#hey {
+    font-size:30px;
+    padding-bottom: 20px;
+}
+
+
+/*PERSONAL PROJECTS SYLING*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#pers-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+h3 {
+    font-size: 30px;
+}
+
+#hero {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* LINKING THE CONTENT TO THE SIDE BAR STARTS HERE */
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.side li.active > a {
+    color: black;
+    font-weight: 300;
+}
+
+.side a {
+    text-decoration: none;
+    display: block;
+    color: grey;
+    transition: all 100ms ease-in-out; /* eases transition to active state */
+}
+
+.side a:hover {
+    color: black;
+}
+
+
+
+
+.proj-container{
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .3s;
+}
+
+/*have case studies slide up*/
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
