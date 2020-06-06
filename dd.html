@@ -1,0 +1,236 @@
+<!doctype html> 
+<html> 
+	<head> 
+		<link rel="stylesheet" type="text/css" href="case-study.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<meta charset=utf8 />
+	</head>
+
+	<body>
+
+		<aside class = "side">
+            	<div id = "sidetext">
+	            	<a href="index.html">< Back </a>
+	            	<p> &nbsp; </p>
+	            	<a id = "desc">Date: Oct 2019</a>
+	            	<a id = "desc">Time: 5 days</a>
+	            	<p> &nbsp; </p>
+	            	<li><a href = "#Outcome">Outcome</a></li>
+	            	<li><a href = "#My Approach">My Approach</a></li>
+	            	<li><a href = "#Usability Testing">Usability Testing</a></li>
+	            	<li><a href = "#Problems">Problems</a></li>
+	            	<li><a href = "#Proposed Solutions">Proposed Solutions</a></li>
+	            	<li><a href = "#Metrics">Metrics</a></li>
+	            	<li><a href = "#Reflection">Reflection</a></li>
+	             </div>
+    	</aside>
+
+    	<div class = "content">
+            	<h3> DoorDash Redesign Challenge </h3>
+
+	    		<p id = "top-desc"> I redesigned a feature of DoorDash for the  <a id = "intextlink" href="https://fellows.kleinerperkins.com" target="_blank">Kleiner Perkins Fellowship</a> design challenge. The challenge was to "redesign a feature of a Kleiner Perkins company's product". </p>
+
+	    		<img src = "assets/dd-hero.png" id = "hero-img"/>
+
+	    		<section id= "Outcome">
+	            	<h1>Outcome</h1>
+	            	<p>I passed this step of the application process and am a finalist for the Kleiner Perkins design fellowship.</p>
+	            </section>
+
+				<section id= "My Approach">
+	            	<h1>My Approach</h1>
+	            	<div id = app-triangle>
+	            		<p>I kicked off the project researching DoorDash's business model, finding that the main user groups are customers, businesses, and Dashers (food deliverers). For this project, <span>I decided to narrow the scope to customers as I could easily reach out to this user group.</span> </p>
+	            		<img src = "assets/triangle.png" id = "triangle"/>
+	            	</div>
+	            	<p> &nbsp; </p>
+	            	<p> DoorDash&#39;s user base is largely made up of working professionals and young families, and coming onto the platform, they tend to be time-sensitive and goal oriented. Thus, <span>I targeted the experience of exploring eateries</span> to help users be more efficient when performing this initial step of making an order.</p>
+	            	<img src = "assets/task flow.png"/>
+	            </section>	
+
+	            <section id= "Usability Testing">
+	            	<h1>Usability Testing</h1>
+	            	<p>I also downloaded the DoorDash app to map out user flows for initial usability testing. I approached usability testing by performing tasks based on specific intentions and end goals. Some use cases include:</p>
+	            	<p> &nbsp; </p>
+
+	            	<div class = "task-prompt">
+	            		<div id = "col1">
+	            			<p><span style = "font-weight: bold; background-color: white">Prompt</span></p>
+	            			<p>Needing a quick, inexpensive, yet quality meal ASAP</p>
+	            			<p>Ordering a dish that’s already in mind</p>
+	            			<p>Exploring the neighborhood and finding the best burger in town</p>
+	            		</div>
+
+	            		<div id = "col2">
+	            			<p><span style = "font-weight: bold; background-color: white">Task</span></p>
+	            			<p>Sort businesses by highest ratings, fastest delivery time, and low to high price range</p>
+	            			<p>Go about ordering a specifc dish from a specific business</p>
+	            			<p>Filter by cuisine type, distance away, and other preferences​</p>
+	            		</div>
+	           		</div>
+	           		<p> &nbsp; </p>
+	           		<img src = "assets/dd user flow.png"/>
+	           		<p id = "caption"> Example task flow for a particular use case </p>
+
+	            </section>
+
+				<section id= "Problems">
+	            	<h1>Problems</h1>
+	            	<p>My takeaway from usability testing boiled down to these four main problems:</p>
+	            	<p> &nbsp; </p>
+
+		            	<div class = "grey-with-gif">
+			            	<div id = "problem">
+			            		<h4>Problem 1: Sorting and filtering leads to decision fatigue</h4>
+			            		<p>Users can swipe horizontally to filter by specific cuisines and sort by ratings, delivery time, etc. </p>
+			            		<p>The subcategory for cuisines alone has 19 items with 4 displayed at once. <span>That's 19 items too many when users are in a hurry</span>, and certain features may go unnoticed from the endless scrolling.</p>
+			            	</div>
+			            	<img src = "assets/old filters.png" id = "bt-gif"/>
+			            </div>
+
+			            <div class = "grey-with-gif">
+			            	<div id = "problem">
+			            		<h4>Problem 2: Search function easily overlooked</h4>
+			            		<p>​People view screens in F-patterns, and that could be the reason why the search function escaped my attention for the longest time, especially with such bright visuals on the page drawing my attention away from it. <span>Thus, the placement of the search function was another area I chose to evaluate.</span></p>
+			            	</div>
+			            	<img src = "assets/old search.png" id = "bt-gif"/>
+			            </div>
+
+			            <div class = "grey-with-gif">
+			            	<div id = "problem">
+			            		<h4>​Problem 3: No ability to save businesses</h4>
+			            		<p>​I constantly found myself wanting to "save" businesses throughout my journey of deciding on one.</p>
+								<p>Instead, I had to keep businesses in my mental back-burner as I went along with exploring alternative options. This was time consuming as I had to spend time recovering prior searches, and it was difficult to compare options against each other.</p>
+			            	</div>
+			            	<img src = "assets/old no fav.png" id = "bt-gif"/>
+			            </div>
+
+			            <div class = "grey-with-gif">
+			            	<div id = "problem">
+			            		<h4>​Problem 4: Visual inconsistencies</h4>
+			            		<p>​​The business browsing experience is visually reliant on individual cards displaying images of menu items. However, some cards have a white background while others have a solid background. <span>This lack of visual cohesion may falsely convey sectional differences in areas where images belong to one category.</span></p>
+								<p>Additionally, in rows of images with white backgrounds, there lacks a visual indication that users can swipe to see more images.</p>
+			            	</div>
+			            	<img src = "assets/old vis incon.png" id = "bt-gif"/>
+			            </div>
+
+			    </section>
+
+			    <section id = "Competitive Analysis">
+			    	<h1>Competitive Analysis</h1>
+			    	<p>As a final step before jumping into ideation, I wanted to see if competitors had the same usability issues that I encountered during usability testing with DoorDash, and if not, how they were able to work around them.</p>
+			    	<img src = "assets/comp analysis.png"/>
+			    	<p> &nbsp; </p>
+			    	<p>Postmates, Grubhub, and Uber Eats were a few products that helped further my understanding of the problem space. In all products, imagery/media was heavily emphasized. However, layouts of businesses, user flows for setting filters, and interaction patterns were areas where products differed. </p>
+			    	<p>​Another interesting thing to note is how DoorDash brands itself differently from competitors; the business felt very friendly and approachable with its iconic bright red branding colors and cartoony icons.</p>
+			    	<p> &nbsp; </p>
+			    	<img src = "assets/cartoons.png"/>
+			    	<p id = "caption">​I found the graphics used for cuisine icons very telling of DoorDash's brand image. Cartoony illustrations with rough outlines and imperfect shapes make the platform feel friendly and informal.</p>
+			    </section>
+
+			    <section id = "Proposed Solutions">
+			    	<h1>Proposed Solutions</h1>
+			    	<h4>Problem 1: Sorting and filtering leads to decision fatigue</h4>
+			    	<p><span style = "font-weight: bold">Solution:</span> Currently there are <span style = "font-weight: normal; font-style: italic; background-color: white">two rows </span>of items users horizontally swipe on to choose filters, the top with 15+ items, and the bottom with 7. I decided to unify them to a single dropdown menu where users can view all items at once and quickly and efficiently set multiple filters.</p>
+			    	<p>I made sure to retain DoorDash's cuisine icons to maintain the friendly, casual sentiment that the current design evokes.</p>
+			    	<p>Click <a id = "intextlink" href="https://www.figma.com/file/jGglEZx3UPR0pW0YUWSO11/Doordash-Prototype?node-id=0%3A1" target="_blank">here</a> to view the Figma prototype for expanding and setting filters</p>
+			    	<img src = "assets/filter before after.png" id = "dd-img"/>
+			    	<p> &nbsp; </p>
+
+			    	<h4>Problem 2: Search function easily overlooked</h4>
+			    	<p><span>Solution:</span> Place the search bar at the top of the screen. In line with the prior mentioned rule of F-patterns, this brings greater visibility and thus higher usage to the search function.</p>
+			    	<img src = "assets/search before after.png" id = "dd-img"/>
+			    	<p> &nbsp; </p>
+
+			    	<h4>Problem 3: No ability to save businesses</h4>
+			    	​<p><span>Solution:</span> Introduce a "favorites" page so users can save businesses to view at any time. Users then have the ability to add businesses to their favorited list by activating an icon to do so on the upper right corner of business images.</p>
+			    	<img src = "assets/favorite before after.png" id = "dd-img"/>
+			    	<p> &nbsp; </p>
+
+
+			    	<h4>Problem 4: Visual inconsistencies</h4>
+			    	​<p><span>Solution:</span> Introduce a border around each image to make the UI more visually cohesive. In a previous iteration, I put a solid background behind each image but reconsidered that as it may take additional engineering effort to accomplish, and that would cause a high loading time.</p>
+			    	<p>Additionally, with a border around every image, there will always be a hint of content peeking out on the rightmost side of the screen, serving as a visual indicator that a set of content is horizontally scrollable. </p>
+			    	<img src = "assets/visual incon before after.png" id = "dd-img"/>
+			    </section>
+
+			    <section id = "Metrics">
+			    	<h1>Metrics</h1>
+			    	<p>For the next steps of this project, I would want to measure my designs against the following key performance indicators to determine whether or not my design was successful or not.</p>
+
+			    	<div class = "task-prompt">
+	            		<div id = "col1">
+	            			<p><span style = "font-weight: bold; background-color: white">Solution</span></p>
+	            			<p>Ability to <span>sort and filter</span> businesses easily</p>
+	            			<p>Ability to <span>search</span> for businesses</p>
+	            			<p>Ability to <span>save businesses</span> by adding them to Favorites</p>
+	            			<p>Maintain visual consistency</p>
+	            		</div>
+
+	            		<div id = "col2">
+	            			<p><span style = "font-weight: bold; background-color: white">Possible KPI&#39;s</span></p>
+	            			<p># of results clicked upon setting filters</p>
+	            			<p># of queries inputted and results clicked</p>
+	            			<p># of business saved</p>
+	            			<p>Talk to users about their experience navigating the UI</p>
+	            		</div>
+	           		</div>
+
+	           	</section>
+
+	           	<section id = "Reflection">
+	           		<h1>Reflection</h1>
+	           		<p>This design challenge was a fun opportunity to learn more about the state of the food delivery service industry and to analyze how major players are framing their products to create a gratifying experience for their users. </p>
+	           		<p>Here are some key learnings I took away from this project:</p>
+	           		<p>1. Narrowing down the scope of my project as well as walking myself through task flows with specific users in mind served to be a ​valuable practice. Doing so helped me focus in on specific problems rather than become buried with reinventing too many aspects of the product.</p>
+	           		<p>2. Taking note of the smaller details helped me create interactive prototypes that follow DoorDash's look and feel. This allowed me to create solutions that are more shippable extensions rather than total upheavals of the current experience.</p>
+
+	           	</section>
+	           	<p id = footer> made by Janet Xu &copy; 2020</p>
+
+	      </div>
+	  </body>
+
+	      <script>
+	window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
