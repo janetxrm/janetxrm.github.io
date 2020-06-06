@@ -55,7 +55,7 @@ html {
 
 /*sidebar text itself*/
 #sidetext {
-    position: fixed;
+    position: sticky;
     top: 30px;
     text-decoration: none;
     letter-spacing: 0.04em;
