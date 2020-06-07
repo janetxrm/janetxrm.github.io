@@ -1,4 +1,4 @@
-/*						 										LINKING THE CONTENT TO THE SIDE BAR STARTS HERE*/
+/*                                LINKING THE CONTENT TO THE SIDE BAR STARTS HERE*/
 
 /* ScrollSpy active styles (see JS tab for activation) */
 .side li.active > a {
@@ -21,16 +21,16 @@
 body {
     font-family: 'Roboto';
     display: flex;
-  	flex-direction: row;
+    flex-direction: row;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-		
-/*              				 													 	SIDEBAR STYLING*/
-	
+    
+/*                                                  SIDEBAR STYLING*/
+  
 /*grey sidebar itself*/
 .side {
    background-color: #F9F9F9;
@@ -81,7 +81,7 @@ a {
    
 
 a:hover {
-  	color: #3B3B3B;
+    color: #3B3B3B;
     cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 
-/*																									GENERAL CONTENT STYLING*/
+/*                                                  GENERAL CONTENT STYLING*/
 
 /*current side bar width is: 20%, so this width is 100 minus that plus margins*/
 .content {
@@ -113,6 +113,20 @@ a:hover {
     color: #515151;
     /*align-items: center;*/
 }
+
+#animate {
+  animation: slideUp .8s ease-in-out forwards .3s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 p {
     text-align: left;
@@ -159,8 +173,8 @@ img {
 }
 
 li {
-	list-style-type: none;
-	line-height: 150%;
+  list-style-type: none;
+  line-height: 150%;
 }
 
 
