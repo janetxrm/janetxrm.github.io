@@ -86,11 +86,17 @@ a:hover {
 }
 
 #desc {
-    line-height: 45%;
+    line-height: 0px;
     color: #3B3B3B;
+    font-size: 14px;
 }
 
-#desc:hover {
+#desc-content {
+  padding-bottom: 40px;
+}
+
+
+#desc-content:hover {
     cursor: default;
 }
 
@@ -150,7 +156,7 @@ h3 {      /*case study title*/
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     padding-bottom: 50px;
 }
@@ -180,7 +186,8 @@ li {
 
 #footer {
     text-align:center;
-    padding-top: 200px;
+    padding-top: 100px;
+    font-size: 14px;
 }
 
 /*                                                              PAN specific styling*/
