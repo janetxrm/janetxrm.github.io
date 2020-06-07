@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto';
     display: flex;
-  	flex-direction: row;
+    flex-direction: row;
 }
 
 html {
@@ -59,7 +59,7 @@ a {
    
 
 a:hover {
-  	color: #3B3B3B;
+    color: #3B3B3B;
     cursor: pointer;
 }
 
@@ -158,8 +158,8 @@ img {
 /*ABOUT CONTENT SYLING*/
 
 #about-pic {
-	width: 100%;
-	padding-bottom: 50px;
+    width: 100%;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 
@@ -170,16 +170,16 @@ img {
 
 
 li {
-	list-style-type: none;
-	line-height: normal;
+    list-style-type: none;
+    line-height: normal;
 }
 
 .lists {
-	margin-top: 50px;
+    margin-top: 50px;
     width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -255,10 +255,15 @@ h3 {
 
 .proj-container{
   transform: translateY(300px);
-  animation: slideUp .8s ease-in-out forwards .3s;
+  animation: slideUp .8s ease-in-out forwards .3s; /*have case studies slide up*/
 }
 
-/*have case studies slide up*/
+#animate {
+  animation: slideUp .8s ease-in-out forwards .3s; /*have pers proj slide up*/
+  
+}
+
+
 @keyframes slideUp {
   0% {
     transform: translateY(300px);
