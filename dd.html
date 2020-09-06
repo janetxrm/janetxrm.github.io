@@ -3,45 +3,50 @@
 	<head> 
 		<link rel="stylesheet" type="text/css" href="case-study.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<meta charset=utf8 />
 	</head>
 
 	<body>
 
-		<aside class = "side">
-            	<div id = "sidetext">
-	            	<a href="index.html">< Back </a>
-	            	<p> &nbsp; </p>
-	            	<div id = "desc-content">
-	            		<p id = "desc">Date: Oct 2019</p>
-	            		<p id = "desc">Time: 5 days</p>
-	            	</div>
-	            	<li><a href = "#Outcome">Outcome</a></li>
-	            	<li><a href = "#My Approach">My Approach</a></li>
-	            	<li><a href = "#Usability Testing">Usability Testing</a></li>
-	            	<li><a href = "#Problems">Problems</a></li>
-	            	<li><a href = "#Proposed Solutions">Proposed Solutions</a></li>
-	            	<li><a href = "#Metrics">Metrics</a></li>
-	            	<li><a href = "#Reflection">Reflection</a></li>
-	             </div>
-    	</aside>
+		<div class = "topnav">
+            <a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "personal.html"> Creative</a></li>
+	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	     </div>
+
+	    <aside class = "sidenav">
+	            	<li><a href = "#outcome"><span style= "font-size: 14px; font-weight: bold">Outcome</span></a></li>
+	            	<br>
+	            	<li><a href = "#my approach"><span style= "font-size: 14px; font-weight: bold">My Approach</span></a></li>
+					<br>
+					<li><a href = "#usability testing"><span style= "font-size: 14px; font-weight: bold">Usability Testing</span></a></li>
+					<br>
+					<li><a href = "problems"><span style= "font-size: 14px; font-weight: bold">Problems</span></a></li>
+					<br>
+					<li><a href = "proposed solutions"><span style= "font-size: 14px; font-weight: bold">Proposed Solutions</span></a></li>
+					<br>
+					<li><a href = "metrics"><span style= "font-size: 14px; font-weight: bold">Metrics</span></a></li>
+					<br>
+					<li><a href = "reflection"><span style= "font-size: 14px; font-weight: bold">Reflection</span></a></li>
+					<br>
+	    </aside>
+
+		<img src = "assets/dd-hero.png" id = "hero-img"/>
 
     	<div class = "content">
-            	<h3> DoorDash Redesign Challenge </h3>
+            	<p><span style= "font-size: 24px; font-weight: bold">DoorDash Redesign Challenge</span></p>
 
-	    		<p id = "top-desc"> I redesigned a feature of DoorDash for the  <a id = "intextlink" href="https://fellows.kleinerperkins.com" target="_blank">Kleiner Perkins Fellowship</a> design challenge. The challenge was to "redesign a feature of a Kleiner Perkins company's product". </p>
+	    		<p> I redesigned a feature of DoorDash for the  <a href="https://fellows.kleinerperkins.com" target="_blank">Kleiner Perkins Fellowship</a> design challenge. The challenge was to "redesign a feature of a Kleiner Perkins company's product". </p>
 
-	    	<div id = "animate">
-	    		<img src = "assets/dd-hero.png" id = "hero-img"/>
 
-	    		<section id= "Outcome">
-	            	<h1>Outcome</h1>
+	    		<section id = "Outcome">
+	            	<p id = "section-title">OUTCOME</p>
 	            	<p>I passed this step of the application process and am a finalist for the Kleiner Perkins design fellowship.</p>
 	            </section>
 
-				<section id= "My Approach">
-	            	<h1>My Approach</h1>
+				<section id = "My Approach">
+	            	<p id = "section-title">MY APPROACH</p>
 	            	<div id = app-triangle>
 	            		<p>I kicked off the project researching DoorDash's business model, finding that the main user groups are customers, businesses, and Dashers (food deliverers). For this project, <span>I decided to narrow the scope to customers as I could easily reach out to this user group.</span> </p>
 	            		<img src = "assets/triangle.png" id = "triangle"/>
@@ -52,7 +57,7 @@
 	            </section>	
 
 	            <section id= "Usability Testing">
-	            	<h1>Usability Testing</h1>
+	            	<p id = "section-title">USABILITY TESTING</p>
 	            	<p>I also downloaded the DoorDash app to map out user flows for initial usability testing. I approached usability testing by performing tasks based on specific intentions and end goals. Some use cases include:</p>
 	            	<p> &nbsp; </p>
 
@@ -78,7 +83,7 @@
 	            </section>
 
 				<section id= "Problems">
-	            	<h1>Problems</h1>
+	            	<p id = "section-title">PROBLEMS</p>
 	            	<p>My takeaway from usability testing boiled down to these four main problems:</p>
 	            	<p> &nbsp; </p>
 
@@ -120,7 +125,7 @@
 			    </section>
 
 			    <section id = "Competitive Analysis">
-			    	<h1>Competitive Analysis</h1>
+			    	<p id = "section-title">COMPETITIVE ANALYSIS</p>
 			    	<p>As a final step before jumping into ideation, I wanted to see if competitors had the same usability issues that I encountered during usability testing with DoorDash, and if not, how they were able to work around them.</p>
 			    	<img src = "assets/comp analysis.png"/>
 			    	<p> &nbsp; </p>
@@ -132,11 +137,11 @@
 			    </section>
 
 			    <section id = "Proposed Solutions">
-			    	<h1>Proposed Solutions</h1>
+			    	<p id = "section-title">PROPOSED SOLUTIONS</p>
 			    	<h4>Problem 1: Sorting and filtering leads to decision fatigue</h4>
 			    	<p><span style = "font-weight: bold">Solution:</span> Currently there are <span style = "font-weight: normal; font-style: italic; background-color: white">two rows </span>of items users horizontally swipe on to choose filters, the top with 15+ items, and the bottom with 7. I decided to unify them to a single dropdown menu where users can view all items at once and quickly and efficiently set multiple filters.</p>
 			    	<p>I made sure to retain DoorDash's cuisine icons to maintain the friendly, casual sentiment that the current design evokes.</p>
-			    	<p>Click <a id = "intextlink" href="https://www.figma.com/file/jGglEZx3UPR0pW0YUWSO11/Doordash-Prototype?node-id=0%3A1" target="_blank">here</a> to view the Figma prototype for expanding and setting filters</p>
+			    	<p>Click <a href="https://www.figma.com/file/jGglEZx3UPR0pW0YUWSO11/Doordash-Prototype?node-id=0%3A1" target="_blank">here</a> to view the Figma prototype for expanding and setting filters</p>
 			    	<img src = "assets/filter before after.png" id = "dd-img"/>
 			    	<p> &nbsp; </p>
 
@@ -158,7 +163,7 @@
 			    </section>
 
 			    <section id = "Metrics">
-			    	<h1>Metrics</h1>
+			    	<p id = "section-title">METRICS</p>
 			    	<p>For the next steps of this project, I would want to measure my designs against the following key performance indicators to determine whether or not my design was successful or not.</p>
 
 			    	<div class = "task-prompt">
@@ -182,7 +187,7 @@
 	           	</section>
 
 	           	<section id = "Reflection">
-	           		<h1>Reflection</h1>
+	           		<p id = "section-title">REFLECTION</p>
 	           		<p>This design challenge was a fun opportunity to learn more about the state of the food delivery service industry and to analyze how major players are framing their products to create a gratifying experience for their users. </p>
 	           		<p>Here are some key learnings I took away from this project:</p>
 	           		<p>1. Narrowing down the scope of my project as well as walking myself through task flows with specific users in mind served to be a ​valuable practice. Doing so helped me focus in on specific problems rather than become buried with reinventing too many aspects of the product.</p>
@@ -191,8 +196,7 @@
 	           	</section>
 	        
 	           	<p id = footer> &copy; 2020 JANET XU DESIGN</p>
-	        </div>
-	      </div>
+	      </div>   <!-- end content -->
 	  </body>
 
 	      <script>

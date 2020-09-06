@@ -1,99 +1,113 @@
+
+.topnav {
+   /*position: sticky;*/
+    display: inline-block;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.topnav a {
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    /*font-weight: bold;*/
+    /*display: block;*/
+    margin-top: 30px;
+}
+
+.topnav a:hover {
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+
+.topnav a.active {
+    color: #2B2E33;
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+/*                                                                                  GENERAL CONTENT STYLING*/
+/*current side bar width is: 20%, so this width is 100 minus that plus margins*/
 body {
-    font-family: 'Roboto';
-    display: flex;
-    flex-direction: row;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/*                                                                                  SIDEBAR STYLING*/
 
-/*grey sidebar itself*/
-.side {
-    background-color: #F9F9F9;
-    width: 20%;
-    height: auto;
+
+.content {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: expand 1s ease forwards;
+
 }
 
-/*have side bar slide in from left*/
-@keyframes expand {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-} 
-
-/*sidebar text itself*/
-#sidetext {
-    position: sticky;
-    top: 30px;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    color: #909090;
-    transition: all 0.15s ease;
-    display: block;
-    margin-top: 30px;
-    color: #3B3B3B;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-/*                                                                  all link styling, including sidebar text*/
-a {
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    color: #909090;
-    transition: all 0.15s ease;
-    display: block;
-    margin-top: 30px;
-}
-   
-
-a:hover {
-    color: #3B3B3B;
-    cursor: pointer;
-}
-
-/*NOTICE that the html name of this class is sidebar-item active. Looks like you have to add period here.*/
-#sidetext-active {
-    color: #3B3B3B;
-}
-
-
-/*                                                                                  GENERAL CONTENT STYLING*/
-/*current side bar width is: 20%, so this width is 100 minus that plus margins*/
-.content {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-    width: 60%;
+.content .intro {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    color: #515151;
-    /*align-items: center;*/
+    align-items: center;
+    width:50%;
+    margin-bottom: 5%;
 }
 
+#proj {
+    padding-top:50px;
+    transition: all 0.2s ease;
+}
+
+    #proj:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    }
+
 p {
-    text-align: left;
     line-height: 30px;
     margin-bottom: 30px; /*between paragraph height*/
 }
 
-
+/*
 h1 {
-    font-size: 25px;
-    font-weight: normal;
-    padding-bottom: 50px;
-}
+    text-align:center;
+}*/
 
 h2 {
     font-size: 16px;
@@ -107,74 +121,41 @@ img {
     width: 100%;
 }
 
+
 #footer {
-    text-align:center;
-    padding-top: 100px;
-    font-size: 12px;
-}
-
-
-/*HOME CONTENT SYLING*/
-
-/*.def {
-    background-color: green;
-}*/
-
-    #header {
-        font-weight: bold;
-        font-size: 30px;
-    }
-
-    #italic {
-        font-style: italic;
-    }
-
-    #green {
-        font-style: italic;
-        color:green;
-    }
-
-    #similar {
-        width: 60%;
-    }
-
-    #proj {
-    /*position: relative;*/
-    padding-top:30px;
-    /*margin-left: -10% ;*/
-    width: 90%;
-    transition: all 0.2s ease;
-}
-
-    #proj:hover {
-    cursor: pointer;
-    transform: scale(0.95);
-    }
-
-    .proj-container {
-        margin-bottom: 80px;
-        margin-left:;
-    }
-
-
-/*ABOUT CONTENT SYLING*/
-
-#about-pic {
-    width: 100%;
-    padding-bottom: 50px;
+    font-size: 12px; 
+    color: #666666;
     padding-top: 50px;
 }
 
 
+
+
+
+
+
+
+/*ABOUT CONTENT SYLING*/
+
+/*.about {
+    display: inline-block;
+}*/
+
+#about-pic {
+    width: 60%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.content .about {
+    width: 60%;
+}
+/*
 #abouttextcontainer {
-    width: 100%;
+    width: 50%;
 }
+*/
 
-
-li {
-    list-style-type: none;
-    line-height: normal;
-}
 
 .lists {
     margin-top: 50px;
@@ -190,10 +171,6 @@ li {
     line-height: 150%;
 }
 
-#list-header {
-    font-size: 20px;
-    padding-bottom:;
-}
 
 #list {
     text-align: left;
@@ -202,10 +179,7 @@ li {
 }
 
 
-#hey {
-    font-size:30px;
-    padding-bottom: 20px;
-}
+
 
 
 /*PERSONAL PROJECTS SYLING*/

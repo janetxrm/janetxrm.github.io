@@ -1,57 +1,74 @@
 <!doctype html> 
 <html> 
 	<head> 
-		<link rel="stylesheet" type="text/css" href="home-about.css">
+		<link rel="stylesheet" type="text/css" href="home-about-personal.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	</head>
 
 	<body>
-            <aside class = "side">
-            	<div id = "sidetext">
-	            	<a href="index.html">< Back </a>
-	            	<p> &nbsp; </p>
-	            	<li><a href = "#animations">Animations</a></li>
-	            	<li><a href = "#illustrations">Illustrations</a></li>
-	             </div>
-            </aside>
+            <div class = "topnav">
+            		<a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
+            		<li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            		<li style="float:right; padding-left: 35px; font-size: 14px"><a class = "active" href= "personal.html"> Creative</a></li>
+	            	<li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	        </div>
+
+			<aside class = "sidenav">
+	            	<li><a href = "#animations"><span style= "font-size: 14px; font-weight: bold">Animations</span></a></li>
+	            	<br>
+	            	<li><a href = "#illustrations"><span style= "font-size: 14px; font-weight: bold">Illustrations</span></a></li>
+					<br>
+	            	<li><a href = "#doodles"><span style= "font-size: 14px; font-weight: bold">Doodles</span></a></li>
+	        </aside>
 
       <div class = "content">
-      		<h3>Personal Projects in Illustration/Animation</h3>
-      		<p>I enjoy creating illustrations and animations in my free time, and the main tools I use are Procreate, Adobe Illustrator, and Adobe Photoshop. As of late, I've been particularly drawn to web illustrations and isometric graphics. Feel free to take a look at my (growing) collection below!</p>
-      		
+
       	<div id = "animate">
-      		<img src = "assets/pers-hero.png" id = "hero"/> 
 			
 			<section id= "animations">
-            	<h1>Animations</h1>
-            </section>
+	            <div class = "grid">
+					<img src = "assets/blue-man.gif" id = "pers-img"/> 
+					<img src = "assets/muslim.gif" id = "pers-img"/> 
+					<img src = "assets/bt.gif" id = "pers-img"/> 
+				</div>
+			</section>
 
-            <div class = "grid">
-				<img src = "assets/blue-man.gif" id = "pers-img"/> 
-				<img src = "assets/muslim.gif" id = "pers-img"/> 
-				<img src = "assets/bt.gif" id = "pers-img"/> 
-				<img src = "assets/crying.gif" id = "pers-img"/> 
-			</div>
-
+			<br><hr><br><br>
 
 			<section id= "illustrations">
-            	<h1>Illustrations</h1>
-            </section>
+	            <div class = "grid">
+					<img src = "assets/pink-cloud.jpg" id = "pers-img"/> 
+					<img src = "assets/dead-woman.jpg" id = "pers-img"/> 
+					<img src = "assets/desert.jpg" id = "pers-img"/> 
+					<img src = "assets/plane.jpg" id = "pers-img"/> 
+					<img src = "assets/flower-cart.png" id = "pers-img"/> 
+					<img src = "assets/hanging-flowers.png" id = "pers-img"/> 
+					<img src = "assets/ipad-girl.png" id = "pers-img"/> 
+					<img src = "assets/choco-milk.jpg" id = "pers-img"/> 
+				</div>
+			</section>
 
-            <div class = "grid">
-				<img src = "assets/pink-cloud.jpg" id = "pers-img"/> 
-				<img src = "assets/dead-woman.jpg" id = "pers-img"/> 
-				<img src = "assets/desert.jpg" id = "pers-img"/> 
-				<img src = "assets/plane.jpg" id = "pers-img"/> 
-				<img src = "assets/flower-cart.png" id = "pers-img"/> 
-				<img src = "assets/hanging-flowers.png" id = "pers-img"/> 
-			</div>
+			<br><hr><br><br>
+
+			<section id= "doodles">
+	            <div class = "grid">
+					<img src = "assets/pumpkin.jpg" id = "pers-img"/> 
+					<img src = "assets/cake.jpg" id = "pers-img"/> 
+					<img src = "assets/bacon.jpg" id = "pers-img"/> 
+					<img src = "assets/ramen.png" id = "pers-img"/> 
+					<img src = "assets/onigiri.jpg" id = "pers-img"/> 
+					<img src = "assets/pastry.jpg" id = "pers-img"/> 
+					<img src = "assets/zhongzi.jpg" id = "pers-img"/> 
+					<img src = "assets/croissant.jpg" id = "pers-img"/>
+					<img src = "assets/steak.png" id = "pers-img"/>  
+					<img src = "assets/wine.jpg" id = "pers-img"/> 
+				</div>
+			 </section>
 	  		
-		</div>
 	  		<p id = footer> &copy; 2020 JANET XU DESIGN</p>
-
-	  		</div> 
+		</div>  <!--  end animate -->
+	  	</div>    <!-- end content -->
 	</body>
 
 	<script>

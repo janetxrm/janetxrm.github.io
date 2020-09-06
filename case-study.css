@@ -1,45 +1,52 @@
-/*                                LINKING THE CONTENT TO THE SIDE BAR STARTS HERE*/
-
-/* ScrollSpy active styles (see JS tab for activation) */
-.side li.active > a {
-    color: black;
-    font-weight: 300;
-}
-
-.side a {
+/*                                                                                  TOP NAV STYLING*/
+.topnav {
+   /*position: sticky;*/
+    display: inline-block;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
     text-decoration: none;
-    display: block;
-    color: grey;
-    transition: all 100ms ease-in-out; /* eases transition to active state */
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.side a:hover {
-    color: black;
+.topnav a {
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: #909090;
+    transition: all 0.15s ease;
+    margin-top: 30px;
+}
+
+.topnav a:hover {
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+.topnav a.active {
+    color: #2B2E33;
 }
 
 
-body {
-    font-family: 'Roboto';
-    display: flex;
-    flex-direction: row;
-}
 
-html {
-    scroll-behavior: smooth;
-}
+/*                                                                                  SIDE NAV STYLING*/
 
-    
-/*                                                  SIDEBAR STYLING*/
-  
-/*grey sidebar itself*/
-.side {
-   background-color: #F9F9F9;
+
+.sidenav {
+    position: fixed;
+    bottom: 50px;
     width: 20%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     animation: expand 1s ease forwards;
+}
+
+.sidenav a {
+    text-decoration: none;
+    margin-left: 15%;
+    color: #909090;
 }
 
 /*have side bar slide in from left*/
@@ -52,130 +59,8 @@ html {
   }
 } 
 
-
-/*sidebar text itself*/
-#sidetext {
-    position: sticky;
-    top: 30px;
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    color: #909090;
-    transition: all 0.15s ease;
-    display: block;
-    margin-top: 30px;
-    color: #3B3B3B;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-/*all link styling, including sidebar text*/
-a {
-    text-decoration: none;
-    letter-spacing: 0.04em;
-    color: #909090;
-    transition: all 0.15s ease;
-    display: block;
-    margin-top: 30px;
-}
-   
-
-a:hover {
-    color: #3B3B3B;
-    cursor: pointer;
-}
-
-#desc {
-    line-height: 0px;
-    color: #3B3B3B;
-    font-size: 14px;
-}
-
-#desc-content {
-  padding-bottom: 40px;
-}
-
-
-#desc-content:hover {
-    cursor: default;
-}
-
-/*NOTICE that the html name of this class is sidebar-item active. Looks like you have to add period here.*/
-#sidetext-active {
-    color: #3B3B3B;
-}
-
-
-/*                                                  GENERAL CONTENT STYLING*/
-
-/*current side bar width is: 20%, so this width is 100 minus that plus margins*/
-.content {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    color: #515151;
-    /*align-items: center;*/
-}
-
-#animate {
-  animation: slideUp .8s ease-in-out forwards .3s;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-
-p {
-    text-align: left;
-    line-height: 30px;
-    margin-bottom: 30px; /*between paragraph height*/
-}
-
-h3 {      /*case study title*/
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#top-desc {
-    margin-bottom: 0px;
-}
-
-#hero-img {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-h1 {
-    font-size: 25px;
-    font-weight: normal;
-    padding-bottom: 50px;
-}
-
-section {
-    padding-bottom: 124px;
-}
-
-h2 {
-    font-size: 16px;
-    text-align: left;
-    font-weight: normal;
-    line-height: 20px;
-    margin-bottom: 30px; /*between paragraph height*/
-}
-
-
-img {
-    width: 100%;
+.sidenav a:hover {
+    color: #3B58ED;
 }
 
 li {
@@ -184,59 +69,106 @@ li {
 }
 
 
-#footer {
-    text-align:center;
+
+/*JAVASCRIPT HERE. RESPONSIVE SIDE BAR*/
+.sidenav li.active > a {
+    color: #3B58ED;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/*                                                                                  GENERAL CONTENT STYLING*/
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+  color: #2B2E33;
+}
+
+#hero-img {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-top: 50px;
-    font-size: 12px;
+    padding-bottom: 50px;
 }
 
-/*                                                              PAN specific styling*/
-#intextlink {   /*thanks to mike*/
-    display: inline;
-    text-decoration: underline;
-    transition: all 0.15s ease;
-    color: #515151;
-}
 
-.roadmap {
-    display: flex;
-    flex-direction: row;
-    padding-bottom:30px;
-}
-
-#dotline {
-   width: 1%;
-   height: 700px;
-   margin-top: 30px;
-   margin-bottom: 40px;
-
-}
-
-.roadtext {
+.content {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 30px;
+    align-items: center;
 }
+
+#section-title {
+  font-size: 14px; 
+  font-weight: bold;
+ /* letter-spacing: 5px;*/
+}
+
+#content-img{
+  width: 140%;
+  margin-left: -20%;  /*lmao tryna override content hack*/
+}
+
+#hero-text {
+  padding: 50px;
+  color: white;
+  background-color: #3B58ED;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height:40px;
+}
+
+#proj {
+    padding-top:50px;
+    transition: all 0.2s ease;
+}
+
+    #proj:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    }
+
+p {
+    line-height: 30px;
+    margin-bottom: 30px; /*between paragraph height*/
+}
+
+
+img {
+    width: 100%;
+}
+
+
+
+#footer {
+    font-size: 12px; 
+    color: #666666;
+    padding-top: 50px;
+}
+
+
 
 /*                                                              berkeleytime specific styling*/
-span {
-    font-weight: bold;
-    background-color: #F3F0EF;
-}
 
-
-#quote-face {
-    display: flex;
-    flex-direction: row;
-}
-
-#person {
-    width:20%; 
-    height:20%;
-
-
-}
 
 .quotes-faces {
     display: flex;
@@ -244,19 +176,22 @@ span {
     padding-right: 15%;
 }
 
-#quote {
-    padding-top:50px;
-    padding-right:100px;
-    padding-bottom:50px;
-    font-style: italic;
-    width: 100%;
+#quote-row {
+    display: flex;
+    flex-direction: row;
 }
 
-.all-greygifs {
+#person {
+  padding-left: 50px;
+    width:20%; 
+    height:20%;
+
 
 }
 
 .grey-with-gif {
+    width: 140%;
+    margin-left: -20%;  /*lmao tryna override content hack*/
     display: flex;
     flex-direction: row;
     padding-bottom: 50px;
@@ -321,13 +256,6 @@ span {
     justify-content: center;
 }
 
-#problem {
-    padding-right: 60px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 h4 {
     font-size: 20;
@@ -356,6 +284,11 @@ h4 {
   height: auto; 
   padding-left: 100px;
 }
+
+
+
+
+
 
 
 
