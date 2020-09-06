@@ -79,9 +79,6 @@ li {
 
 
 
-
-
-
 /*                                                                                  GENERAL CONTENT STYLING*/
 body {
     font-family: proxima-nova, sans-serif;
@@ -233,6 +230,7 @@ img {
 .task-prompt {
     display: flex;
     flex-direction: row;
+    padding: 30px;
 }
 
 #col1 {
@@ -258,35 +256,17 @@ img {
 
 
 h4 {
+
     font-size: 20;
     font-weight: bold;
     line-height: 200%;
 }
 
-#filter-arrow {
-  max-width:900px;
-  max-height:570px;
-  width: auto;
-  height: auto;
+#problem{
+  width: 50%;
+  padding-top: 100px;
+
 }
-
-#dd-img {
-  max-width:700px;
-  max-height:570px;
-  width: auto;
-  height: auto; 
-}
-
-#dd-gif {
-  max-width:700px;
-  max-height:570px;
-  width: auto;
-  height: auto; 
-  padding-left: 100px;
-}
-
-
-
 
 
 
