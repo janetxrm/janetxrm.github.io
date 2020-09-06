@@ -1,0 +1,103 @@
+<!doctype html> 
+<html> 
+	<head> 
+		<link rel="stylesheet" type="text/css" href="case-study.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+
+
+		<div class = "topnav">
+            <a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "personal.html"> Creative</a></li>
+	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	     </div>
+
+	    <aside class = "sidenav">
+	            	<li><a href = "#the problem"><span style= "font-size: 14px; font-weight: bold">The Problem</span></a></li>
+	            	<br>
+	            	<li><a href = "#the solution"><span style= "font-size: 14px; font-weight: bold">The Solution</span></a></li>
+					<br>
+	    </aside>
+
+    	<img src = "assets/scheduler-hero.png" id = "hero-img"/>
+
+    	
+    	
+		
+
+    	<div class = "content">
+
+    		<p><span style= "font-size: 24px; font-weight: bold">Berkeleytime Scheduler</span></p>
+
+    		
+    		<p>Fall 2020 I’m leading a team of 3 designers in <a href="https://berkeleytime.com/" target="_blank">Berkeleytime</a>. We are a team of students at UC Berkeley building and maintaining a course exploration website used by 26k+ UC Berkeley students. </p><p>My main project this semester is to design a <span style = "font-weight: bold; color: #3B58ED">schedule building feature</span> for the website. This is currently a work in progress, and I’m currently working with another designer and two backend engineers on this project.</p>
+    		<p> &nbsp; </p>
+
+    		<section id= "the problem">
+            	<p id = "section-title">THE PROBLEM</p>
+            	<p>When exploring courses to take, a common behavior for students is to switch tabs between Berkeleytime and Google Calendar to ensure there are no schedule conflicts in their interested courses. This is an annoying and inefficient process that leaves room for human error and could potentially lead to critical enrollment mishaps.</p>
+            </section>
+            <p> &nbsp; </p>
+
+            <section id= "the solution">
+            	<p id = "section-title">THE SOLUTION</p>
+            	<p>This feature will allow students to add classes to their shopping cart when they are browsing courses on Berkeleytime.com, view and edit them on a calendar within the site itself, and export a finalized schedule to Google Calendar. </p> 
+        	</section>
+        	<p> &nbsp; </p>
+
+    	
+
+    	<img id = "content-img2" src = "assets/scheduler4.png">
+
+			<p> &nbsp; </p>
+			<p><span style= "font-size: 22px; font-weight: bold; color: #3B58ED">Hold on tight!</span></p>
+			<p>This project is a work in process. More content to come in the near future.</p>
+   			<p> &nbsp; </p>
+
+        		<div class = socials>
+						<a href = "https://www.linkedin.com/in/janet-xu/">
+							<img src = "assets/linkedin.png" id = "icon">
+						</a>
+						<a href = "mailto:janet.m.xu@berkeley.edu">
+							<img src = "assets/mail.png" id = "icon">
+						</a>
+					</div>
+
+					<p id = footer>&copy; 2020 JANET XU DESIGN</p>
+
+	
+
+    	</div> <!-- ending content -->
+
+	</body>
+
+
+	<script>
+	window.addEventListener('DOMContentLoaded', () => {
+
+	const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+			const id = entry.target.getAttribute('id');
+			if (entry.intersectionRatio > 0) {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.add('active');
+			} else {
+				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.remove('active');
+			}
+		});
+	});
+
+	// Track all sections that have an `id` applied
+	document.querySelectorAll('section[id]').forEach((section) => {
+		observer.observe(section);
+	});
+	
+});
+</script>
+
+
+</html>

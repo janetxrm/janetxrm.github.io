@@ -175,11 +175,28 @@ img {
     width: 100%;
 }
 
+.socials {
+    padding-top: 100px;
+text-align: center;
+
+}
+
+#icon {
+    width: 2%;
+    height: 2%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#icon:hover {
+  opacity: 0.4;
+}
+
 
 #footer {
     font-size: 12px; 
     color: #666666;
-    padding-top: 50px;
 }
 
 

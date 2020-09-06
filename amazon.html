@@ -7,6 +7,9 @@
 
 	<body>
 
+
+
+
 		<div class = "topnav">
             <a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
             <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
@@ -25,7 +28,15 @@
 
     	<img src = "assets/amazon-hero.png" id = "hero-img"/>
 
+    	
+    	
+		
+
     	<div class = "content">
+			<button class="back-to-top" type="button"></button>   <!-- tryna figure out scroll to top button -->
+		
+
+
     		<p><span style= "font-size: 24px; font-weight: bold">Amazon Internship</span></p>
 
     		
@@ -55,9 +66,19 @@
 			<p> &nbsp; </p>
 			<p>If you're interested in learning more about this project, feel free to reach out to me and I&#39;d be happy to chat more about it!</p>
    			<p> &nbsp; </p>
-        	<p id = footer> &copy; 2020 JANET XU DESIGN</p>
 
+        		<div class = socials>
+						<a href = "https://www.linkedin.com/in/janet-xu/">
+							<img src = "assets/linkedin.png" id = "icon">
+						</a>
+						<a href = "mailto:janet.m.xu@berkeley.edu">
+							<img src = "assets/mail.png" id = "icon">
+						</a>
+					</div>
 
+					<p id = footer>&copy; 2020 JANET XU DESIGN</p>
+
+	
 
     	</div> <!-- ending content -->
 
@@ -83,6 +104,25 @@
 		observer.observe(section);
 	});
 	
+});
+
+	// click button to top starts here
+var amountScrolled = 100;
+var amountScrolledNav = 25;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('button.back-to-top').addClass('show');
+  } else {
+    $('button.back-to-top').removeClass('show');
+  }
+});
+
+$('button.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 800);
+  return false;
 });
 </script>
 
