@@ -3,94 +3,114 @@
 	<head> 
 		<link rel="stylesheet" type="text/css" href="case-study.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	</head>
 
 	<body>
-			
-		<aside class = "side">
-            	<div id = "sidetext">
-	            	<a href="index.html">< Back </a>
-	            	<p> &nbsp; </p>
-	            	<div id = "desc-content">
-		            	<p id = "desc">Role: Product Designer</p>
-		            	<p id = "desc">Time: 5 months</p>
-		            	<p id = "desc">Team member: Jemma Kwak</p>
-	            	</div>
-	            	<li><a href = "#Problem">Problem</a></li>
-	            	<li><a href = "#Research">Research</a></li>
-	            	<li><a href = "#Goal">Goal</a></li>
-	            	<li><a href = "#Iterations &#38; User Testing">Iterations &#38; User Testing</a></li>
-	            	<li><a href = "#Final Design">Final Design</a></li>
-	            	<li><a href = "#Results">Results</a></li>
-	             </div>
-    	</aside>
+
+
+		<div class = "topnav">
+            <a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a class = "active" href= "personal.html"> Creative</a></li>
+	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	     </div>
+
+	    <aside class = "sidenav">
+	            	<li><a href = "#problem"><span style= "font-size: 14px; font-weight: bold">Problem</span></a></li>
+	            	<br>
+	            	<li><a href = "#research"><span style= "font-size: 14px; font-weight: bold">Research</span></a></li>
+					<br>
+					<li><a href = "#goal"><span style= "font-size: 14px; font-weight: bold">Goal</span></a></li>
+					<br>
+					<li><a href = "iterations &#38; user testing"><span style= "font-size: 14px; font-weight: bold">Iterations &#38; User Testing</span></a></li>
+					<br>
+					<li><a href = "final design"><span style= "font-size: 14px; font-weight: bold">Final Design</span></a></li>
+					<br>
+					<li><a href = "results"><span style= "font-size: 14px; font-weight: bold">Results</span></a></li>
+					<br>
+	    </aside>
+
+
+    	<img src = "assets/bt-hero.png" id = "hero-img"/>
 
             <div class = "content">
-            	<h3> Berkeleytime </h3>
+            	<p><span style= "font-size: 24px; font-weight: bold">Berkeleytime</span></p>
 
-	    		<p id = "top-desc"> I'm a product designer for <a id = "intextlink" href="https://berkeleytime.com/" target="_blank">Berkeleytime</a>, a website used by 26k+ Berkeley students for course exploration that gets 170k+ visitors per year. In this project, I worked with a web engineer and another designer to make the site compatible across all devices. </p>
+	    		<p> I'm a product designer for <a href="https://berkeleytime.com/" target="_blank">Berkeleytime</a>, a website used by 26k+ Berkeley students for course exploration that gets 170k+ visitors per year. In this 5-month long project, I worked with a web engineer and another designer to make the site compatible across all device types. </p>
 
-	    		<div id = "animate">
-			    		<img src = "assets/bt-hero.png" id = "hero-img"/>
-
-			    		<section id= "Problem">
-			            	<h1>Problem</h1>
-			            	<p><span>Choosing classes at UC Berkeley is a time-consuming and frustrating process.</span> This is due to many factors students face, some of which include frustratingly long waitlists, a lack of grading transparency, and a lot of pressure choosing the right classes to graduate on time.</p>
-							<p>As a team of student volunteers, our mandate was simple for this project: do whatever we can to <span>simplify the course discovery process.</span></p>
+<p> &nbsp; </p>
+			    		<section id = "problem">
+			            	<p id = "section-title">PROBLEM</p>
+			            	<p><span style = "font-weight: bold"> Choosing classes at UC Berkeley is a time-consuming and frustrating process.</span> This is due to many factors students face, some of which include frustratingly long waitlists, a lack of grading transparency, and a lot of pressure choosing the right classes to graduate on time.</p>
+							<p>As a team of student volunteers, our mandate was simple for this project: do whatever we can to <span style = "font-weight: bold">simplify the course discovery process.</span></p>
 			            </section>
 
-			            <section id= "Research">
-			            	<h1>Research</h1>
+<p> &nbsp; </p>
+
+			            <section id= "research">
+			            	<p id = "section-title">RESEARCH</p>
 			            	<p>We started off with a generative research study, interviewing current Berkeley students and learning more about their experiences choosing and enrolling for classes. </p>
 
 			            	<div class = "quotes-faces">
-			            		<div id = "quote-face">
-			            			<p id = "quote">&#34;I spent hours finding the right class to take but found out there were no more open seats the moment I tried to enroll. Now I have to find an alternative and do my research all over again.&#34;</p>
+			            		<div id = "quote-row">
+			            			<p><span style = "font-style: italic">&#34;I spent hours finding the right class to take but found out there were no more open seats the moment I tried to enroll. Now I have to find an alternative and do my research all over again.&#34;</span></p>
 			            			<img src = "assets/bald.png" id = "person"/>
 			            		</div>
 
-			            		<div id = "quote-face">
-			            			<p id = "quote">&#34;Last year I had to create a backup to the backup of my ideal schedule because I knew enrollment would be unpredictable once it started.&#34;</p>
+			            		<div id = "quote-row">
+			            			<p><span style = "font-style: italic">&#34;Last year I had to create a backup to the backup of my ideal schedule because I knew enrollment would be unpredictable once it started.&#34;</span></p>
 			            			<img src = "assets/girl.png" id = "person"/>
 			            		</div>
 
-			            		<div id = "quote-face">
-			            			<p id = "quote"> &#34;I got waitlisted in all of my classes. I literally had to drop all of them and enroll in random classes just to still be considered a student here.&#34;</p>
+			            		<div id = "quote-row">
+			            			<p><span style = "font-style: italic">&#34;I got waitlisted in all of my classes. I literally had to drop all of them and enroll in random classes just to still be considered a student here.&#34;</span></p>
 			            			<img src = "assets/boy.png" id = "person"/>
 			            		</div>
 			            	</div>
 			            </section>
 
-			            <section id= "Goal">
-			            	<h1>Goal</h1>
-			            	<p>My goal in particular was to scale the interaction patterns to non desktop platforms to make Berkeleytime accessible across all devices. </p>
-			            	<p><span>Priority metrics and KPI&#39;s:</span> Daily active users and mobile website retention rate compared to that of the desktop site.</p>
+<p> &nbsp; </p>
+			            <section id= "goal">
+			            	<p id = "section-title">GOAL</p>			            	
+			            	<p id = "hero-text">My goal was to make Berkeleytime accessible across all device types by scaling the interaction patterns to non-desktop platforms. </p>
+			            	<p><span style = "font-weight: bold">Priority metrics and KPI&#39;s:</span>
+			            	<br>
+			            	Daily active users and mobile website retention rate relative to that of the desktop site.</p>
 			            </section>
 
-			            <section id= "Iterations &#38; User Testing">
-			            	<h1>Iterations &#38; User Testing</h1>
+
+<p> &nbsp; </p>
+
+			            <section id = "iterations &#38; user testing">
+			            	<p id = "section-title">ITERATIONS &#38; USER TESTING</p>
 			            	<p>We followed a task based user testing protocol with 10 students and tested workflows for the following three pages: </p>
 			            	<li> 1. Course catalog </li>
 							<li> 2. Grade distributions</li>
 				  			<li> 3. Enrollment </li>
 				  			<p> &nbsp; </p>
+
 			            	<p>In our first round of user testing, users were presented with a course catalog that had a side menu for setting filters. Activated filters would then be displayed as pills on the original course catalog screen.</p>
-			            	<img src = "assets/og course cat.png"/>
 			            	<p> &nbsp; </p>
+			            	<img id = "content-img" src = "assets/og course cat.png"/>
+			            	<p> &nbsp; </p>		            	
 			            	<p> We witnessed participants run into several usability issues with the previous flow, so we explored different mobile patterns that led to the following flow:</p>
-			            	<img src = "assets/final course cat.png"/>
 			            	<p> &nbsp; </p>
-			            	<p> Moving forward with the grade distrubutions screen, usability testing allowed us to spot <span>where existing patterns used on the desktop interface failed when they were translated to mobile.</span> This was especially prevalent in data visualizations; users found it difficult to interact with graphs and to interpret screens that were text and statistics heavy.</p>
+			            	<img id = "content-img" src = "assets/final course cat.png"/>
+			            	<p> &nbsp; </p>
+			            	<p> Moving forward with the grade distrubutions screen, usability testing allowed us to spot where existing patterns used on the desktop interface failed when they were translated to mobile. This was especially prevalent in data visualizations; users found it difficult to interact with graphs and to interpret screens that were text and statistics heavy.</p>
 			            	<p> Below is the evolution of the grade distribution screen as we learned from these observations:</p>
-			            	<img src = "assets/grade evol.png"/>
+			            	<p> &nbsp; </p>
+			            	<img id = "content-img" src = "assets/grade evol.png"/>
 			            	<p> &nbsp; </p>
 			            	<p>The evolution of the course enrollment screen was similar to that of the grade distributions screen as users faced similar issues.</p>
-			            	<img src = "assets/enroll evol.png"/>
+							<p> &nbsp; </p>			            	
+			            	<img id = "content-img" src = "assets/enroll evol.png"/>
 			            </section>
 
-			            <section id = "Final Design">
-			            	<h1>Final Design</h1>
+<p> &nbsp; </p>
+
+			            <section id = "final design">
+			            	<p id = "section-title">FINAL DESIGN</p>
 
 			            	<div class = "all-greygifs">
 
@@ -122,20 +142,22 @@
 					            </div>
 							</div>
 						<p> &nbsp; </p>
-						<p>I also got the chance to make the graphic for Berkeleytime&#39;s landing page. Feel free to take a look at it (and the rest of our snazzy site) <a id = "intextlink" href="https://berkeleytime.com/landing" target="_blank">here</a>.</p>
-						<img src = "assets/landing.png"/>
+						<p>I also got the chance to make the graphic for Berkeleytime&#39;s landing page. Feel free to take a look at it (and the rest of our snazzy site) <a href="https://berkeleytime.com/landing" target="_blank">here</a>.</p>
+						<p> &nbsp; </p>
+						<img id = "content-img" src = "assets/landing.png"/>
 
 			            </section>
 
-			            <section id = "Results">
-			            	<h1>Results</h1>
+<p> &nbsp; </p>
+			            <section id = "results">
+			            	<p id = "section-title">RESULTS</p>
 			            	<p>Finalized designs have been handed off to the engineering team and construction is currently underway. <span>Berkeleytime will be available to use across all devices for incoming Fall 2020 students!</span></p>
 			            </section>
 
 	          <p id = footer> &copy; 2020 JANET XU DESIGN</p>
 	           
-				</div>
-            </div>
+
+            </div>   <!-- end content -->
 
     </body>
 
