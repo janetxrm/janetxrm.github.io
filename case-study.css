@@ -78,8 +78,8 @@ li {
 
 /*                                                                                  GENERAL CONTENT STYLING*/
 body {
-    /*font-family: proxima-nova, sans-serif;*/
-    font-family: 'Inter', sans-serif;
+    font-family: proxima-nova, sans-serif;
+    
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -149,7 +149,6 @@ a {
     }
 
 p {
-    font-family: 'Inter', sans-serif;
     line-height: 30px;
     margin-bottom: 30px; /*between paragraph height*/
 }
