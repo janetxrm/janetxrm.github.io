@@ -149,6 +149,7 @@ a {
     }
 
 p {
+    font-family: 'Inter', sans-serif;
     line-height: 30px;
     margin-bottom: 30px; /*between paragraph height*/
 }
