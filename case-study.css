@@ -1,4 +1,14 @@
-/*                                                                                  TOP NAV STYLING*/
+
+
+
+
+/* Makes sure that literally everything is one font */
+body {
+    font-family: 'Inter', sans-serif; /* Apply the Inter font to all elements */
+}
+
+
+/* TOP NAV STYLING*/
 .topnav {
    /*position: sticky;*/
     display: inline-block;
@@ -30,79 +40,42 @@
     color: #2B2E33;
 }
 
-
-
-/*                                                                                  SIDE NAV STYLING*/
-
-
-.sidenav {
-    position: fixed;
-    bottom: 50px;
-    width: 20%;
-    height: auto;
-    animation: expand 1s ease forwards;
-}
-
-.sidenav a {
-    text-decoration: none;
-    margin-left: 15%;
-    color: #909090;
-}
-
-/*have side bar slide in from left*/
-@keyframes expand {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-} 
-
-.sidenav a:hover {
-    color: #3B58ED;
-}
-
-li {
+li { /*styling for the top nav*/
   list-style-type: none;
   line-height: 150%;
 }
 
 
 
-/*JAVASCRIPT HERE. RESPONSIVE SIDE BAR*/
-.sidenav li.active > a {
-    color: #3B58ED;
+/*                                                                   PARALLAX IMAGE CODE*/
+/* Parallax container */
+.parallax-container {
+    height: 60vh; /* 60% viewport height */
+    overflow: hidden; /* Hide overflow to ensure the image doesn't extend beyond */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Required for containing absolute-positioned elements */
+    margin-bottom: 100px;
+}
+
+/* Parallax image */
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 800px;
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: -1; /* Move the image behind the content */
 }
 
 
-/*                                                                                  GENERAL CONTENT STYLING*/
-body {
-    
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-a {
-  color: #2B2E33;
-}
-
-#hero-img {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 
-.content {
+/*                                                                                GENERAL CONTENT STYLING*/
+
+.content { /* centers the whole page with left right margins  */
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
@@ -111,6 +84,53 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+
+.two-columns-container { /* creates a flex container for two columns */
+    width:100%; /* you need this so that the text spans the full width of .content */
+    display: flex;
+    justify-content: space-between; /* evenly spaces the columns  */
+}
+
+
+.top-aligned-column {
+    width: 48%; /* Sets the width of each column */
+    align-self: flex-start;
+}
+
+.bottom-aligned-column {
+    width: 48%; /* Sets the width of each column */
+    align-self: flex-end;
+}
+
+p {
+    font-weight: 350;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    line-height: 1.5; /* Line height is x times the font size */
+}
+
+
+/*    CASE STUDY HEADER        */
+h1 { 
+    font-weight: 400;
+    font-size: 3.5em; /* This is x amount bigger than the base font size from <p> */
+    line-height: 1.2; /* Line height is x times the font size. Adjusted line height for larger text */
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a { /* styles hyperlinks */
+  color: #2B2E33;
+}
+
+
+
+
 
 #section-title {
   font-size: 14px; 
@@ -148,15 +168,6 @@ a {
     opacity: 0.8;
     }
 
-p {
-    line-height: 30px;
-    margin-bottom: 30px; /*between paragraph height*/
-}
-
-
-img {
-    width: 100%;
-}
 
 
 
