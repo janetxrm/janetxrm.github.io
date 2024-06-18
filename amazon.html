@@ -1,76 +1,100 @@
 <!doctype html> 
 <html> 
-	<head> 
+	<head> <!-- This is all metadata, like linking to Google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" type="text/css" href="case-study.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
+
+
+
 	<body>
-
-
-
                                                                            
 		<div class = "topnav">
-            <a class = "active" href="index.html"><span style= "font-size: 18px; font-weight: bold">Janet Xu</span></a>
+            <a class = "active" href="index.html"><span style= "font-size: 18px;">Janet Xu</span></a>
             <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
             <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "personal.html"> Creative</a></li>
 	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
 	   </div>
 
 
-	    <!--   
-	    <aside class = "sidenav">
-	            	<li><a href = "#what i did"><span style= "font-size: 14px; font-size: 14px; letter-spacing: 2px">What I Did</span></a></li>
-	            	<br>
-	            	<li><a href = "#main learnings"><span style= "font-size: 14px; letter-spacing: 2px">Main Learnings</span></a></li>
-					<br>
-					<li><a href = "#what others have said"><span style= "font-size: 14px; letter-spacing: 2px">What Others Have Said</span></a></li>
-					<br>
-	    </aside>
-	    -->
+		<div class = "content">
+				<div class = "two-columns-container">
+				
+							<div class = "bottom-aligned-column">
+						   		<h1> Case study title </h1>
+						 	</div>
+						 	
 
-    	<img src = "assets/amazon-hero.png" id = "hero-img"/>
-    	
+					 		<div class = "bottom-aligned-column">
+							 			<p> test test </p>
+				 			</div>		
+				</div>
+					
+		</div>
+
 		
+
+
+
+
+
+
+  <div class="parallax-container">
+        <div class="parallax-image">
+            <img src="assets/amazon-hero.png" alt="Parallax Image">
+        </div>
+    </div>
+
+   
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var parallaxImage = document.querySelector('.parallax-image');
+            parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+    </script>
+
+
+
+
+
+
+
+
+    			<div class = "content">
+				<div class = "two-columns-container">
+				
+							<div class = "top-aligned-column">
+						   		<p> I led the design of blah blah blah blah blah blah badasdsadfsdafsdaf </p>
+						 	</div>
+						 	
+
+					 		<div class = "top-aligned-column">
+							 			<p> blah blah sadfsadfasdfadfsadfasdfsadfdasf </p>
+				 			</div>		
+				</div>
+					
+		</div>
+
+
+
 
     	<div class = "content">
-			<button class="back-to-top" type="button"></button>   <!-- tryna figure out scroll to top button -->
-		
 
-
-    		<p><span style= "font-size: 24px; font-weight: bold">Amazon Internship</span></p>
+    		<h1> Amazon Internship </h1>
 
     		
     		<p> I spent the summer of 2020 as a UX design intern on Amazon's Alexa Core CX team. I learned about creating touch and voice forward experiences on <a href = "https://www.amazon.com/Echo-Show-8/dp/B07PF1Y28C" target="_blank">Alexa Echo Show devices</a>, and worked with motion and sound designers in working towards my final deliverable. </p>
-    		<p> &nbsp; </p>
+    		
+    		<h1> testing an h1 <h1>
 
-    		<section id= "what i did">
-            	<p id = "section-title">WHAT I DID</p>
-            	<p>My project focus was to <span style = "font-weight: bold; color: #3B58ED">push the customization, visual, and CX expression of the idle state displayed on Alexa Echo Show devices.</span> My final deliverable is a touch and voice forward experience that implements collaborated work done with sound designers, motion designers, and illustrators, and that scales across different device models and generations.</p>
-            </section>
-            <p> &nbsp; </p>
-
-            <section id= "main learnings">
-            	<p id = "section-title">MAIN LEARNINGS</p>
-            	<p>There was no clear path for how to tackle my project so it was important to iterate effectively, over communicate, and share ideas early and often. This led to productive design feedback sessions and team visibility to my project.</p>
-				<p>This was also my first time working in a product and voice driven space, so I learned a lot about it through user research, product needs, and 1:1&apos;s with other members of <a href = "https://www.amazon.jobs/en/teams/ddgAmazon">Amazon&apos;s Device Design Group. </a></p> 
-        	</section>
-        	<p> &nbsp; </p>
-
-    		<section id= "what others have said">
-            	<p id = "section-title">WHAT OTHERS HAVE SAID</p>
-            	<p><span style = "font-style: italic">&quot;I had the pleasure of working with Janet as her UX Manager during her summer internship at Amazon in 2020. From the first day - Janet fearlessly dove into new challenges and immediately immersed herself in the project space for the Alexa Core team. Janet is a great team collaborator and consistently delivers high quality work. She is interested in research and a data driven process as a UX designer - but can also contribute to highly creative workstreams as a visual design unicorn. Janet is great at navigating ambiguous spaces and was able to onboard to our team and learn the ropes during a 100% virtual internship. Janet is self motivated, driven, and is a great communicator. I always enjoyed creative brainstorming with Janet, and I hope that we can work together again in the future!&quot;</span>
-            	<br>
-				<span style = "font-weight: bold"> &ndash; <a href = " https://www.linkedin.com/in/gretchennash/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BRvMcPIwKRkO2gEeSYwhW3A%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-recommendation_details_profile">Gretchen Nash</a> (Creative Director at Amazon)</span></p>
-            </section>
-
-			<p> &nbsp; </p>
-			<p>If you're interested in learning more about this project, feel free to reach out to me and I&#39;d be happy to chat more about it!</p>
-   			<p> &nbsp; </p>
+    		
 
         		<div class = socials>
 						<a href = "https://www.linkedin.com/in/janet-xu/">
