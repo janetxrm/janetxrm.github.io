@@ -150,6 +150,7 @@ a {
 p {
     line-height: 30px;
     margin-bottom: 30px; /*between paragraph height*/
+    font-family: 'Inter', sans-serif;
 }
 
 
