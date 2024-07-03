@@ -585,7 +585,7 @@ html {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
-    gap: 700px;  /*Hard coding cuz I can't figure out how to make this class right-aligned */
+    gap: 45vw;  /*Hard coding cuz I can't figure out how to make this class right-aligned */
 }
 
 
