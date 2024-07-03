@@ -54,6 +54,18 @@ li { /*styling for the top nav*/
 
 
 
+/* ------------------------------- HOME STYLING------------------------------- */
+
+.home-image-container {
+    width: auto;
+    height:auto;
+}
+
+.home-image-container-text {
+    text-align: left;
+    margin-left: 30%
+}
+
 
 
 
@@ -136,17 +148,6 @@ li { /*styling for the top nav*/
     display: flex;
     flex-direction: column;
     margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
-}
-
-
-.home-image-container {
-    width: auto;
-    height:auto;
-}
-
-.home-image-container-text {
-    text-align: left;
-    margin-left: 30%
 }
 
 
