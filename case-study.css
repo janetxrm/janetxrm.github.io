@@ -5,22 +5,25 @@
 /* Makes sure that literally everything is one font */
 body {
     font-family: 'Inter', sans-serif; /* Apply the Inter font to all elements */
+    color: #333333;
 }
 
 
-/* TOP NAV STYLING*/
+/* ------------------------------- TOP NAV STYLING------------------------------- */
+
+
 .topnav {
    /*position: sticky;*/
     display: inline-block;
-    width: 60%;
+    width: 70%;
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 5%;
-    text-decoration: none;
     letter-spacing: 0.04em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px; 
+    font-weight: 400
 }
 
 .topnav a {
@@ -38,6 +41,7 @@ body {
 
 .topnav a.active {
     color: #2B2E33;
+    font-weight: 600;
 }
 
 li { /*styling for the top nav*/
@@ -47,10 +51,16 @@ li { /*styling for the top nav*/
 
 
 
-/*                                                                   PARALLAX IMAGE CODE*/
-/* Parallax container */
+
+
+
+/*------------------------------- PARALLAX IMAGE CODE------------------------------- */
+
+
+
 .parallax-container {
     height: 60vh; /* 60% viewport height */
+    width: 100vw;
     overflow: hidden; /* Hide overflow to ensure the image doesn't extend beyond */
     display: flex;
     justify-content: center; /* Center content horizontally */
@@ -60,62 +70,326 @@ li { /*styling for the top nav*/
 }
 
 /* Parallax image */
-.parallax-image {
+.parallax-container img {
     position: absolute;
     top: 0;
     left: 0;
-    margin-bottom: 800px;
     width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
     z-index: -1; /* Move the image behind the content */
 }
 
 
 
 
-/*                                                                                GENERAL CONTENT STYLING*/
 
-.content { /* centers the whole page with left right margins  */
+
+/*-------------------------------  GENERAL CASE STUDY CONTENT STYLING------------------------------- */
+
+
+.content-section { /* Centers the whole page with left right margins, adds hella bottom margin and a top line */
+    border-top: 1px solid #D6D6D6;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+
+/* Removes the border-top line, used for the case study description */
+.content-section-no-line { 
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+
+.title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; /* Sections this off and adds spacing  */
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+
+/*  Used for standalone glory shots */
+.image-container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+/*  Good for to make glory shots thinner */
+.skinny-image-container {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
 
-.two-columns-container { /* creates a flex container for two columns */
+/*  Used for double images and images in a single column. Just removes the margins from image-container */
+.full-width-image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+/*  Still trying to make this work... */
+.full-width-image-container-circle {
+    width: 100%
+    height: auto;
+    border-radius: 50%; /*not working*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+
+.two-columns-container { /* Creates a flex container for two columns */
     width:100%; /* you need this so that the text spans the full width of .content */
     display: flex;
     justify-content: space-between; /* evenly spaces the columns  */
 }
 
-
+ /* This is one of the columns */
 .top-aligned-column {
-    width: 48%; /* Sets the width of each column */
-    align-self: flex-start;
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    padding-right: 100px; /* Shortens the width between the two columns */
 }
 
+ /* This is one of the columns */
 .bottom-aligned-column {
-    width: 48%; /* Sets the width of each column */
-    align-self: flex-end;
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns the content at the bottom */
 }
 
-p {
+
+
+
+
+
+/* ---------------------------------- CASE STUDY TEXT --------------------------------------------- */ 
+
+
+/* Black paragraph text */
+.paragraph {
     font-weight: 350;
-    font-size: 32px; /* This is the base font size that everything scales from */
-    line-height: 1.5; /* Line height is x times the font size */
+    font-size: 18px; /* This is the base font size that everything scales from */
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+/* Grey paragraph text */
+.paragraph-grey {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #949494;
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+
+/* Green paragraph text */
+.paragraph-green {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #53DC76;
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+
+/* Used for case study timeline & description, adds a line on top */
+.paragraph-lines-grey {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 10px; /* Space between line (border) and first text */
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #949494;
+    line-height:1.5;
 }
 
 
-/*    CASE STUDY HEADER        */
-h1 { 
+/* Used for case study timeline & description */
+.paragraph-lines {
+    padding-bottom: 10px; /* Space between text and bottom line */
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    line-height:1.5;
+}
+
+
+/* Green paragraph text */
+.paragraph-green {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #53DC76;
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+
+/* Larger callout text, used for eye-catching highlights and project summary */ 
+.callout-text { 
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    }
+
+/* Used for case study timeline & description, adds a line on top */
+.callout-lines {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 10px; /* Space between line (border) and first text */
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    line-height:1.5;
+}
+
+/* Green callout text */
+.callout-text-green { /
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    color: #53DC76;
+    }
+
+/* Grey callout text, also used for short hook */
+.callout-text-grey { 
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    color: #949494;
+    }
+
+
+/* Fairly large header */
+.one-word-header { 
+    font-weight: 0;
+    font-size: 48px; /* This is the base font size that everything scales from */
+    }
+
+/* Fairly large header, grey */
+.one-word-header-grey { 
+    font-weight: 0;
+    font-size: 48px; /* This is the base font size that everything scales from */
+    color: #949494;
+    }
+
+
+/* Smaller sized header */
+.multi-word-header {
+    font-weight: 0;
+    font-size: 22px; /* This is the base font size that everything scales from */
+    }
+
+/* Smaller sized header, grey */
+.multi-word-header-grey {
+    font-weight: 0;
+    font-size: 22px; /* This is the base font size that everything scales from */
+    color: #949494;
+    }
+
+
+/* Title text for the entire case study */   
+.title-text { 
     font-weight: 400;
     font-size: 3.5em; /* This is x amount bigger than the base font size from <p> */
     line-height: 1.2; /* Line height is x times the font size. Adjusted line height for larger text */
 }
+
+
+
+
+
+
+/* ---------------------------------- SPACING CSS ----------------------------------- */ 
+
+ .space-4 {
+    height: 4px;
+  }
+   .space-10 {
+    height: 10px;
+  }
+
+  .space-10-w {
+    width: 10px;
+  }
+
+  .space-20 {
+    height: 20px;
+  }
+
+   .space-20-w {
+    width: 20px;
+  }
+
+    .space-40 {
+    height: 40px;
+  }
+
+    .space-40-w {
+    width: 40px;
+  }
+
+    .space-60 {
+    height: 60px;
+  }
+
+    .space-60-w {
+    width: 60px;
+  }
+
+    .space-80 {
+    height: 80px;
+  }
+
+  .space-80-w {
+    width: 80px;
+  }
+
+/* Spacing between content section and glory image */
+.space-100 {
+    height: 100px;
+}
+
+  .space-100-w {
+    width: 100px;
+  }
+
+/* Standard spacing to section off content sections */
+  .space-300 {
+    height:300px;
+  }
+
+.space-300-w {
+width:300px;
+  }
+
+
 
 
 
@@ -124,9 +398,349 @@ html {
 }
 
 
-a { /* styles hyperlinks */
-  color: #2B2E33;
+
+
+
+
+
+
+
+
+
+/* ------------------------------- HOME PAGE CSS ---------------------------------- */ 
+
+/* The different font text used in home and about pages */
+.title-unique {
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    font-size: 36px
 }
+
+
+/* Scale down the image to fit its container (in this case, content-section) */
+/* Maintain the aspect ratio */
+/* Round them corners */
+
+.project-right-align {
+    position: relative;
+    padding-top:20px;
+    height: auto; 
+    display: flex;
+    flex-direction:column; 
+    align-items: flex-end;
+}
+
+
+
+.project-video {
+    position: relative;
+    width:70%;
+    border-radius: 50px;  
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+ 
+.project-text-column {
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+}
+
+.project-video:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+    z-index: 1;
+}
+
+
+
+.caption-text { /* Used in the text under intro blurb */
+    font-weight: regular;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    margin-top: 20px;
+}
+
+.button {
+        display: inline-block; /* This button is its own container but can sit with other elements */
+        padding: 10px 20px;
+        background-color: #333333;
+        color: #ffffff;
+        font-family: Atkinson Hyperlegible, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 20%;
+    }
+
+    .button:hover {
+        background-color: #555555;
+    }
+
+
+
+
+.shipped-badge {
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color:#E9F7EE;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.6px solid #D2EBDC;
+  }
+
+ .green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3CDA64;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .shipped-text {
+    color: #404040;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+
+
+
+
+/* ------------------------------- ABOUT PAGE CSS ---------------------------------- */ 
+
+.circular-image {  
+        max-width: 50%; /* Scale down the image to fit its container (in this case, content-section.special) */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 50%; /* Round them corners */
+    }
+
+
+/* Tiny grey paragrph text used in about page and "selected work" in home page */
+.paragraph-unique-grey {
+    font-size: 14px; /* This is the base font size that everything scales from */
+    color: #949494;
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+
+/* Unique font paragraph text used in about blurb */
+.paragraph-unique {
+    font-size: 18px; /* This is the base font size that everything scales from */
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    margin-bottom: 10px;
+    line-height:1.5;
+    }
+
+
+
+/* ------------------------------- FOOTER CSS ---------------------------------- */ 
+
+
+/* Adds bg color */
+.footer-container {
+    background-color: #F0F0F0;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Below makes the footer stick to the bottom of the viewport */
+    bottom: 0;
+    left: 0;
+}
+
+/* Just adds margins */
+.footer-content {
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.footer-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 700px;  /*Hard coding cuz I can't figure out how to make this class right-aligned */
+}
+
+
+.footer-row-links {
+    display: flex;
+    flex-direction: row; 
+    gap: 40px;
+}
+
+
+/* ------------------------------- LINK STYLING CSS ---------------------------------- */ 
+
+/* Special note about this - html takes styling from the web for <a> links, you need to make sure your CSS selectors are specific enough with something like .class-name a */ 
+
+/* About page and footer styling */
+.paragraph a {
+    font-size: 18px;
+    color: #909090;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+
+.paragraph a:hover {
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+/* Case study link styling */
+.callout-text-green a {
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    color: #53DC76;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+/* Case study link styling */
+.callout-text-green a:hover{
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+/* Case study link styling */
+.paragraph-green a {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #53DC76;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+/* Case study link styling */
+.paragraph-green a:hover{
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+
+/* About page link styling */
+.paragraph-unique a {
+    font-size: 18px;
+    color: #909090;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+
+/* About page link styling */
+.paragraph-unique a:hover {
+    color: #333333;
+    cursor: pointer;
+}
+
+/* About page "drop me a line" link styling */
+.callout-text a {
+    font-weight: 300;
+    font-size: 32px;
+    color: #909090;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+/* About page "drop me a line" link styling */
+.callout-text a:hover {
+    font-weight: 300;
+    font-size: 32px;
+    color: #333333;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+
+
+
+/* ------------------------------- Berkeleytime CSS ---------------------------------- */ 
+.generic-row {
+    position: relative;
+    padding-top:20px;
+    max-width: 50%; 
+    height: auto; 
+    display: flex;
+    flex-direction:row; 
+}
+
+#person {
+  padding-left: 50px;
+    width:20%; 
+    height:20%;
+}
+
+#bt-gif {
+  max-width:50%;
+  max-height:50%;
+  width: auto;
+  height: auto;
+  padding-left: 60px;
+}
+
+/* ------------------------------- Creative CSS ---------------------------------- */ 
+
+.creative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    justify-items: center;
+}
+
+.creative-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* ------------------------------- need to deprecate... ---------------------------------- */ 
+
+.lists {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+li {
+    list-style-type: none;
+    line-height: 150%;
+}
+
+
+#list {
+    text-align: left;
+    line-height: 16px;
+    /*margin-bottom: 30px;*/ /*between paragraph height*/
+}
+
 
 
 
@@ -138,14 +752,7 @@ a { /* styles hyperlinks */
  /* letter-spacing: 5px;*/
 }
 
-#content-img{
-  width: 140%;
-  margin-left: -20%;  /*lmao tryna override content hack*/
-}
 
-#content-img2{
-  width: 140%;  /* "this is just for scheduler"*/
-}
 
 
 #hero-text {
@@ -158,67 +765,17 @@ a { /* styles hyperlinks */
   line-height:40px;
 }
 
-#proj {
-    padding-top:50px;
-    transition: all 0.2s ease;
-}
-
-    #proj:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    }
 
 
 
 
-.socials {
-  padding-top: 100px;
-  text-align: center;
-
-}
-
-#icon {
-    width: 3%;
-    height: 3%;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
-
-#icon:hover {
-  opacity: 0.4;
-}
 
 
-#footer {
-    font-size: 12px; 
-    color: #666666;
-}
+/* ------------------------------ (need to deprecate) berkeleytime specific styling-------------------*/
 
 
 
 
-/*                                                              berkeleytime specific styling*/
-
-
-.quotes-faces {
-    display: flex;
-    flex-direction: column;
-    padding-right: 15%;
-}
-
-#quote-row {
-    display: flex;
-    flex-direction: row;
-}
-
-#person {
-  padding-left: 50px;
-    width:20%; 
-    height:20%;
-
-
-}
 
 .grey-with-gif {
     width: 140%;
@@ -284,12 +841,6 @@ a { /* styles hyperlinks */
 }
 
 
-#caption{
-    font-style: italic;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 
 h4 {
