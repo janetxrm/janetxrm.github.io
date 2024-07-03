@@ -57,6 +57,7 @@ li { /*styling for the top nav*/
 
 
 
+
 /*------------------------------- PARALLAX IMAGE CODE------------------------------- */
 
 
@@ -82,6 +83,7 @@ li { /*styling for the top nav*/
     object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
     z-index: -1; /* Move the image behind the content */
 }
+
 
 
 
@@ -144,6 +146,7 @@ li { /*styling for the top nav*/
     height: auto;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
@@ -164,6 +167,7 @@ li { /*styling for the top nav*/
     display: flex;
     justify-content: space-between; /* evenly spaces the columns  */
 }
+
 
  /* This is one of the columns */
 .top-aligned-column {
@@ -318,6 +322,7 @@ li { /*styling for the top nav*/
 
 
 
+
 /* ---------------------------------- SPACING CSS ----------------------------------- */ 
 
  .space-4 {
@@ -383,12 +388,9 @@ width:300px;
 
 
 
-
-
 html {
     scroll-behavior: smooth;
 }
-
 
 
 
@@ -748,14 +750,11 @@ li {
 
 
 
-
-
 #section-title {
   font-size: 14px; 
   font-weight: bold;
  /* letter-spacing: 5px;*/
 }
-
 
 
 
@@ -771,14 +770,7 @@ li {
 
 
 
-
-
-
-
 /* ------------------------------ (need to deprecate) berkeleytime specific styling-------------------*/
-
-
-
 
 
 .grey-with-gif {
@@ -843,8 +835,6 @@ li {
     flex-direction: column;
 
 }
-
-
 
 
 h4 {
