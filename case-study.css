@@ -138,6 +138,18 @@ li { /*styling for the top nav*/
     margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
+
+.home-image-container {
+    width: auto;
+    height:auto;
+}
+
+.home-image-container-text {
+    text-align: left;
+    margin-left: 30%
+}
+
+
 /*  Good for to make glory shots thinner */
 .skinny-image-container {
     width: 40%;
