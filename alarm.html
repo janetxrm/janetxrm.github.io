@@ -429,46 +429,4 @@
 
 	</body>
 
-
-<!-- 	<script>
-	window.addEventListener('DOMContentLoaded', () => {
-
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
-			const id = entry.target.getAttribute('id');
-			if (entry.intersectionRatio > 0) {
-				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.add('active');
-			} else {
-				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.remove('active');
-			}
-		});
-	});
-
-	// Track all sections that have an `id` applied
-	document.querySelectorAll('section[id]').forEach((section) => {
-		observer.observe(section);
-	});
-	
-});
-
-	// click button to top starts here
-var amountScrolled = 100;
-var amountScrolledNav = 25;
-
-$(window).scroll(function() {
-  if ( $(window).scrollTop() > amountScrolled ) {
-    $('button.back-to-top').addClass('show');
-  } else {
-    $('button.back-to-top').removeClass('show');
-  }
-});
-
-$('button.back-to-top').click(function() {
-  $('html, body').animate({
-    scrollTop: 0
-  }, 800);
-  return false;
-});
-</script> -->
-
 </html>
