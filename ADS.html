@@ -37,10 +37,7 @@
 
 
 
-
-
-
-
+<!---------------------- Parallax hero img --------------------------->
 <div class="parallax-container">
     <img src="assets/ADS/frozen-1.png" alt="Parallax Image" class="parallax-image">
 </div>
@@ -56,6 +53,33 @@
     </script>
 
 
+
+<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+
+    <script>
+ var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
 
 
 
@@ -449,7 +473,7 @@
 					</div>
 		</div>
 
-		<div class = "space-300"></div>=
+		<div class = "space-300"></div>
 
 
 
