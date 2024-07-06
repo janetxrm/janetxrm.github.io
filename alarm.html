@@ -58,33 +58,6 @@
 
 
 
-<!---------------------- Back button --------------------------->
-    <button id="backButton" class="back-button">
-        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
-    </button>
-
-
-    <script>
- var backButton = document.getElementById("backButton");
-var scrollThreshold = 700;
-var isVisible = false;
-
-window.onscroll = function() {
-    if (window.scrollY > scrollThreshold && !isVisible) {
-        isVisible = true;
-        backButton.classList.add("slide-in");
-    } else if (window.scrollY <= scrollThreshold && isVisible) {
-        isVisible = false;
-        backButton.classList.remove("slide-in");
-    }
-};
-
-backButton.onclick = function() {
-    window.location.href = "index.html";
-};
-</script>
-
-
 
 
 <!---------------------- Project description --------------------------->
@@ -152,7 +125,7 @@ backButton.onclick = function() {
 							      	<source src="assets/alarm/alarm-past-CX.mp4" type="video/mp4">
 							      	Your browser does not support videos.
 							    	</video>
-							    	<div class = "caption-text" style = "text-align: center;">Previously, users needed to swipe to dismiss an alarm.</div>
+							    	<div class = "caption-text" style = "text-align: center;">Previously, users needed to swipe up to dismiss an alarm.</div>
 									</div>
 						 	</div>
 
@@ -177,7 +150,7 @@ backButton.onclick = function() {
 							<div class = "top-aligned-column">
 									 			<div class = "paragraph-green">Challenges</div>
 									 			<div class = "paragraph-lines-grey">Latency and Responsiveness</div>
-									 			<div class = "paragraph">Ensuring responsive, low-latency interactions on diverse devices, prioritizing users with slower internet.</div>
+									 			<div class = "paragraph">Ensuring responsive, low-latency interactions on diverse devices, taking hardware constraints into account.</div>
 									 			<div class = "paragraph-lines-grey">Consistency in User Experience</div>
 									 			<div class = "paragraph">Ensuring uniform visual elements, interaction patterns, and functionality across all Alexa devices.</div>
 									 			<div class = "paragraph-lines-grey">Backward Compatibility</div>
@@ -309,12 +282,12 @@ backButton.onclick = function() {
 
 							<div class = "top-aligned-column">
 								<div class = "multi-word-header">User testing</div>
-								<div class = "multi-word-header-grey">Prototypes for headless devices</div>
+								<div class = "multi-word-header-grey">Prototypes for our smallest devices</div>
 							</div>
 
 
 							<div class = "top-aligned-column">
-					 					<div class = "paragraph-grey">Developed interactive prototypes for devices with the smallest screen size to evaluation accessibility.</div>
+					 					<div class = "paragraph-grey">Developed interactive prototypes for devices with the smallest screen size to evaluate accessibility.</div>
 
 			 							<div class = space-40></div>
 
@@ -450,9 +423,35 @@ backButton.onclick = function() {
 									</div>
 								</div>
 						</div>
-							
-						
+				
 
+
+						
+<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+    <script>
+ var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
 					
 						
 

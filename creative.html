@@ -142,6 +142,36 @@
 
 
 
+	<!---------------------- Back to top button --------------------------->
+    <button id="backToTopButton" class="back-to-top-button">↑</button>
+
+
+
+    <script>
+ document.addEventListener('DOMContentLoaded', function () {
+    var backToTopButton = document.getElementById('backToTopButton');
+    var scrollThreshold = 1000; // Adjust this value to determine when the button should appear
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    };
+
+    backToTopButton.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll to the top
+        });
+    };
+});
+</script>
+
+
+
+
 
 
 

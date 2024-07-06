@@ -54,34 +54,6 @@
 
 
 
-<!---------------------- Back button --------------------------->
-    <button id="backButton" class="back-button">
-        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
-    </button>
-
-
-
-    <script>
- var backButton = document.getElementById("backButton");
-var scrollThreshold = 700;
-var isVisible = false;
-
-window.onscroll = function() {
-    if (window.scrollY > scrollThreshold && !isVisible) {
-        isVisible = true;
-        backButton.classList.add("slide-in");
-    } else if (window.scrollY <= scrollThreshold && isVisible) {
-        isVisible = false;
-        backButton.classList.remove("slide-in");
-    }
-};
-
-backButton.onclick = function() {
-    window.location.href = "index.html";
-};
-</script>
-
-
 
 
 <!---------------------- Project description --------------------------->
@@ -166,7 +138,7 @@ backButton.onclick = function() {
 
 			 									<div class = "space-40"></div>
 
-			 									<div class = "paragraph">The challenge was to update and standardize them for accessibility and functionality across all device types, from larger screens like Fire TV to smaller displays like Echo Show 5, covering various shapes, sizes, resolutions, and modalities.</div>
+			 									<div class = "paragraph">The challenge was to update and standardize them for accessibility and functionality across all device types, from larger screens like Fire TV to smaller displays like Echo Spot, covering various shapes, sizes, resolutions, and modalities.</div>
 						 	</div>
 
 					</div>
@@ -197,12 +169,16 @@ backButton.onclick = function() {
 					 					<div class = "space-20"></div>
 
 									 			<div class = "paragraph-green"> Common painpoints </div>
-									 			<div class = "paragraph-lines-grey">Inconsistent design patterns across devices</div>
+									 			<div class = "paragraph-lines-grey"><img src="assets/ADS/not-equal.png" alt="Inconsistency Icon" class="icon">&nbsp; Inconsistent design patterns across devices</div>
 									 			<div class = "paragraph">Research showed customers couldn't recognize our devices as related, or coming from the same company, noting inconsistent interaction patterns.</div>
-									 			<div class = "paragraph-lines-grey">Accessibility issues </div>
+									 			<div class = "space-20"></div>
+									 			<div class = "paragraph-lines-grey"><img src="assets/ADS/wheelchair.png" alt="Accessibility Icon" class="icon">&nbsp; Accessibility issues </div>
 									 			<div class = "paragraph">There was a significant gap in accessibility, particularly for users interacting with voice and touch modalities.</div>
+
+									 			<!--
 									 			<div class = "paragraph-lines-grey">Identifying components with highest user interaction</div>
 									 			<div class = "paragraph">By focusing on these high-impact areas, we ensured that the updates would yield the most significant improvements in user experience.</div>
+									 		-->
 			 				</div>	
 					</div>
 		</div>
@@ -210,6 +186,24 @@ backButton.onclick = function() {
 		<div class = "space-300"></div>
 
 
+
+<!-----------------------  Listed bullet points content section ---------------------------->
+
+
+		<div class = "content-section">
+					<div class = "two-columns-container">
+							<div class = "top-aligned-column">
+								<div class = "one-word-header">Process</div>
+							</div>
+
+							<div class = "top-aligned-column">
+							 					<div class = "paragraph-grey">blah</div>
+		 					</div>
+ 					</div>
+		</div>
+
+
+		<div class = "space-300"></div>
 
 
 <!----------------------- Simple grey and regular text content section  ---------------------------->
@@ -234,21 +228,6 @@ backButton.onclick = function() {
 
 
 
-<!------------------------------  Glory shot  ----------------------------------->
-
-
-		<div class = "skinny-image-container">
-					<video autoplay muted loop>
-        <source src="assets/ADS/layout.mp4" type="video/mp4">
-        Your browser does not support videos.
-        </video>
-		</div>
-
-		<div class = "space-60"></div>
-
-
-
-
 <!----------------------- Informational text section (e.g. Our principles)  ---------------------------->
 
 		<div class = "content-section">
@@ -269,8 +248,21 @@ backButton.onclick = function() {
 		</div>
 	</div>
 
-<div class = "space-300"></div>
+<div class = "space-80"></div>
 
+
+
+<!------------------------------  Glory shot  ----------------------------------->
+
+
+		<div class = "skinny-image-container">
+					<video autoplay muted loop>
+        <source src="assets/ADS/layout.mp4" type="video/mp4">
+        Your browser does not support videos.
+        </video>
+		</div>
+
+		<div class = "space-60"></div>
 
 
 
@@ -538,5 +530,39 @@ backButton.onclick = function() {
 						</div>
 
 	</body>
+
+
+
+	<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+
+    <script>
+ var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
+
+
+
+
+
 
 </html>
