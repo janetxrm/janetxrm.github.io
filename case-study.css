@@ -410,7 +410,11 @@ html {
 
 
 
-
+/* -------------------------------- ICONS ---------------------------------- */ 
+.icon {
+    width: 18px;
+    vertical-align: middle;
+}
 
 
 
@@ -521,6 +525,9 @@ html {
 
 
 
+
+/* ------------------------------- BACK BUTTON ---------------------------------- */ 
+
 .back-button {
     position: fixed;
     top: 9vh;
@@ -564,6 +571,35 @@ html {
   }
 
 
+
+/* ------------------------------- BACK TO TOP BUTTON ---------------------------------- */ 
+
+.back-to-top-button {
+    position: fixed;
+    bottom: -100px; /* Start off-screen */
+    right: 56px;
+    padding: 10px 16px;
+    color: #666666;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: bottom 0.7s ease-in-out; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.back-to-top-button.show {
+    bottom: 56px; /* Slide in to this position */
+}
+
+.back-to-top-button:hover {
+    cursor: pointer;
+    background-color: #E1E1E1;
+    transition: all 0.15s ease;
+}
 
 
 
