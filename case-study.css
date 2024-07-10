@@ -159,10 +159,17 @@ li { /*styling for the top nav*/
     height: auto;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
+.medium-image-container {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 /*  Used for double images and images in a single column. Just removes the margins from image-container */
 .full-width-image-container {
@@ -224,6 +231,16 @@ li { /*styling for the top nav*/
     line-height:1.5;
     }
 
+/* Grey paragraph text */
+.paragraph-grey-italic {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #949494;
+    margin-bottom: 10px;
+    line-height:1.5;
+    font-style: italic;
+    }
+
 
 /* Green paragraph text */
 .paragraph-green {
@@ -254,15 +271,6 @@ li { /*styling for the top nav*/
     line-height:1.5;
 }
 
-
-/* Green paragraph text */
-.paragraph-green {
-    font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
-    color: #53DC76;
-    margin-bottom: 10px;
-    line-height:1.5;
-    }
 
 
 /* Larger callout text, used for eye-catching highlights and project summary */ 
@@ -412,11 +420,72 @@ html {
 
 /* -------------------------------- ICONS ---------------------------------- */ 
 .icon {
-    width: 18px;
+    width: 20px;
     vertical-align: middle;
 }
 
 
+
+/*----------------------- Slideshow that I decided against 
+.image-viewer {
+    width:100%;
+    position:relative;
+  
+}
+
+.slideshow-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-image-item {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.slideshow-image-item.active {
+    opacity: 1;
+    position: relative;
+}
+
+#prevButton, #nextButton {
+    border-radius: 100px;
+    padding: 15px 20px;
+    background-color: #53DC76;
+    font-size: 22px;
+    border: 1px solid #CDCDCD;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    top: 50%;
+}
+
+
+#prevButton {
+    left: 20px; 
+}
+
+#nextButton {
+    right: 20px; 
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #3CAD62;
+}
+
+#prevButton:active, #nextButton:active {
+    transform: translateY(-50%) scale(0.95); 
+}
+
+*/
 
 
 /* ------------------------------- HOME PAGE CSS ---------------------------------- */ 
@@ -512,7 +581,7 @@ html {
  .green-dot {
     width: 10px;
     height: 10px;
-    background-color: #3CDA64;
+    background-color: #53DC76;
     border-radius: 50%;
     margin-right: 10px;
   }
