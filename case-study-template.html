@@ -7,6 +7,7 @@
 
 		<link rel="stylesheet" type="text/css" href="case-study.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="assets/favicon.png" type="image/png">
 	</head>
 
 
@@ -17,7 +18,7 @@
 		<div class = "topnav">
             <a class="active" href="index.html">JANET XU</span></a>
             <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
-            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "personal.html"> Creative</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "creative.html"> Creative</a></li>
 	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
 	   </div>
 
@@ -25,24 +26,23 @@
 		<div class = "title-row">
 				<div class = "two-columns-container">
 							<div class = "bottom-aligned-column">
-						   		<div class = "title-text"> Case Study Template </div>
+						   		<div class = "title-text">Case study template</div>
 						 	</div>	 	
 						 	<div class = "bottom-aligned-column">
-						   		<div class = "callout-text-grey"> Short hook goes here </div>
+						   		<div class = "callout-text-grey">Description here</div>
 						 	</div>	
 
 				</div>				
 		</div>
 
+
 	
 
-
-  <div class="parallax-container">
-        <div class="parallax-image">
-            <img src="assets/placeholder-img.jpg" alt="Parallax Image">
-        </div>
-    </div>
-
+<!---------------------- Parallax hero img --------------------------->
+<div class="parallax-container">
+    <img src="assets/placeholder-img.jpg" alt="Parallax Image" class="parallax-image">
+</div>
+ 
    
 
     <script>
@@ -308,11 +308,21 @@
 							</div>
 
 
-							<div class = "top-aligned-column">
+							<div class = "full-width-image-container">	 						
+ 								<a href="bt.html"><video autoplay muted loop class="next-project-video">
+						        <source src="assets/bt/bt-home.mp4" type="video/mp4">
+						        Your browser does not support videos.
+						        </video></a> 
 
-			 							<div class = "full-width-image-container">
-											<img src = "assets/placeholder-img.jpg">
-									</div>						 			
+				        <div class = "space-10"></div>
+				        <div class = "shipped-badge">
+								<div class="green-dot"></div>
+								<div class="shipped-text">Shipped</div>
+								</div>
+								<div class = "space-10"></div>
+								<div class = "title-unique">Berkeleytime</div>
+
+															 			
 							</div>
 
 					</div>
@@ -330,21 +340,47 @@
         					<div class = "footer-row"> <!--- entire row --->
 		        					<div class = "footer-column"> <!--- column --->
 				        				<div class = "paragraph-unique-grey"> &copy; 2024 JANET XU</div> 
-				        				<div class = "paragraph-unique-grey">Made with love and lofi hip hop</div>
+				        				<div class = "paragraph-unique-grey">Made with love and lofi hip hop &#9834;</div>
 			        				</div>
 
 
 			        				<div class = "footer-row-links"> <!--- row of just links --->
 													<div class = "paragraph"><a href = "https://www.linkedin.com/in/janet-xu/">Linkedin</a></div>
 													<div class = "paragraph"><a href= "mailto:janet16xu@gmail.com" target="_blank">Contact</a></div>
-													<div class = "paragraph"><a href="https://drive.google.com/file/d/1Ka8E5JuI1KDPkAO13CaDOA8z3FNAY3Ng/view?usp=sharing" target="_blank"> Resume</a></div> 
+													<div class = "paragraph"><a href="https://drive.google.com/file/d/1LTMSsNdoc1cHzEkncNfVCJI79biDPoMV/view?usp=sharing" target="_blank"> Resume</a></div> 
 											</div>
 									</div>
 								</div>
 						</div>
-							
-						
+				
 
+
+						
+<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+    <script>
+ var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
 					
 						
 
@@ -353,47 +389,5 @@
     	</div> <!-- ending content -->
 
 	</body>
-
-
-	<script>
-	window.addEventListener('DOMContentLoaded', () => {
-
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
-			const id = entry.target.getAttribute('id');
-			if (entry.intersectionRatio > 0) {
-				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.add('active');
-			} else {
-				document.querySelector(`aside li a[href="#${id}"]`).parentElement.classList.remove('active');
-			}
-		});
-	});
-
-	// Track all sections that have an `id` applied
-	document.querySelectorAll('section[id]').forEach((section) => {
-		observer.observe(section);
-	});
-	
-});
-
-	// click button to top starts here
-var amountScrolled = 100;
-var amountScrolledNav = 25;
-
-$(window).scroll(function() {
-  if ( $(window).scrollTop() > amountScrolled ) {
-    $('button.back-to-top').addClass('show');
-  } else {
-    $('button.back-to-top').removeClass('show');
-  }
-});
-
-$('button.back-to-top').click(function() {
-  $('html, body').animate({
-    scrollTop: 0
-  }, 800);
-  return false;
-});
-</script>
 
 </html>

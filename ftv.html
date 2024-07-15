@@ -1,0 +1,180 @@
+<!doctype html> 
+<html> 
+	<head> <!-- This is all metadata, like linking to Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="case-study.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="assets/favicon.png" type="image/png">
+	</head>
+
+
+
+
+	<body>
+                                                                           
+		<div class = "topnav">
+            <a class="active" href="index.html">JANET XU</span></a>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "creative.html"> Creative</a></li>
+	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	   </div>
+
+
+		<div class = "title-row">
+				<div class = "two-columns-container">
+							<div class = "bottom-aligned-column">
+						   		<div class = "title-text">Rentals and Purchases on Fire TV</div>
+						 	</div>	 	
+						 	<div class = "bottom-aligned-column">
+						   		<div class = "callout-text-grey"></div>
+						 	</div>	
+
+				</div>				
+		</div>
+
+
+
+<!---------------------- Parallax hero img --------------------------->
+<div class="parallax-container">
+    <img src="assets/ftv/ftv-hero.png" alt="Parallax Image" class="parallax-image">
+</div>
+ 
+   
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var parallaxImage = document.querySelector('.parallax-image');
+            parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+    </script>
+
+
+
+
+
+<!---------------------- Project description --------------------------->
+
+			<div class = "content-section-no-line">
+				<div class = "two-columns-container">
+				
+							
+						 	
+
+					 		<div class = "top-aligned-column">
+							 			<div class = "paragraph-lines-grey">My role</div>
+							 			<div class = "paragraph">UX design</div>
+							 			<div class = "paragraph">Visual design</div>
+							 			<div class = "paragraph-lines-grey"> Timeline </div>
+							 			<div class = "paragraph-lines"> Q3 2024 - Ongoing</div>
+				 			</div>		
+
+				 			<div class = "top-aligned-column">
+				 				<div class = "paragraph">This gist of this project is to rethink the Fire TV purchase experience by displaying all available purchase options from various providers upfront. <br><br>It's currently in progress, but please  <span class="paragraph-green"><a href="about.html" target="_blank">reach out</span></a> for details if interested.</div>
+							</div>	
+				</div>
+			</div>
+
+
+			<div class = "space-300"></div>
+
+
+
+
+<!----------------------- Next project  ---------------------------->
+
+<div class="footer-nav">
+    <a href="bt.html" class="footer-button prev">
+        <span>&#8592;</span>
+        <span class="footer-button-text">Prev</span>
+    </a>
+
+
+	<a href="index.html" class="footer-button home">
+        <img src="assets/grid.png" style="width:30px">
+    </a>
+
+
+
+    <a href="ADS.html" class="footer-button next">
+        <span>&#8594;</span>
+        <span class="footer-button-text">Next</span>
+    </a>
+
+</div>
+
+
+
+
+
+<div class = "space-100"></div>
+
+
+
+
+    		
+
+    	
+<!-----------------------------------------  Footer ------------------------------------------------>
+
+
+        		<div class = "footer-container"> <!--- bg color --->
+        				<div class = "footer-content"> <!--- left right margins --->
+        					<div class = "footer-row"> <!--- entire row --->
+		        					<div class = "footer-column"> <!--- column --->
+				        				<div class = "paragraph-unique-grey"> &copy; 2024 JANET XU</div> 
+				        				<div class = "paragraph-unique-grey">Made with love and lofi hip hop &#9834;</div>
+			        				</div>
+
+
+			        				<div class = "footer-row-links"> <!--- row of just links --->
+													<div class = "paragraph"><a href = "https://www.linkedin.com/in/janet-xu/">Linkedin</a></div>
+													<div class = "paragraph"><a href= "mailto:janet16xu@gmail.com" target="_blank">Contact</a></div>
+													<div class = "paragraph"><a href="https://drive.google.com/file/d/1LTMSsNdoc1cHzEkncNfVCJI79biDPoMV/view?usp=sharing" target="_blank"> Resume</a></div> 
+											</div>
+									</div>
+								</div>
+						</div>
+
+	</body>
+
+
+
+	<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+
+    <script>
+ var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
+
+
+
+
+
+
+
+
+</html>

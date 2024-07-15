@@ -54,18 +54,6 @@ li { /*styling for the top nav*/
 
 
 
-/* ------------------------------- HOME STYLING------------------------------- */
-
-.home-image-container {
-    width: auto;
-    height:auto;
-}
-
-.home-image-container-text {
-    text-align: left;
-    margin-left: 30%
-}
-
 
 
 
@@ -335,7 +323,7 @@ li { /*styling for the top nav*/
 /* Title text for the entire case study */   
 .title-text { 
     font-weight: 400;
-    font-size: 3.5em; /* This is x amount bigger than the base font size from <p> */
+    font-size: 2.8em; /* This is x amount bigger than the base font size from <p> */
     line-height: 1.2; /* Line height is x times the font size. Adjusted line height for larger text */
 }
 
@@ -345,7 +333,7 @@ li { /*styling for the top nav*/
 
 
 
-/* ---------------------------------- SPACING CSS ----------------------------------- */ 
+/* ---------------------------------- all things SPACING CSS ----------------------------------- */ 
 
  .space-4 {
     height: 4px;
@@ -488,109 +476,6 @@ html {
 */
 
 
-/* ------------------------------- HOME PAGE CSS ---------------------------------- */ 
-
-/* The different font text used in home and about pages */
-.title-unique {
-    font-family: Atkinson Hyperlegible, sans-serif; 
-    font-weight: 400; 
-    font-size: 36px
-}
-
-
-/* Scale down the image to fit its container (in this case, content-section) */
-/* Maintain the aspect ratio */
-/* Round them corners */
-
-.project-right-align {
-    position: relative;
-    padding-top:20px;
-    height: auto; 
-    display: flex;
-    flex-direction:column; 
-    align-items: flex-end;
-}
-
-
-
-.project-video {
-    position: relative;
-    width:70%;
-    border-radius: 50px;  
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
-
- 
-.project-text-column {
-    width: 40%; /* Sets the width of each column */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Aligns the content at the top */
-}
-
-.project-video:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
-    z-index: 1;
-}
-
-
-
-.caption-text { /* Used in the text under intro blurb */
-    font-weight: regular;
-    font-size: 16px; /* This is the base font size that everything scales from */
-    margin-top: 20px;
-}
-
-.button {
-        display: inline-block; /* This button is its own container but can sit with other elements */
-        padding: 10px 20px;
-        background-color: #333333;
-        color: #ffffff;
-        font-family: Atkinson Hyperlegible, sans-serif;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 20px;
-        transition: background-color 0.3s, color 0.3s;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        width: 20%;
-    }
-
-    .button:hover {
-        background-color: #555555;
-    }
-
-
-
-
-.shipped-badge {
-    border-radius: 20px;
-    padding: 10px 15px;
-    background-color:#E9F7EE;
-    font-size: 16px;
-    width: fit-content;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0.6px solid #D2EBDC;
-  }
-
- .green-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #53DC76;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-
-  .shipped-text {
-    color: #404040;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
 
 
 
@@ -896,6 +781,266 @@ html {
 }
 
 
+
+/* ------------------------------- HOME PAGE CSS ---------------------------------- */ 
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+    row-gap: 32px;
+    justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.home-grid video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.home-image-container {
+    max-width: 100%;
+}
+
+
+
+/* The different font text used in home and about pages */
+.title-unique {
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    font-size: 32px
+}
+
+
+/*
+.project-right-align {
+    position: relative;
+    padding-top:20px;
+    height: auto; 
+    display: flex;
+    flex-direction:column; 
+    align-items: flex-end;
+}
+*/
+
+
+
+.next-project-video {
+    position: relative;
+    width:60%;
+    border-radius: 50px;  
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+ 
+.project-text-column {
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+}
+
+.project-video:hover {
+    transform: scale(1.02); /* Scale up by 5% on hover */
+    transition: transform 0.2s ease;
+    z-index: 1;
+}
+
+.project-video:active {
+    transform: scale(1); /* Scale down the button on click */
+    transition: transform 0.05s ease;
+}
+
+
+
+.caption-text { /* Used in the text under intro blurb */
+    font-weight: regular;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    margin-top: 20px;
+}
+
+.button {
+        display: inline-block; /* This button is its own container but can sit with other elements */
+        padding: 10px 20px;
+        background-color: #333333;
+        color: #ffffff;
+        font-family: Atkinson Hyperlegible, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 20%;
+    }
+
+    .button:hover {
+        background-color: #555555;
+    }
+
+
+
+
+.shipped-badge {
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color:#E9F7EE;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.6px solid #D2EBDC;
+  }
+
+ .green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #53DC76;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .badge-text {
+    color: #404040;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+
+  .in-progress-badge {
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: #FFEEE3;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.6px solid #D2EBDC;
+  }
+  
+ .orange-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #FF7C2B;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+
+
+
+/* ------------------------------- Next Project CSS ---------------------------------- */ 
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button {
+    position: relative;
+    padding: 10px 60px;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    margin: 8px;
+    overflow: hidden;
+}
+
+.footer-button span {
+    transition: transform 0.3s;
+    position: absolute;
+    color: black;
+}
+
+ 
+
+.footer-button-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: transform 0.3s;
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+.footer-button.home:hover {
+    border-color: black; /* Change border color on hover */
+    background-color: transparent;
+    transition: border-color 0.9s;
+}
+
+
+.footer-button:active {
+    transform: scale(0.95); /* Scale down the button on click */
+}
+
+.footer-button:hover {
+    background-color: #F4F4F4;
+    cursor:pointer;
+}
+
+.prev:hover span {
+    transform: translateY(-250%);
+}
+
+.next:hover span {
+    transform: translateY(-250%);
+
+}
+
+.prev:hover .footer-button-text {
+    transform: translateY(-80%);
+
+}
+
+.next:hover .footer-button-text {
+    transform: translateY(-80%);
+
+}
+
+
+/* ------------------------------- Next Project CSS
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-button {
+    padding: 10px 60px;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    margin: 8px;
+
+}
+ ---------------------------------- */ 
 
 
 
