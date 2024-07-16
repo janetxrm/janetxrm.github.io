@@ -387,6 +387,15 @@ li { /*styling for the top nav*/
     width: 100px;
   }
 
+
+  .space-200 {
+    height:200px;
+  }
+
+    .space-200-w {
+    width:200px;
+  }
+
 /* Standard spacing to section off content sections */
   .space-300 {
     height:300px;
@@ -600,6 +609,16 @@ html {
     line-height:1.5;
     }
 
+.connect-text {
+    text-align: left;
+    max-width: 30vw;
+    margin: 0 auto;             
+    display: flex;               
+    flex-direction: column;      
+   
+}
+
+
 
 
 /* ------------------------------- FOOTER CSS ---------------------------------- */ 
@@ -607,7 +626,7 @@ html {
 
 /* Adds bg color */
 .footer-container {
-    background-color: #F0F0F0;
+    background-color: #EEEEEE;
     height: 20vh;
     width: 100%;
     display: flex;
@@ -630,6 +649,16 @@ html {
     flex-direction: column; 
 }
 
+
+
+/*
+.new-footer-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+*/
 
 .footer-row {
     display: flex;
@@ -663,6 +692,23 @@ html {
     color: #2B2E33;
     cursor: pointer;
 }
+
+
+
+.footer-paragraph a {
+    font-size: 16px;
+    color: #909090;
+    text-decoration: none; /* Removes the text underline for links */
+    transition: all 0.15s ease;
+}
+
+
+.footer-paragraph a:hover {
+    color: #2B2E33;
+    cursor: pointer;
+}
+
+
 
 /* Case study link styling */
 .callout-text-green a {
@@ -724,6 +770,7 @@ html {
     font-weight: 300;
     font-size: 32px;
     color: #333333;
+    opacity: 60%;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
 }
