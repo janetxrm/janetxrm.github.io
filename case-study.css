@@ -232,7 +232,7 @@ li { /*styling for the top nav*/
 
 /* Green paragraph text */
 .paragraph-green {
-    font-weight: 350;
+    font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #53DC76;
     margin-bottom: 10px;
@@ -275,6 +275,12 @@ li { /*styling for the top nav*/
     font-size: 32px; /* This is the base font size that everything scales from */
     line-height:1.5;
 }
+
+.line {
+    border: 0.9px solid #D6D6D6;
+}
+
+
 
 /* Green callout text */
 .callout-text-green { /
@@ -331,6 +337,32 @@ li { /*styling for the top nav*/
 
 
 
+.highlight-text {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.highlight-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #AEF7C1;
+    z-index: -1;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 1s ease-in-out;
+}
+
+.highlight-text.highlight::before {
+    transform: scaleX(1);
+}
+
+
 
 
 /* ---------------------------------- all things SPACING CSS ----------------------------------- */ 
@@ -344,6 +376,14 @@ li { /*styling for the top nav*/
 
   .space-10-w {
     width: 10px;
+  }
+
+   .space-16 {
+    height: 16px;
+  }
+
+   .space-16-w {
+    height: 16px;
   }
 
   .space-20 {
@@ -623,56 +663,61 @@ html {
 
 /* ------------------------------- FOOTER CSS ---------------------------------- */ 
 
-
-/* Adds bg color */
 .footer-container {
-    background-color: #EEEEEE;
-    height: 20vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* Below makes the footer stick to the bottom of the viewport */
+    padding-top: 80px;
     bottom: 0;
     left: 0;
+    background-color: #F4F5F7;
+    
 }
 
-/* Just adds margins */
+
+
 .footer-content {
     margin-left: 15%;
     margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+}
 
+
+.contact-me-button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #171918;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+
+.contact-me-button:hover {
+    cursor: pointer;
+    background-color: #E1E1E1;
+    transition: all 0.15s ease;
 }
 
 .footer-column {
     display: flex;
+    flex-direction: column;
+}
+
+
+.footer-links {
+    display: flex;
     flex-direction: column; 
+ 
+
+    
 }
 
 
-
-/*
-.new-footer-row {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
-}
-*/
-
-.footer-row {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    gap: 40vw;  /*Hard coding cuz I can't figure out how to make this class right-aligned */
-}
-
-
-.footer-row-links {
-    display: flex;
-    flex-direction: row; 
-    gap: 40px;
-}
 
 
 /* ------------------------------- LINK STYLING CSS ---------------------------------- */ 
@@ -696,15 +741,15 @@ html {
 
 
 .footer-paragraph a {
-    font-size: 16px;
-    color: #909090;
+    font-size: 18px;
+    color: #2B2E33;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
 }
 
 
 .footer-paragraph a:hover {
-    color: #2B2E33;
+    color: #909090;
     cursor: pointer;
 }
 
@@ -727,7 +772,7 @@ html {
 
 /* Case study link styling */
 .paragraph-green a {
-    font-weight: 350;
+    font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #53DC76;
     text-decoration: none; /* Removes the text underline for links */
@@ -796,6 +841,7 @@ html {
     height: auto; 
     display: flex;
     flex-direction:row; 
+    align-items: center;
 }
 
 #person {
@@ -875,14 +921,6 @@ html {
 */
 
 
-
-.next-project-video {
-    position: relative;
-    width:60%;
-    border-radius: 50px;  
-    transition: transform 0.2s ease;
-    cursor: pointer;
-}
 
  
 .project-text-column {
@@ -988,13 +1026,13 @@ html {
 
 /* ------------------------------- Next Project CSS ---------------------------------- */ 
 
-.footer-nav {
+.next-proj-nav {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.footer-button {
+.next-proj-button {
     position: relative;
     padding: 10px 60px;
     font-size: 16px;
@@ -1007,7 +1045,7 @@ html {
     overflow: hidden;
 }
 
-.footer-button span {
+.next-proj-button span {
     transition: transform 0.3s;
     position: absolute;
     color: black;
@@ -1015,7 +1053,7 @@ html {
 
  
 
-.footer-button-text {
+.next-proj-button-text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1028,21 +1066,18 @@ html {
 
 
 
-
-
-
-.footer-button.home:hover {
+.next-proj-button.home:hover {
     border-color: black; /* Change border color on hover */
     background-color: transparent;
     transition: border-color 0.9s;
 }
 
 
-.footer-button:active {
+.next-proj-button:active {
     transform: scale(0.95); /* Scale down the button on click */
 }
 
-.footer-button:hover {
+.next-proj-button:hover {
     background-color: #F4F4F4;
     cursor:pointer;
 }
@@ -1056,38 +1091,25 @@ html {
 
 }
 
-.prev:hover .footer-button-text {
+.prev:hover .next-proj-button-text {
     transform: translateY(-80%);
 
 }
 
-.next:hover .footer-button-text {
+.next:hover .next-proj-button-text {
     transform: translateY(-80%);
 
 }
 
 
-/* ------------------------------- Next Project CSS
-
-.footer-nav {
+.middle-text{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 
-.footer-button {
-    padding: 10px 60px;
-    font-size: 16px;
-    width: fit-content;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #E6E6E6;
-    margin: 8px;
 
-}
- ---------------------------------- */ 
 
 
 
