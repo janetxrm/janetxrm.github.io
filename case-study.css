@@ -215,7 +215,6 @@ li { /*styling for the top nav*/
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #949494;
-    margin-bottom: 10px;
     line-height:1.5;
     }
 
@@ -629,13 +628,12 @@ html {
 }
 
 
-/* Tiny grey paragrph text used in about page and "selected work" in home page */
+/* Tiny grey paragrph text used in about page, footer copyright, and "selected work" in home page */
 .paragraph-unique-grey {
     font-size: 14px; /* This is the base font size that everything scales from */
     color: #949494;
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
-    margin-bottom: 10px;
     line-height:1.5;
     }
 
@@ -654,11 +652,15 @@ html {
     max-width: 30vw;
     margin: 0 auto;             
     display: flex;               
-    flex-direction: column;      
-   
+    flex-direction: column;        
 }
 
-
+.paragraph-about {
+    color: #444444;
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    line-height:1.5;
+}
 
 
 /* ------------------------------- FOOTER CSS ---------------------------------- */ 
@@ -815,7 +817,6 @@ html {
     font-weight: 300;
     font-size: 32px;
     color: #333333;
-    opacity: 60%;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
 }
@@ -1010,7 +1011,6 @@ html {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    border: 0.6px solid #D2EBDC;
   }
   
  .orange-dot {
