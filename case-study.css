@@ -206,8 +206,15 @@ li { /*styling for the top nav*/
 .paragraph {
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
-    margin-bottom: 10px;
-    line-height:1.5;
+
+    line-height:1.75;
+    }
+
+.paragraph-bold {
+    font-weight: 550;
+    font-size: 18px; /* This is the base font size that everything scales from */
+
+    line-height:1.75;
     }
 
 /* Grey paragraph text */
@@ -215,7 +222,7 @@ li { /*styling for the top nav*/
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #949494;
-    line-height:1.5;
+    line-height:1.75;
     }
 
 /* Grey paragraph text */
@@ -223,47 +230,39 @@ li { /*styling for the top nav*/
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #949494;
-    margin-bottom: 10px;
-    line-height:1.5;
+
+    line-height:1.75;
     font-style: italic;
     }
 
+.line {
+    border-top: 1px solid #D6D6D6;
+}
 
 /* Green paragraph text */
 .paragraph-green {
     font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #53DC76;
-    margin-bottom: 10px;
-    line-height:1.5;
+
+    line-height:1.75;
     }
 
-
-/* Used for case study timeline & description, adds a line on top */
-.paragraph-lines-grey {
-    border-top: 1px solid #D6D6D6;
-    padding-top: 10px; /* Space between line (border) and first text */
-    font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
-    color: #949494;
-    line-height:1.5;
-}
-
-
-/* Used for case study timeline & description */
+/*to deprecate
 .paragraph-lines {
-    padding-bottom: 10px; /* Space between text and bottom line */
+    padding-bottom: 10px; 
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 18px; 
     line-height:1.5;
 }
-
+*/
 
 
 /* Larger callout text, used for eye-catching highlights and project summary */ 
 .callout-text { 
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
+    line-height: 1.3;
     }
 
 /* Used for case study timeline & description, adds a line on top */
@@ -275,9 +274,7 @@ li { /*styling for the top nav*/
     line-height:1.5;
 }
 
-.line {
-    border: 0.9px solid #D6D6D6;
-}
+
 
 
 
@@ -383,6 +380,14 @@ li { /*styling for the top nav*/
 
    .space-16-w {
     height: 16px;
+  }
+
+    .space-18 {
+    height: 18px;
+  }
+
+   .space-18-w {
+    height: 18px;
   }
 
   .space-20 {
@@ -643,8 +648,7 @@ html {
     font-size: 18px; /* This is the base font size that everything scales from */
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
-    margin-bottom: 10px;
-    line-height:1.5;
+    line-height:1.75;
     }
 
 .connect-text {
@@ -948,6 +952,7 @@ html {
     font-weight: regular;
     font-size: 16px; /* This is the base font size that everything scales from */
     margin-top: 20px;
+    line-height: 1.6;
 }
 
 .button {
