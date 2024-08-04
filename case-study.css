@@ -243,7 +243,7 @@ li { /*styling for the top nav*/
 .paragraph-green {
     font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
-    color: #53DC76;
+    color: #40A900;
 
     line-height:1.75;
     }
@@ -282,7 +282,7 @@ li { /*styling for the top nav*/
 .callout-text-green { /
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
-    color: #53DC76;
+    color: #40A900;
     }
 
 /* Grey callout text, also used for short hook */
@@ -573,7 +573,7 @@ html {
 
   .back-button-arrow {
     font-size: 22px; /* This is the base font size that everything scales from */
-    color: #53DC76;
+    color: #40A900;
 
   }
 
@@ -765,7 +765,7 @@ html {
 .callout-text-green a {
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
-    color: #53DC76;
+    color: #40A900;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
 }
@@ -780,7 +780,7 @@ html {
 .paragraph-green a {
     font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
-    color: #53DC76;
+    color: #40A900;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
 }
