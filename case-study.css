@@ -206,7 +206,6 @@ li { /*styling for the top nav*/
 .paragraph {
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
-
     line-height:1.75;
     }
 
@@ -221,7 +220,7 @@ li { /*styling for the top nav*/
 .paragraph-grey {
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
-    color: #949494;
+    color: #757575;
     line-height:1.75;
     }
 
@@ -229,8 +228,7 @@ li { /*styling for the top nav*/
 .paragraph-grey-italic {
     font-weight: 350;
     font-size: 18px; /* This is the base font size that everything scales from */
-    color: #949494;
-
+    color: #757575;
     line-height:1.75;
     font-style: italic;
     }
@@ -289,21 +287,21 @@ li { /*styling for the top nav*/
 .callout-text-grey { 
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
-    color: #949494;
+    color: #757575;
     }
 
 
 /* Fairly large header */
 .one-word-header { 
-    font-weight: 0;
-    font-size: 48px; /* This is the base font size that everything scales from */
+    font-weight: 400;
+    font-size: 42px; /* This is the base font size that everything scales from */
     }
 
 /* Fairly large header, grey */
 .one-word-header-grey { 
     font-weight: 0;
     font-size: 48px; /* This is the base font size that everything scales from */
-    color: #949494;
+    color: #757575;
     }
 
 
@@ -317,7 +315,7 @@ li { /*styling for the top nav*/
 .multi-word-header-grey {
     font-weight: 0;
     font-size: 22px; /* This is the base font size that everything scales from */
-    color: #949494;
+    color: #757575;
     }
 
 
@@ -347,7 +345,7 @@ li { /*styling for the top nav*/
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #AEF7C1;
+    background-color: #B8EF97;
     z-index: -1;
     transform-origin: left;
     transform: scaleX(0);
@@ -633,10 +631,19 @@ html {
 }
 
 
-/* Tiny grey paragrph text used in about page, footer copyright, and "selected work" in home page */
+/* Tiny grey paragrph text used in footer copyright*/
 .paragraph-unique-grey {
-    font-size: 14px; /* This is the base font size that everything scales from */
-    color: #949494;
+    font-size: 14px; 
+    color: #757575;
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    line-height:1.5;
+    }
+
+/* Used in home page project captions */
+.paragraph-unique-grey-home {
+    font-size: 16px; 
+    color: #757575;
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
     line-height:1.5;
