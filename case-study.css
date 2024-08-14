@@ -880,7 +880,8 @@ html {
     justify-items: center;
 }
 
-.creative-grid img {
+.creative-grid img,
+.creative-grid video {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
