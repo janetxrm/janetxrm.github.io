@@ -275,6 +275,20 @@ li { /*styling for the top nav*/
 
 
 
+.centered-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.callout-text-standalone {
+    font-size: 18px;
+    padding: 4vh 22vw;
+    border: 2px dashed #A09E9C;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
 
 
 /* Green callout text */
@@ -589,16 +603,16 @@ html {
     background-color: #F2F2F2;
     border: none;
     border-radius: 5px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    transition: bottom 0.7s ease-in-out; /* Smooth transition */
+    transition: bottom 0.8s ease-in-out; /* Smooth transition */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
 
 .back-to-top-button.show {
-    bottom: 56px; /* Slide in to this position */
+    bottom: 6vh; /* Slide in to this position */
 }
 
 .back-to-top-button:hover {
@@ -884,7 +898,7 @@ html {
 .creative-grid video {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    
 }
 
 
@@ -1136,11 +1150,6 @@ html {
 }
 
 
-.middle-text{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 
 
