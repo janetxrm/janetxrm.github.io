@@ -283,7 +283,7 @@ li { /*styling for the top nav*/
 
 .callout-text-standalone {
     font-size: 18px;
-    padding: 4vh 22vw;
+    padding: 4vh 20vw;
     border: 2px dashed #A09E9C;
     text-align: center;
     width: 100%;
@@ -409,6 +409,14 @@ li { /*styling for the top nav*/
 
    .space-20-w {
     width: 20px;
+  }
+
+    .space-30 {
+    height: 30px;
+  }
+
+   .space-30-w {
+    width: 30px;
   }
 
     .space-40 {
@@ -887,18 +895,30 @@ html {
 
 /* ------------------------------- Creative CSS ---------------------------------- */ 
 
-.creative-grid {
+.two-column-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     justify-items: center;
 }
 
-.creative-grid img,
-.creative-grid video {
+.two-column-grid img,
+.two-column-grid video {
     max-width: 100%;
     height: auto;
-    
+}
+
+.n-column-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-items: center;
+}
+
+.n-column-grid img,
+.n-column-grid video {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -974,7 +994,6 @@ html {
 .caption-text { /* Used in the text under intro blurb */
     font-weight: regular;
     font-size: 16px; /* This is the base font size that everything scales from */
-    margin-top: 20px;
     line-height: 1.6;
 }
 
