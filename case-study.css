@@ -821,6 +821,19 @@ html {
     cursor: pointer;
 }
 
+.paragraph-about a {
+    font-weight: 400;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #909090;
+    transition: all 0.15s ease;
+}
+
+/* Case study link styling */
+.paragraph-about a:hover{
+    color: #2B2E33;
+    cursor: pointer;
+}
+
 
 /* About page link styling */
 .paragraph-unique a {
