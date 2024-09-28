@@ -1004,11 +1004,27 @@ html {
 
 
 
-.caption-text { /* Used in the text under intro blurb */
+.blurb-text { /* Used in the text under intro blurb */
     font-weight: regular;
     font-size: 16px; /* This is the base font size that everything scales from */
     line-height: 1.6;
 }
+
+.caption-text {
+    font-weight: regular;
+    font-style: italic;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    line-height: 1.6;
+    width: 100%; /* Full width container */
+    text-align: center; /* Center text horizontally */
+}
+
+.caption-text span {
+    display: inline-block; /* Allows width to be applied */
+    width: 60%; /* Text takes up 50% of container width */
+}
+
+
 
 .button {
         display: inline-block; /* This button is its own container but can sit with other elements */
