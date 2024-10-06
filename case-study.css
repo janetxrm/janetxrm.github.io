@@ -166,6 +166,15 @@ li { /*styling for the top nav*/
 }
 
 
+/* Just so I can adjust the breakpoint for standalone images in 3D on mobile */
+.full-width-image-container-smaller {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
 
 .two-columns-container { /* Creates a flex container for two columns */
     width:100%; /* you need this so that the text spans the full width of .content */
@@ -196,6 +205,26 @@ li { /*styling for the top nav*/
     flex-direction: column;
     justify-content: flex-start; /* Aligns the content at the top */
     }
+
+
+/* Just makes the width wider from 40% to 50%. Used in ambient */
+.top-aligned-column-medium {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    padding-right: 100px; /* Shortens the width between the two columns */
+}
+
+
+/* Just makes the width wider from 40% to 60%. Used in 3D */
+.top-aligned-column-wide {
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    padding-right: 100px; /* Shortens the width between the two columns */
+}
 
  /* This is one of the columns */
 .bottom-aligned-column {
@@ -243,6 +272,19 @@ li { /*styling for the top nav*/
     line-height:1.75;
     width: 30vw;
     }
+
+/* Centered text under creative */
+.paragraph-grey-standalone {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #757575;
+    line-height:1.75;
+    text-align: center;
+    width: 60%;
+    padding-left: 20%;
+    padding-right:20%;
+}
+
 
 /* Grey paragraph text */
 .paragraph-grey-italic {
@@ -925,7 +967,7 @@ html {
 .two-column-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    gap: 1%;
     justify-items: center;
 }
 
@@ -1246,7 +1288,7 @@ html {
     }
 
 
-    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-bold, .footer-paragraph a {
+    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-grey-short, .paragraph-bold, .callout-text-standalone, .paragraph-grey-standalone, .footer-paragraph a {
         font-size: 16px;
     }
 
@@ -1286,13 +1328,23 @@ html {
         height: 230px;
     }
 
-    .back-button {
+    .back-button{
         display: none; /* This will hide the button */
+    }
+
+    .back-to-top-button{
+        display: none; 
     }
 
 
     .paragraph-grey-short {
         width: 100%;
+    }
+
+    .paragraph-grey-standalone {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     
 
@@ -1361,6 +1413,36 @@ html {
         margin-left: 5%;
         margin-right: 5%; 
     }
+
+    .space-200 {
+        height: 100px;
+    }
+
+    .callout-text-standalone {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .top-aligned-column-wide {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .top-aligned-column-medium {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .full-width-image-container-smaller {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
 
 }
 
