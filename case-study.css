@@ -55,10 +55,6 @@ li { /*styling for the top nav*/
 
 
 
-
-
-
-
 /*------------------------------- PARALLAX IMAGE CODE------------------------------- */
 
 
@@ -95,8 +91,8 @@ li { /*styling for the top nav*/
 .content-section { /* Centers the whole page with left right margins, adds hella bottom margin and a top line */
     border-top: 1px solid #D6D6D6;
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -107,8 +103,8 @@ li { /*styling for the top nav*/
 /* Removes the border-top line, used for the case study description */
 .content-section-no-line { 
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -118,8 +114,8 @@ li { /*styling for the top nav*/
 
 .title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -131,8 +127,8 @@ li { /*styling for the top nav*/
 /*  Used for standalone glory shots */
 .image-container {
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -143,8 +139,8 @@ li { /*styling for the top nav*/
 /*  Good for to make glory shots thinner */
 .skinny-image-container {
     width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 30vw;
+    margin-right: 30vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -153,8 +149,8 @@ li { /*styling for the top nav*/
 
 .medium-image-container {
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 20vw;
+    margin-right: 20vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -675,7 +671,7 @@ html {
 
 /* Unique font paragraph text used in about blurb */
 .paragraph-unique {
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 1.125rem; /* This is the base font size that everything scales from */
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
     line-height:1.75;
@@ -700,19 +696,20 @@ html {
 /* ------------------------------- FOOTER CSS ---------------------------------- */ 
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers items vertically */
     width: 100%;
-    padding-top: 80px;
-    bottom: 0;
-    left: 0;
+    padding: 80px 0 20px; /* Shortened padding syntax */
     background-color: #F4F5F7;
-    
 }
 
 
 
 .footer-content {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
     display: flex;
     flex-direction: row;
 }
@@ -747,10 +744,7 @@ html {
 
 .footer-links {
     display: flex;
-    flex-direction: column; 
- 
-
-    
+    flex-direction: column;   
 }
 
 
@@ -781,6 +775,7 @@ html {
     color: #2B2E33;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
+    white-space: nowrap; /* Prevent line break */
 }
 
 
@@ -883,19 +878,14 @@ html {
 
 /* ------------------------------- Berkeleytime CSS ---------------------------------- */ 
 .generic-row {
-    position: relative;
-    padding-top:20px;
-    max-width: 50%; 
-    height: auto; 
     display: flex;
-    flex-direction:row; 
-    align-items: center;
+    flex-direction:row;    
+    gap: 60px;
 }
 
 #person {
-  padding-left: 50px;
-    width:20%; 
-    height:20%;
+  width:9vw; 
+  height:9vh;
 }
 
 #bt-gif {
@@ -944,7 +934,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 12px;
-    row-gap: 32px;
+    row-gap: 1.67vw;
     justify-items: center;
     margin-left: 15%;
     margin-right: 15%;
@@ -968,7 +958,7 @@ html {
 .title-unique {
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
-    font-size: 32px
+    font-size: 32px;
 }
 
 
@@ -1043,6 +1033,7 @@ html {
         border: none;
         outline: none;
         width: 20%;
+        min-width: 100px
     }
 
     .button:hover {
@@ -1202,6 +1193,119 @@ html {
 
 
 
+/*------------------------------- RESPONSIVE BREAKPOINTS ------------------------------- */
+
+@media (max-width: 1200px) {
+    .two-columns-container {
+        flex-direction: column; /* Stack columns on smaller screens */
+        gap: 5vh; /* Space between elements */
+    }
+
+    .top-aligned-column {
+        flex-direction: column;
+        width: 80vw;    
+    }
+
+
+    .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines {
+        font-size: 18px;
+    }
+
+    .title-text, .one-word-header, .title-unique {
+        font-size: 22px;
+    }
+
+
+    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-bold, .footer-paragraph a {
+        font-size: 16px;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+    .home-grid, .n-column-grid, .two-column-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .medium-image-container, .image-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .circular-image-container {
+        width: 230px;
+        height: 230px;
+    }
+
+    .back-button {
+        display: none; /* This will hide the button */
+    }
+
+    .next-proj-nav {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+
+/*------------------------------- MOBILE ------------------------------- */
+
+@media (max-width: 600px) {
+
+    .top-aligned-column {
+        width: 70vw !important;  /* Overriding the home page width style in HTML */
+    }
+
+    .topnav {
+        width: 90vw; /* Use more screen space */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+
+    .content-section, .content-section-no-line {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%; 
+    }
+
+    .two-columns-container {
+        width: 100%;
+    }
+
+    .home-grid, .n-column-grid, .two-column-grid {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-bold, .footer-paragraph a {
+        width: 90%;
+    }
+
+}
+
+
+
 
 
 
@@ -1249,6 +1353,7 @@ li {
   font-weight: 400;
   line-height:40px;
 }
+
 
 
 
