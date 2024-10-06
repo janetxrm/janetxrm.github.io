@@ -287,18 +287,19 @@ li { /*styling for the top nav*/
 }
 
 
-/* Green callout text */
-.callout-text-green { /
-    font-weight: 300;
-    font-size: 32px; /* This is the base font size that everything scales from */
-    color: #40A900;
-    }
-
 /* Grey callout text, also used for short hook */
 .callout-text-grey { 
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
     color: #757575;
+    }
+
+
+/* Green callout text */
+.callout-text-green { /
+    font-weight: 300;
+    font-size: 32px; /* This is the base font size that everything scales from */
+    color: #40A900;
     }
 
 
@@ -1207,7 +1208,7 @@ html {
     }
 
 
-    .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines {
+    .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a {
         font-size: 18px;
     }
 
