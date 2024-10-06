@@ -708,14 +708,15 @@ html {
 /* ------------------------------- ABOUT PAGE CSS ---------------------------------- */ 
 
 .circular-image-container {
-    width: 330px;
-    height: 350px;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-radius: 400px;
+    width: 20vw; /* Set a responsive width (adjust as necessary) */
+    height: 20vw; /* Set the same value for height to make it a circle */
+    max-width: 400px; /* Optional: Set a maximum width */
+    max-height: 400px; /* Optional: Set a maximum height */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -957,11 +958,20 @@ html {
     display: flex;
     flex-direction:row;    
     gap: 60px;
+    align-items: flex-start;
+    
 }
 
-#person {
-  width:9vw; 
-  height:9vh;
+.person {
+    width: 20%; 
+    max-height: 200px; /* Set a maximum height if needed */
+    flex: 0 0 auto; /* Prevent flex item from shrinking */  
+}
+
+.person img {
+    width: 100%; /* Ensure image takes full width of the .person div */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image to fill the dimensions */
 }
 
 #bt-gif {
