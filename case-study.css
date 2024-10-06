@@ -1310,54 +1310,8 @@ html {
 
 
 
-/* ------------------------------- need to deprecate... ---------------------------------- */ 
+/* ------------------------------- bt need to deprecate... ---------------------------------- */ 
 
-.lists {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-li {
-    list-style-type: none;
-    line-height: 150%;
-}
-
-
-#list {
-    text-align: left;
-    line-height: 16px;
-    /*margin-bottom: 30px;*/ /*between paragraph height*/
-}
-
-
-
-
-#section-title {
-  font-size: 14px; 
-  font-weight: bold;
- /* letter-spacing: 5px;*/
-}
-
-
-
-#hero-text {
-  padding: 50px;
-  color: white;
-  background-color: #3B58ED;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  line-height:40px;
-}
-
-
-
-
-/* ------------------------------ (need to deprecate) berkeleytime specific styling-------------------*/
 
 
 .grey-with-gif {
