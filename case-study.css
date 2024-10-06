@@ -27,6 +27,7 @@ body {
     cursor: pointer;
     font-size: 14px; 
     font-weight: 400;
+
 }
 
 .topnav a {
@@ -34,7 +35,6 @@ body {
     letter-spacing: 0.04em;
     color: #909090;
     transition: all 0.15s ease;
-    margin-top: 30px;
 }
 
 .topnav a:hover {
@@ -173,6 +173,13 @@ li { /*styling for the top nav*/
     justify-content: space-between; /* evenly spaces the columns  */
 }
 
+.two-columns-container-row { /* Make the case study title a row on mobile */
+    width:100%; /* you need this so that the text spans the full width of .content */
+    display: flex;
+    justify-content: space-between; /* evenly spaces the columns  */
+}
+
+
 
  /* This is one of the columns */
 .top-aligned-column {
@@ -182,6 +189,13 @@ li { /*styling for the top nav*/
     justify-content: flex-start; /* Aligns the content at the top */
     padding-right: 100px; /* Shortens the width between the two columns */
 }
+
+ .top-aligned-column-home {
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    }
 
  /* This is one of the columns */
 .bottom-aligned-column {
@@ -1212,6 +1226,10 @@ html {
         gap: 5vh; /* Space between elements */
     }
 
+    .two-columns-container-row { /* Keep the case study title two columns */
+        flex-direction: row;
+    }
+
     .top-aligned-column {
         flex-direction: column;
         width: 80vw;    
@@ -1288,6 +1306,14 @@ html {
         width: 100%; /* Overriding the home page width style in HTML */
     }
 
+    .top-aligned-column-home { /* Fixing home blurb */
+        width: 100%;
+    }
+
+    .blurb-text { /* Also fixing home blurb */
+        width:90%;
+    }
+
     .topnav {
         width: 90vw; /* Use more screen space */
         margin-left: 5%;
@@ -1303,9 +1329,6 @@ html {
         margin-right: 5%; 
     }
 
-    .two-columns-container {
-        width: 100%;
-    }
 
     .home-grid, .n-column-grid, .two-column-grid {
         width: 90%;
@@ -1317,13 +1340,26 @@ html {
         width: 90%;
     }
 
+    .next-proj-nav {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
 
+    }
 
     .next-proj-button {
-         padding: 8px 20px; /* Even smaller padding for mobile screens */
+        padding: 8px 20px; /* Even smaller padding for mobile screens */
         font-size: 12px; /* Adjust font size for better mobile readability */
         width: 100%; /* Make button full-width on small screens */
         justify-content: center; /* Center text inside buttons */
+    }
+
+    .title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%; 
     }
 
 }
