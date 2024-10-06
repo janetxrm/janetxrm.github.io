@@ -304,7 +304,6 @@ li { /*styling for the top nav*/
     font-weight: 400;
     font-size: 18px; /* This is the base font size that everything scales from */
     color: #40A900;
-
     line-height:1.75;
     }
 
@@ -333,7 +332,6 @@ li { /*styling for the top nav*/
     font-size: 32px; /* This is the base font size that everything scales from */
     line-height:1.5;
 }
-
 
 
 .centered-text{
@@ -406,8 +404,6 @@ li { /*styling for the top nav*/
 
 
 
-
-
 .highlight-text {
     display: inline-block;
     position: relative;
@@ -432,6 +428,10 @@ li { /*styling for the top nav*/
 .highlight-text.highlight::before {
     transform: scaleX(1);
 }
+
+
+
+
 
 
 
@@ -514,6 +514,15 @@ li { /*styling for the top nav*/
     width: 100px;
   }
 
+/* So I can remove it on mobile */
+.space-100-about {
+    height: 100px;
+}
+
+/* So I can reduce it on mobile */
+.space-100-home {
+    height: 100px;
+}
 
   .space-200 {
     height:200px;
@@ -531,6 +540,7 @@ li { /*styling for the top nav*/
 .space-300-w {
 width:300px;
   }
+
 
 
 
@@ -699,10 +709,12 @@ html {
 
 .circular-image-container {
     width: 330px;
-    height: 330px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    margin-left: 9vw;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 400px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -751,12 +763,7 @@ html {
     flex-direction: column;        
 }
 
-.paragraph-about {
-    color: #444444;
-    font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
-    line-height:1.5;
-}
+
 
 
 /* ------------------------------- FOOTER CSS ---------------------------------- */ 
@@ -851,7 +858,6 @@ html {
 }
 
 
-
 /* Case study link styling */
 .callout-text-green a {
     font-weight: 300;
@@ -862,7 +868,24 @@ html {
 }
 
 /* Case study link styling */
-.callout-text-green a:hover{
+.callout-text a:hover .callout-text-green {
+    color: #2B2E33;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+
+/* Case study link styling, berkeleytime "landing page" text */
+.paragraph-green a {
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+
+/* Case study link styling, berkeleytime "landing page" text */
+.paragraph-green a:hover {
     color: #2B2E33;
     cursor: pointer;
 }
@@ -878,19 +901,6 @@ html {
 
 /* Case study link styling */
 .paragraph-green a:hover{
-    color: #2B2E33;
-    cursor: pointer;
-}
-
-.paragraph-about a {
-    font-weight: 400;
-    font-size: 18px; /* This is the base font size that everything scales from */
-    color: #909090;
-    transition: all 0.15s ease;
-}
-
-/* Case study link styling */
-.paragraph-about a:hover{
     color: #2B2E33;
     cursor: pointer;
 }
@@ -916,7 +926,7 @@ html {
     font-weight: 300;
     font-size: 32px;
     color: #909090;
-    text-decoration: none; /* Removes the text underline for links */
+    text-decoration: none;
     transition: all 0.15s ease;
 }
 
@@ -1025,6 +1035,21 @@ html {
     font-family: Atkinson Hyperlegible, sans-serif; 
     font-weight: 400; 
     font-size: 32px;
+}
+
+/* So I can center the "hey I'm janet" on mobile */
+.title-unique-about {
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 600; 
+    font-size: 28px;
+}
+
+/* So I can center the "hey I'm janet" on mobile */
+.title-unique-about-green {
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 600; 
+    font-size: 20px;
+    color: #10BD3D;
 }
 
 
@@ -1279,16 +1304,17 @@ html {
     }
 
 
-    .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a {
+    .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a, .title-unique-about-green {
         font-size: 18px;
     }
 
-    .title-text, .one-word-header, .title-unique {
+    .title-text, .one-word-header, .title-unique, .title-unique-about {
         font-size: 22px;
     }
 
 
-    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-grey-short, .paragraph-bold, .callout-text-standalone, .paragraph-grey-standalone, .footer-paragraph a {
+
+    .paragraph, .paragraph-green, .paragraph-grey, .paragraph-grey-short, .paragraph-bold, .callout-text-standalone, .paragraph-grey-standalone, .paragraph-green a, .footer-paragraph a {
         font-size: 16px;
     }
 
@@ -1440,6 +1466,19 @@ html {
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .space-100-about {
+        display: none;
+    }
+
+     .space-100-home {
+        height: 50px;
+    }
+
+    .title-unique-about .title-unique-about-green{
+        display: flex;
+        justify-content: center;
     }
 
 
