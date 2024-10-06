@@ -221,6 +221,15 @@ li { /*styling for the top nav*/
     line-height:1.75;
     }
 
+/* Grey paragraph text for system final designs impact text*/
+.paragraph-grey-short {
+    font-weight: 350;
+    font-size: 18px; /* This is the base font size that everything scales from */
+    color: #757575;
+    line-height:1.75;
+    width: 30vw;
+    }
+
 /* Grey paragraph text */
 .paragraph-grey-italic {
     font-weight: 350;
@@ -1152,6 +1161,7 @@ html {
     color: black;
     transition: transform 0.3s;
     transform: translateY(100%);
+    text-align: center;
 }
 
 
@@ -1205,6 +1215,7 @@ html {
     .top-aligned-column {
         flex-direction: column;
         width: 80vw;    
+        padding-right: 0px;
     }
 
 
@@ -1219,6 +1230,10 @@ html {
 
     .paragraph, .paragraph-green, .paragraph-grey, .paragraph-bold, .footer-paragraph a {
         font-size: 16px;
+    }
+
+    .caption-text span{
+        width: 100%;
     }
 
 
@@ -1257,10 +1272,9 @@ html {
         display: none; /* This will hide the button */
     }
 
-    .next-proj-nav {
-        width: 90%;
-        display: flex;
-        justify-content: center;
+
+    .paragraph-grey-short {
+        width: 100%;
     }
     
 
@@ -1271,7 +1285,7 @@ html {
 @media (max-width: 600px) {
 
     .top-aligned-column {
-        width: 70vw !important;  /* Overriding the home page width style in HTML */
+        width: 100%; /* Overriding the home page width style in HTML */
     }
 
     .topnav {
@@ -1301,6 +1315,15 @@ html {
 
     .paragraph, .paragraph-green, .paragraph-grey, .paragraph-bold, .footer-paragraph a {
         width: 90%;
+    }
+
+
+
+    .next-proj-button {
+         padding: 8px 20px; /* Even smaller padding for mobile screens */
+        font-size: 12px; /* Adjust font size for better mobile readability */
+        width: 100%; /* Make button full-width on small screens */
+        justify-content: center; /* Center text inside buttons */
     }
 
 }
