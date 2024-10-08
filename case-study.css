@@ -1496,6 +1496,10 @@ html {
         font-size: 14px;
     }
 
+    /* Space between home page blurb and "currently at" */
+    .space-8-mobile {
+        height: 8px;
+    }
 
 
 }
