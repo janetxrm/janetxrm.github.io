@@ -30,6 +30,12 @@ body {
 
 }
 
+li { /*styling for the top nav*/
+  list-style-type: none;
+  line-height: 150%;
+}
+
+
 .topnav a {
     text-decoration: none;
     letter-spacing: 0.04em;
@@ -48,10 +54,6 @@ body {
     font-weight: 600;
 }
 
-li { /*styling for the top nav*/
-  list-style-type: none;
-  line-height: 150%;
-}
 
 
 
