@@ -184,6 +184,7 @@ li { /*styling for the top nav*/
     justify-content: space-between; /* evenly spaces the columns  */
 }
 
+
 .two-columns-container-row { /* Make the case study title a row on mobile */
     width:100%; /* you need this so that the text spans the full width of .content */
     display: flex;
@@ -206,6 +207,11 @@ li { /*styling for the top nav*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns the content at the top */
+    }
+
+/* Increase width of about blurb */
+ .top-aligned-column-about {
+    width: 60%; /* Sets the width of each column */
     }
 
 
