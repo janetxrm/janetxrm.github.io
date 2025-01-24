@@ -1299,7 +1299,26 @@ html {
 
 /*------------------------------- RESPONSIVE BREAKPOINTS ------------------------------- */
 
-@media (max-width: 1200px) {
+
+/* Browser full size */
+@media (min-width: 901px) {
+    .top-aligned-column-home {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }   
+
+    .title-unique {
+        font-size: 28px;
+    }
+}
+
+
+/* Browser minimize */
+@media (max-width: 900px) {
+
+
     .two-columns-container {
         flex-direction: column; /* Stack columns on smaller screens */
         gap: 5vh; /* Space between elements */
@@ -1314,6 +1333,13 @@ html {
         width: 80vw;    
         padding-right: 0px;
     }
+
+    .top-aligned-column-home {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }  
 
 
     .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a, .title-unique-about-green {
@@ -1387,6 +1413,8 @@ html {
     
 
 }
+
+
 
 /*------------------------------- MOBILE ------------------------------- */
 
