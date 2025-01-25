@@ -1318,6 +1318,8 @@ html {
     .title-unique {
         font-size: 28px;
     }
+
+
 }
 
 
@@ -1452,7 +1454,6 @@ html {
         margin-left: 5%;
         margin-right: 5%; 
     }
-
 
     .home-grid, .n-column-grid, .two-column-grid {
         width: 90%;
