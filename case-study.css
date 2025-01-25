@@ -532,6 +532,10 @@ li { /*styling for the top nav*/
     height: 100px;
 }
 
+.space-180 {
+    height:180px;
+}
+
   .space-200 {
     height:200px;
   }
@@ -818,9 +822,11 @@ html {
     transition: all 0.15s ease;
 }
 
+/* Pushes footer to the far right */
 .footer-column {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 
