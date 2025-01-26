@@ -113,6 +113,14 @@ li { /*styling for the top nav*/
     padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
+.content-section-play { 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
 
 .title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
     width: 70%;
@@ -181,7 +189,7 @@ li { /*styling for the top nav*/
 .two-columns-container { /* Creates a flex container for two columns */
     width:100%; /* you need this so that the text spans the full width of .content */
     display: flex;
-    justify-content: space-between; /* evenly spaces the columns  */
+    justify-content: center;
 }
 
 
