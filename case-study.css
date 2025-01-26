@@ -1024,7 +1024,7 @@ html {
 .n-column-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px 16px;
+    gap: 16px 16px;
     justify-items: center;
 }
 
