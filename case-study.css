@@ -259,8 +259,7 @@ li { /*styling for the top nav*/
 
 .paragraph-bold {
     font-weight: 550;
-    font-size: 18px; /* This is the base font size that everything scales from */
-
+    font-size: 16px; /* This is the base font size that everything scales from */
     line-height:1.75;
     }
 
@@ -1034,7 +1033,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 12px;
-    row-gap: 1.67vw;
+    row-gap: 3vw;
     justify-items: center;
     margin-left: 15%;
     margin-right: 15%;
