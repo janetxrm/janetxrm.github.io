@@ -189,8 +189,14 @@ li { /*styling for the top nav*/
 .two-columns-container { /* Creates a flex container for two columns */
     width:100%; /* you need this so that the text spans the full width of .content */
     display: flex;
+}
+
+.two-columns-container-play { /* Creates a flex container for two columns */
+    width:100%; /* you need this so that the text spans the full width of .content */
+    display: flex;
     justify-content: center;
 }
+
 
 
 .two-columns-container-row { /* Make the case study title a row on mobile */
