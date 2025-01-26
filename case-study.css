@@ -202,6 +202,15 @@ li { /*styling for the top nav*/
     padding-right: 100px; /* Shortens the width between the two columns */
 }
 
+/* Exclusively for play section */
+.top-aligned-column-play {
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    padding-right: 10px; /* Shortens the width between the two columns */
+}
+
  .top-aligned-column-home {
     width: 40%; /* Sets the width of each column */
     display: flex;
@@ -225,13 +234,13 @@ li { /*styling for the top nav*/
 }
 
 
-/* Just makes the width wider from 40% to 60%. Used in 3D */
+/* Just makes the width wider from 40% to 60%. Used in play */
 .top-aligned-column-wide {
     width: 60%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns the content at the top */
-    padding-right: 100px; /* Shortens the width between the two columns */
+    padding-right: 10px; /* Shortens the width between the two columns */
 }
 
  /* This is one of the columns */
@@ -1497,12 +1506,6 @@ html {
     }
 
     .callout-text-standalone {
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    .top-aligned-column-wide {
         width: 80%;
         padding-left: 10%;
         padding-right: 10%;
