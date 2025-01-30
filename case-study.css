@@ -121,6 +121,15 @@ li { /*styling for the top nav*/
     padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
+.content-section-about { 
+    width: 90%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
     width: 70%;
@@ -276,8 +285,8 @@ li { /*styling for the top nav*/
 /* Black paragraph text */
 .paragraph {
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
-    line-height:1.75;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    line-height:1.5;
     }
 
 .paragraph-bold {
@@ -289,26 +298,26 @@ li { /*styling for the top nav*/
 /* Grey paragraph text */
 .paragraph-grey {
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     color: #757575;
-    line-height:1.75;
+    line-height:1.5;
     }
 
 /* Grey paragraph text for system final designs impact text*/
 .paragraph-grey-short {
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     color: #757575;
-    line-height:1.75;
+    line-height:1.5;
     width: 30vw;
     }
 
 /* Centered text under creative */
 .paragraph-grey-standalone {
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     color: #757575;
-    line-height:1.75;
+    line-height:1.5;
     text-align: center;
     width: 60%;
     padding-left: 20%;
@@ -319,9 +328,9 @@ li { /*styling for the top nav*/
 /* Grey paragraph text */
 .paragraph-grey-italic {
     font-weight: 350;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     color: #757575;
-    line-height:1.75;
+    line-height:1.5;
     font-style: italic;
     }
 
@@ -332,9 +341,9 @@ li { /*styling for the top nav*/
 /* Green paragraph text */
 .paragraph-green {
     font-weight: 400;
-    font-size: 18px; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     color: #40A900;
-    line-height:1.75;
+    line-height:1.5;
     }
 
 /*to deprecate
@@ -371,7 +380,7 @@ li { /*styling for the top nav*/
 }
 
 .callout-text-standalone {
-    font-size: 18px;
+    font-size: 16px;
     padding: 4vh 20vw;
     border: 2px dashed #A09E9C;
     text-align: center;
@@ -784,10 +793,10 @@ html {
 
 /* Unique font paragraph text used in about blurb */
 .paragraph-unique {
-    font-size: 1.125rem; /* This is the base font size that everything scales from */
+    font-size: 16px; /* This is the base font size that everything scales from */
     font-family: Atkinson Hyperlegible, sans-serif; 
-    font-weight: 400; 
-    line-height:1.75;
+    font-weight: 350; 
+    line-height:1.5;
     }
 
 .connect-text {
@@ -945,7 +954,7 @@ html {
 
 /* About page link styling */
 .paragraph-unique a {
-    font-size: 18px;
+    font-size: 16px;
     color: #909090;
     text-decoration: none; /* Removes the text underline for links */
     transition: all 0.15s ease;
@@ -1063,7 +1072,8 @@ html {
 }
 
 
-.home-grid video {
+.home-grid video,
+.home-grid img{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
