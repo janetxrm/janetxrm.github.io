@@ -113,6 +113,16 @@ li { /*styling for the top nav*/
     padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
+/* Background color */
+.content-section-fill { 
+    width: 100%;
+    background-color: #0F0F0F;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
 .content-section-play { 
     width: 100%;
     height: auto;
@@ -243,7 +253,7 @@ li { /*styling for the top nav*/
 
 /* Increase width of about blurb */
  .top-aligned-column-about {
-    width: 60%; /* Sets the width of each column */
+    width: 40%; /* Sets the width of each column */
     }
 
 
@@ -287,6 +297,12 @@ li { /*styling for the top nav*/
     font-weight: 350;
     font-size: 16px; /* This is the base font size that everything scales from */
     line-height:1.5;
+    }
+
+.paragraph-about {
+    font-weight: 350;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    line-height:1.75;
     }
 
 .paragraph-bold {
@@ -379,7 +395,7 @@ li { /*styling for the top nav*/
     justify-content: center;
 }
 
-.callout-text-standalone {
+.callout-text-standalone-border {
     font-size: 16px;
     padding: 4vh 20vw;
     border: 2px dashed #A09E9C;
@@ -387,6 +403,31 @@ li { /*styling for the top nav*/
     width: 100%;
     line-height: 1.5;
 }
+
+
+/* Used in about page */
+.callout-text-standalone-white-italic {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 100;
+    padding: 4vh 20vw;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.callout-text-standalone-white {
+    color: #ffffff;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 100;
+    padding: 4vh 20vw;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+
 
 
 /* Grey callout text, also used for short hook */
@@ -573,6 +614,14 @@ li { /*styling for the top nav*/
 
     .space-200-w {
     width:200px;
+  }
+
+  .space-280 {
+    height:280px;
+  }
+
+    .space-280-w {
+    width:280px;
   }
 
 /* Standard spacing to section off content sections */
@@ -920,6 +969,19 @@ html {
     transition: all 0.15s ease;
 }
 
+/* About page filled background */
+.callout-text-standalone-white a {
+    text-decoration: none;
+    color: #6D6D6D;
+}
+
+/* About page filled background */
+.callout-text-standalone-white a:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
 
 /* Case study link styling, berkeleytime "landing page" text */
 .paragraph-green a {
@@ -953,7 +1015,7 @@ html {
 
 
 /* About page link styling */
-.paragraph-unique a {
+.paragraph-about a {
     font-size: 16px;
     color: #909090;
     text-decoration: none; /* Removes the text underline for links */
@@ -962,7 +1024,7 @@ html {
 
 
 /* About page link styling */
-.paragraph-unique a:hover {
+.paragraph-about a:hover {
     color: #333333;
     cursor: pointer;
 }

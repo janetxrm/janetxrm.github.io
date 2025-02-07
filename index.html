@@ -130,6 +130,28 @@
 
 
 	<!----------------------------- Fire TV IA ------------------------>
+
+
+<?php
+session_start();
+$correct_password = "mypassword"; // Change this to your password
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_POST["password"] === $correct_password) {
+        $_SESSION["authenticated"] = true;
+        header("Location: case-study.php"); // Redirect to the case study page
+        exit();
+    } else {
+        $error = "Incorrect password!";
+    }
+}
+?>
+
+
+
+
+
+	
 	<div class = "home-image-container">
 	<a href="ftv.html"><video autoplay muted loop playsinline class="project-video">
 	    <source src="assets/ftv/ftv-home-1.mp4" type="video/mp4">
@@ -139,7 +161,7 @@
 		<div class = "space-10"></div>
 		<div class = "in-progress-badge">
 			<div class="orange-dot"></div>
-			<div class="badge-text">In progress</div>
+			<div class="badge-text">Locked - In progress</div>
 		</div>
 		 	<div class = "space-4"></div>
 		<div class = "title-unique"><a href = "ftv.html">fire TV</a></div>
