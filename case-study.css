@@ -131,7 +131,7 @@ li { /*styling for the top nav*/
     padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
-.content-section-about { 
+.content-section-90 { 
     width: 90%;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -139,6 +139,7 @@ li { /*styling for the top nav*/
     display: flex;
     flex-direction: column;
 }
+
 
 
 .title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
@@ -276,6 +277,7 @@ li { /*styling for the top nav*/
     padding-right: 10px; /* Shortens the width between the two columns */
 }
 
+
  /* This is one of the columns */
 .bottom-aligned-column {
     width: 40%; /* Sets the width of each column */
@@ -283,6 +285,7 @@ li { /*styling for the top nav*/
     flex-direction: column;
     justify-content: flex-end; /* Aligns the content at the bottom */
 }
+
 
 
 
@@ -371,6 +374,13 @@ li { /*styling for the top nav*/
 }
 */
 
+.alexa-text {
+    font-weight: 550;
+    font-size: 22px; /* This is the base font size that everything scales from */
+    font-style: italic;
+    color: #1B86FF;
+    line-height:1.5;
+}
 
 /* Larger callout text, used for eye-catching highlights and project summary */ 
 .callout-text { 
@@ -472,6 +482,14 @@ li { /*styling for the top nav*/
     font-size: 22px; /* This is the base font size that everything scales from */
     color: #757575;
     }
+
+/* Large grey header*/
+.large-grey-header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #999999;
+}
 
 
 
@@ -936,6 +954,19 @@ html {
     cursor: pointer;
 }
 
+/* Used in ftv reach out */
+.paragraph-grey a {
+    color: #999999;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+
+.paragraph-grey a:hover {
+    color: #757575;
+    cursor: pointer;
+}
+
 
 
 .footer-paragraph a {
@@ -1061,13 +1092,6 @@ html {
 
 
 /* ------------------------------- Berkeleytime CSS ---------------------------------- */ 
-.generic-row {
-    display: flex;
-    flex-direction:row;    
-    gap: 60px;
-    align-items: flex-start;
-    
-}
 
 .person {
     width: 20%; 
@@ -1205,6 +1229,9 @@ html {
 
 
 
+
+
+
 .blurb-text { /* Used in the text under intro blurb */
     font-weight: regular;
     font-size: 16px; /* This is the base font size that everything scales from */
@@ -1214,6 +1241,7 @@ html {
 .caption-text {
     font-weight: regular;
     font-style: italic;
+    color: #747474;
     font-size: 16px; /* This is the base font size that everything scales from */
     line-height: 1.6;
     width: 100%; /* Full width container */
