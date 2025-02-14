@@ -43,7 +43,7 @@
 						   		<div class = "title-text">Alexa Time Features</div>
 						 	</div>	 	
 						 	<div class = "bottom-aligned-column">
-						   		<div class = "callout-text-grey">Revamping Alarms, Timers, & Reminders</div>
+						   		<div class = "callout-text-grey">Productivity and Management Tools</div>
 						 	</div>	
 
 				</div>				
@@ -55,7 +55,7 @@
 	<!---------------------- Parallax hero img --------------------------->	
 
   <div class="parallax-container">
-    <img src="assets/alarm/alarm-hero.png" alt="Parallax Image" class="parallax-image">
+    <img src="assets/alarm/alarm-hero.jpg" alt="Parallax Image" class="parallax-image">
 </div>
 
    
@@ -123,7 +123,7 @@
 
 						<div class = "top-aligned-column">
 						    <video autoplay muted loop playsinline>
-						        <source src="assets/alarm/alarm-past.mp4" type="video/mp4">
+						        <source src="assets/alarm/alarm-past-1080.mp4" type="video/mp4">
 						    </video>
 
 						</div>
@@ -302,25 +302,124 @@
 
 				</div>
 
+
 				<div class = "top-aligned-column">
 						<div class = "paragraph-grey">Aligned with domain teams to scale the experience across devices, modalities, and interaction paradigms, ensuring seamless interaction via voice, touch, and remote control.
 						</div>
 						 			
 				</div>
 			</div>
-		
-
-			
-
-			<div class = "full-width-image-container-smaller">
-			     <video autoplay muted loop playsinline>
-		  			<source src="assets/alarm/scale.mp4" type="video/mp4">
-		  			Your browser does not support videos.
-				</video>
-			</div>
 		</div>
 
+		<div class = "space-80"></div>
+
+
+
+<!----------------------- Slideshow ---------------------------->
+
+<!-- Slides -->
+    <div class="slideshow-container">
+        <button class="slide-show-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slides">
+            <img src="assets/alarm/scaled-alarm.jpg" alt="Slide 1"">
+            <img src="assets/alarm/scaled-timer.jpg" alt="Slide 2"">
+            <img src="assets/alarm/scaled-reminder.jpg" alt="Slide 3">
+        </div>
+        <button class="slide-show-next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+
+<div class = "space-20"></div>
+
+    <!-- Pagination dots -->
+    <div class="dots-container">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+
+
+<!-- Pagination dots script -->
+    <script>
+        let index = 0;
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = document.querySelectorAll('.slides img').length;
+
+        function moveSlide(direction) {
+            index += direction;
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+            updateSlide();
+        }
+
+        function goToSlide(slideIndex) {
+            index = slideIndex;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+
+            // Update active dot
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        // Initialize the first dot as active
+        updateSlide();
+    </script>
+
+
+<!-- Slides script -->
+    <script>
+        let index = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const images = document.querySelectorAll('.slides img');
+            const totalSlides = images.length;
+
+            index += direction;
+
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+
+
+
 <div class = "space-180"></div>
+
+
+
+
+
+<!-----------------------  An ecosystem-wide change  ---------------------------->
+
+		<div class = "content-section-no-line">
+					<div class = "two-columns-container">
+							<div class = "top-aligned-column">
+								<div class = "alexa-text">"Alexa, set a timer for the living room lights"</div>
+								<div class = "space-20"></div>
+								<div class = "large-grey-header">An ecosystem-wide change</div>
+								<div class = "space-20"></div>
+								<div class = "paragraph-grey">Standardized time management across Alexa, shaping core experiences for key teams like Settings, Smart Home, and more.</div>
+							</div>
+
+
+							<div class = "top-aligned-column" style = "width: 60%; margin-right: -100px;">
+								<div class = "full-width-image-container">
+							      	<img src="assets/alarm/ecosystem.png">
+							    </div>
+							</div>
+					</div>
+
+		</div>
+
+		<div class = "space-180"></div>
 
 
 
