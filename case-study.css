@@ -769,14 +769,14 @@ li { /*styling for the top nav*/
 .stem {
     width: 2px; /* Stem width */
     height: 70px; /* Length of the stem (you can adjust this) */
-    background-color: #757575;
+    background-color: #C6C6C6;
 }
 
 .arrow-head {
     font-size: 20px; /* Size of the arrow */
     margin-top: 0; /* Remove default margin */
     line-height: 0; /* Removes the line-height space causing the gap */
-    color: #757575;
+    color: #C6C6C6;
 }
 
 
