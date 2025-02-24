@@ -192,10 +192,10 @@
 
         <div class="paragraph-grey" style = "line-height: 1.75;">
 		            <span class="short-text" >Janet takes ownership in a way that moves teams and projects forward. Leading vNext, a complex information architecture initiative, she demonstrated exceptional leadership by bringing together engineering, product, and three partner teams for the first in-person workshop of its kind. 
-					She developed a comprehensive system object model, partnered with engineering to define system logic, and delivered in-depth explorations of information architecture concepts that shaped the direction of the work. Her weekly presentations to senior leadership didn’t just showcase high-quality work. They were a masterclass in storytelling, framing a clear vision and strategic direction that influenced decisions. 
+					She developed a comprehensive system object model, partnered with engineering to define system logic, and delivered in-depth explorations of information architecture concepts that shaped the direction of the work. Her weekly presentations to senior leadership didn’t just showcase high-quality work. They were a masterclass in storytelling, framing a clear vision and strategic direction that influenced decisions.</span>
 
 					<button class="read-more-btn" onclick="toggleText()">...Show more</button>
-					</span>
+					
 					
 					<div class = "space-10"></div>
 					<span class="full-text">She builds trust across teams, fosters alignment, and creates momentum. Her contributions to vNext weren’t just impactful. They shaped the product direction in a way that earned organization-wide recognition.
@@ -208,6 +208,25 @@
 		        </div>
 		    
 		</div>
+
+		<!----------------------- See more --------------------->
+    <script>
+    function toggleText() {
+        const fullText = document.querySelector('.full-text');
+        const button = document.querySelector('.read-more-btn');
+
+        if (fullText.style.display === 'none' || fullText.style.display === '') {
+            fullText.style.display = 'block';
+            button.textContent = 'Show less';
+            fullText.after(button); // Move the button to the bottom
+        } else {
+            fullText.style.display = 'none';
+            button.textContent = '...Show more';
+        }
+    }
+    </script>
+
+
 
 		<div id="product" class="tab-content" style="display:none;">
 		    
@@ -274,22 +293,7 @@
 }
 </script>
 
-<!----------------------- See more --------------------->
-    <script>
-    function toggleText() {
-        const fullText = document.querySelector('.full-text');
-        const button = document.querySelector('.read-more-btn');
 
-        if (fullText.style.display === 'none' || fullText.style.display === '') {
-            fullText.style.display = 'block';
-            button.textContent = 'Show less';
-            fullText.after(button); // Move the button to the bottom
-        } else {
-            fullText.style.display = 'none';
-            button.textContent = '...Show more';
-        }
-    }
-    </script>
 
 
 
