@@ -335,15 +335,18 @@ li { /*styling for the top nav*/
 
 .testimonial-container {
     height: 90vh;
+    flex-direction: column;
 }
 
 .tabs {
     display: flex;
     cursor: pointer;
+    justify-content: space-between;
+    padding: 0 80px;
 }
 
 .tab {
-    margin: 0px 80px;
+    
     background-color: transparent; /* No background color */
     color: black; /* Text color */
     position: relative; /* Position for the underline */
@@ -1918,6 +1921,7 @@ html {
 
     
     .footer-column {
+        margin-top: 20px;
         margin-bottom: 20px;
         width: 100%;
     }
@@ -1988,7 +1992,7 @@ html {
     }
 
 
-    .content-section, .content-section-no-line {
+    .content-section, .content-section-no-line, .content-section-50 {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%; 
