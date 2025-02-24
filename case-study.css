@@ -114,6 +114,17 @@ li { /*styling for the top nav*/
 }
 
 
+/* Used in home testimonials */
+.content-section-50 { 
+    width: 50%;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
 .content-section-100 { 
     width: 100%;
     height: auto;
@@ -316,6 +327,60 @@ li { /*styling for the top nav*/
     flex-direction: column;
     justify-content: flex-end; /* Aligns the content at the bottom */
 }
+
+
+
+
+/* ---------------------------------- TESTIMONIALS --------------------------------------------- */ 
+
+.testimonial-container {
+    height: 90vh;
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab {
+    margin: 0px 80px;
+    background-color: transparent; /* No background color */
+    color: black; /* Text color */
+    position: relative; /* Position for the underline */
+}
+
+
+.tab:hover::after {
+    content: ''; /* Create an empty content */
+    display: block; /* Make it a block element */
+    width: 100%; /* Width to match the text */
+    height: 2px; /* Thickness of the underline */
+    background: black; /* Underline color on hover */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    bottom: -8px; /* Adjust the distance from the text */
+}
+
+.tab.active {
+    color: #000; /* Active tab text color */
+}
+
+.tab.active::after {
+    content: ''; /* Keep this for consistency */
+    display: block; /* Make it a block element */
+    width: 100%; /* Width to match the text */
+    height: 2px; /* Thickness of the underline */
+    background: black; /* Active underline color */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    bottom: -8px; /* Adjust the distance from the text */
+}
+
+
+
+
+
+
 
 
 /* ---------------------------------- SLIDE SHOW --------------------------------------------- */ 

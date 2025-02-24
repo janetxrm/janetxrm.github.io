@@ -131,27 +131,6 @@
 
 	<!----------------------------- Fire TV IA ------------------------>
 
-
-<?php
-session_start();
-$correct_password = "mypassword"; // Change this to your password
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if ($_POST["password"] === $correct_password) {
-        $_SESSION["authenticated"] = true;
-        header("Location: case-study.php"); // Redirect to the case study page
-        exit();
-    } else {
-        $error = "Incorrect password!";
-    }
-}
-?>
-
-
-
-
-
-
 	<div class = "home-image-container">
 	<a href="ftv.html"><video autoplay muted loop playsinline class="project-video">
 	    <source src="assets/ftv/ftv-home-1.mp4" type="video/mp4">
@@ -169,7 +148,145 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div class = "space-4"></div>
 				<div class = "paragraph-unique-grey-home">Information architecture redesign</div>
 
-		</div> 
+	</div> 
+
+
+	</div>
+
+
+
+<!----------------------------- Testimonials ---------------------------->
+
+<div class = "space-160"></div>
+<div class = "testimonial-container">
+
+	<div class = "content-section-no-line">
+		<div class = "title-unique" style = "text-align:center">
+			Reviews from my teammates
+		</div>
+
+		<div class = "space-30"></div>
+	</div>
+
+	<div class = "content-section-50">
+		<div class="tabs">
+		    <div class="tab active" onclick="showTab('designers')">Designers</div>
+		    <div class="tab" onclick="showTab('product')">Product</div>
+		    <div class="tab" onclick="showTab('engineers')">Engineers</div>
+		</div>
+
+		<div class = "space-30"></div>
+
+		<div id="designers" class="tab-content">
+	  
+		        <div class="paragraph-grey" style = "line-height: 1.75;">
+		            Janet is an exceptional asset to any design team, bringing a unique combination of adaptability, problem-solving, and collaboration. She takes direction well and listens actively, ensuring that she understands and applies insights effectively. Her strong design thinking skills, coupled with a customer-centered, data-driven approach, make her a thoughtful and strategic decision-maker. She is cognitively flexible, always willing to adjust her perspective when presented with new information, and she actively seeks opportunities to grow, learn, and lead. A dedicated team player, Janet thrives in collaborative environments, diving headfirst into challenges with enthusiasm and determination. With her ability to balance creativity and analytical thinking, she is a valuable addition to any team looking for a dynamic, diligent, and forward-thinking design and product contributor.
+		        </div>
+		        <div class="space-10"></div>
+		        <div class="paragraph-unique-grey-home">
+		            Jeremy Milbourne-Clarke, UX Design Manager @ Amazon DDG
+		        </div>
+		    
+		</div>
+
+		<div id="product" class="tab-content" style="display:none;">
+		    
+		        <div class="paragraph-grey" style = "line-height: 1.75;">
+		            Janet and I collaborated in Amazon’s device group on a new product line with a drastically different customer journey and exception handling than what exists in the market. As a UX design partner, she played a pivotal role in refining UX options to align with copywriters, product positioning, and marketing messaging, all while reducing customer friction. Janet effectively managed changing needs while maintaining design standards. I am happy to recommend her for her skills in quickly iterating to keep the team focused on customer obsession, and in securing leadership's buy-in through clear communication and rationale.
+		        </div>
+		        <div class="space-10"></div>
+		        <div class="paragraph-unique-grey-home">
+		            Rajan Batra, Senior Product Manager @ Amazon
+		        </div>
+		   
+		</div>
+
+		<div id="engineers" class="tab-content" style="display:none;">
+    
+        <div class="paragraph-grey" style = "line-height: 1.75;">
+            Thank you for your outstanding support in unblocking the team during our tech stack migration! Your ability to effectively remove obstacles for over 50 engineers while demonstrating agility in understanding and adapting to technical constraints has been impressive. We truly appreciate your quick responses and innovative solutions; they've saved us a significant amount of time.
+        </div>
+        <div class="space-10"></div>
+        <div class="paragraph-unique-grey-home">
+            SDE Manager @ Amazon Fire TV
+        </div>
+
+        <div class = "space-30"></div>
+
+        <div class="paragraph-grey" style = "line-height: 1.75;">
+           Janet established her reputation on the Alexa Design System team by demonstrating her keen understanding of the complete product lifecycle and delivering thoughtful designs paired with highly detailed, comprehensive specs. Her approach goes beyond focusing solely on user experience; she considers the entire system, providing invaluable insights that enhance the team's work. She has earned the trust of the technical team and has been a stellar design partner to work with, consistently performing far above the bar.
+        </div>
+        <div class="space-10"></div>
+        <div class="paragraph-unique-grey-home">
+            Design Technologist @ Amazon DDG
+        </div>
+   
+</div>
+
+
+	</div>
+</div>
+
+
+<script>
+	function showTab(tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.style.display = 'none';
+    });
+
+    // Remove active class from all tabs
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabName).style.display = 'block';
+
+    // Add active class to the clicked tab
+    const activeTab = Array.from(tabs).find(tab => tab.textContent === tabName.charAt(0).toUpperCase() + tabName.slice(1));
+    if (activeTab) {
+        activeTab.classList.add('active');
+    }
+}
+</script>
+
+
+
+
+	<!----------------------------- Testimonials TEMP
+	<div class = "space-160"></div>
+
+	<div class = "content-section-no-line">
+		<div class = "title-unique" style = "text-align:center">
+			What do others say about my work?
+		</div>
+
+		<div class = "space-60"></div>
+	</div>
+
+	<div class = "content-section-50">
+		<div class = "paragraph-grey">
+			test
+		</div>
+		<div class = "space-10"></div>
+		<div class = "paragraph-bold">
+			Jeremy Milbourne-Clarke, UX Design Manager @ Amazon DDG
+		</div>
+
+		<div class = "space-80"></div>
+
+		<div class = "paragraph-grey">
+			test
+		</div>
+		<div class = "space-10"></div>
+		<div class = "paragraph-bold">
+			Rajan Batra, Senior Product Manager
+		</div>
+	</div>
+------------------------>
 
 
 
@@ -260,7 +377,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-		</div>
+	
 
 
 <!-----------------------------------------  Footer   ------------------------------------------------>	
