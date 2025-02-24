@@ -346,7 +346,6 @@ li { /*styling for the top nav*/
 }
 
 .tab {
-    
     background-color: transparent; /* No background color */
     color: black; /* Text color */
     position: relative; /* Position for the underline */
@@ -367,6 +366,11 @@ li { /*styling for the top nav*/
 .tab.active {
     color: #000; /* Active tab text color */
 }
+
+.tab:active {
+    transform: scale(0.95); /* Scale down slightly on click */
+}
+
 
 .tab.active::after {
     content: ''; /* Keep this for consistency */
