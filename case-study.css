@@ -334,7 +334,7 @@ li { /*styling for the top nav*/
 /* ---------------------------------- TESTIMONIALS --------------------------------------------- */ 
 
 .testimonial-container {
-    height: 90vh;
+    height: auto;
     flex-direction: column;
 }
 
@@ -384,8 +384,20 @@ li { /*styling for the top nav*/
 }
 
 
+.read-more-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    display: inline;
+}
 
-
+.short-text {
+    display: block;
+}
+.full-text {
+    display: none;
+}
 
 
 
