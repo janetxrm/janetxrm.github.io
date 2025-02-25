@@ -334,6 +334,7 @@ li { /*styling for the top nav*/
 /* ---------------------------------- TESTIMONIALS --------------------------------------------- */ 
 
 .testimonial-container {
+    min-height: 70vh;
     height: auto;
     flex-direction: column;
 }
