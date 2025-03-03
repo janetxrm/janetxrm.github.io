@@ -2,7 +2,7 @@
 
 
 
-/* Makes sure that literally everything is one font */
+/* Makes sure that everything is one font */
 body {
     font-family: 'Inter', sans-serif; /* Apply the Inter font to all elements */
     color: #333333;
@@ -12,11 +12,10 @@ body {
 
 
 
-/* ------------------------------- TOP NAV STYLING------------------------------- */
+/* ------------------------------- Top nav styling ------------------------------- */
 
 
 .topnav {
-   /*position: sticky;*/
     display: inline-block;
     width: 70%;
     margin-top: 5%;
@@ -30,7 +29,8 @@ body {
 
 }
 
-li { /*styling for the top nav*/
+/* top nav styling */
+li { 
   list-style-type: none;
   line-height: 150%;
 }
@@ -57,7 +57,7 @@ li { /*styling for the top nav*/
 
 
 
-/*------------------------------- PARALLAX IMAGE CODE------------------------------- */
+/*------------------------------- Parallax image code ------------------------------- */
 
 
 
@@ -87,10 +87,11 @@ li { /*styling for the top nav*/
 
 
 
-/*-------------------------------  GENERAL CASE STUDY CONTENT STYLING------------------------------- */
+/*-------------------------------  General case study content styling ------------------------------- */
 
 
-.content-section { /* Centers the whole page with left right margins, adds hella bottom margin and a top line */
+/* Centers the whole page with left right margins, adds hella bottom margin and a top line */
+.content-section { 
     border-top: 1px solid #D6D6D6;
     width: 70%;
     margin-left: 15vw;
@@ -144,7 +145,6 @@ li { /*styling for the top nav*/
 }
 
 
-
 .content-section-90 { 
     width: 90%;
     margin-left: 5vw;
@@ -155,10 +155,8 @@ li { /*styling for the top nav*/
 }
 
 
-
-
-
-.title-row { /* MAKE SURE that when you call this it's class = content-dection special. with a space. I'm making a special case just for the case study title */
+/*  MAKE SURE that when you call this it's class = content-section special. with a space. I'm making a special case just for the case study title */
+.title-row { 
     width: 70%;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -227,12 +225,12 @@ li { /*styling for the top nav*/
     display: flex;
 }
 
+
 .two-columns-container-play { /* Creates a flex container for two columns */
     width:100%; /* you need this so that the text spans the full width of .content */
     display: flex;
     justify-content: center;
 }
-
 
 
 .two-columns-container-row { /* Make the case study title a row on mobile */
@@ -243,7 +241,6 @@ li { /*styling for the top nav*/
 
 
 /* Used in system what who why how */
-
 .n-column-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts based on available space */
@@ -331,7 +328,7 @@ li { /*styling for the top nav*/
 
 
 
-/* ---------------------------------- TESTIMONIALS --------------------------------------------- */ 
+/* ---------------------------------- Testimonials --------------------------------------------- */ 
 
 .testimonial-container {
     min-height: 70vh;
@@ -403,7 +400,7 @@ li { /*styling for the top nav*/
 
 
 
-/* ---------------------------------- SLIDE SHOW --------------------------------------------- */ 
+/* ---------------------------------- Slide show --------------------------------------------- */ 
 
     .slideshow-container {
         width: 75%;
@@ -481,7 +478,7 @@ li { /*styling for the top nav*/
     }
 
 
-/* ---------------------------------- CASE STUDY TEXT --------------------------------------------- */ 
+/* ---------------------------------- Case study text --------------------------------------------- */ 
 
 
 /* Black paragraph text */
@@ -576,14 +573,6 @@ li { /*styling for the top nav*/
     line-height:1.5;
     }
 
-/*to deprecate
-.paragraph-lines {
-    padding-bottom: 10px; 
-    font-weight: 350;
-    font-size: 18px; 
-    line-height:1.5;
-}
-*/
 
 .alexa-text {
     font-weight: 550;
@@ -649,8 +638,6 @@ li { /*styling for the top nav*/
 }
 
 
-
-
 /* Grey callout text, also used for short hook */
 .callout-text-grey { 
     font-weight: 300;
@@ -710,14 +697,12 @@ li { /*styling for the top nav*/
 }
 
 
-
 .large-white-header {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.25;
     color: #FFFFFF;
 }
-
 
 
 /* Title text for the entire case study */   
@@ -729,64 +714,7 @@ li { /*styling for the top nav*/
 
 
 
-
-
-
-
-
-
-
-
-/*
-
-.banner-grey { 
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 160px 0;
-    justify-content: center;
-    align-items: center;
-    background-color: #F0F0F0;
-}
-
-.banner-callout-text {
-    width: 65%;
-    font-weight: 300;
-    font-size: 32px; 
-    line-height: 1.3;
-    text-align: center;
-    color: #333;
-}
-
-.highlight-text {
-    display: inline-block;
-    position: relative;
-    vertical-align: bottom;
-    overflow: hidden;
-    color: #000;
-    white-space: nowrap; 
-    z-index: 1;
-}
-
-.highlight-text::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background-color: #3CDA64;
-    z-index: -1;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 1s ease-in-out;
-}
-
-.highlight-text.highlight::before {
-    transform: scaleX(1); 
-}
-*/
+/* ---------------------------------- Banner --------------------------------------------- */ 
 
 .banner-white { 
     width: 100%;
@@ -868,7 +796,6 @@ li { /*styling for the top nav*/
 
 /* ---------------------------------- Quote box ----------------------------------- */ 
 
-
 .quote-box {
     background-color: white;
     display: flex;
@@ -891,7 +818,6 @@ li { /*styling for the top nav*/
     justify-content: center;
     width: 100%;
 }
-
 
 .circular-image-quote {
     display: flex;
@@ -916,7 +842,7 @@ li { /*styling for the top nav*/
 
 
 
-/* ---------------------------------- all things SPACING CSS ----------------------------------- */ 
+/* ---------------------------------- Al things spacing ----------------------------------- */ 
 
  .space-4 {
     height: 4px;
@@ -1074,7 +1000,7 @@ html {
 
 
 
-/* -------------------------------- ICONS ---------------------------------- */ 
+/* -------------------------------- Icons ---------------------------------- */ 
 .icon {
     width: 20px;
     vertical-align: middle;
@@ -1082,73 +1008,7 @@ html {
 
 
 
-/*----------------------- Slideshow that I decided against 
-.image-viewer {
-    width:100%;
-    position:relative;
-  
-}
-
-.slideshow-img {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slideshow-image-item {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.slideshow-image-item.active {
-    opacity: 1;
-    position: relative;
-}
-
-#prevButton, #nextButton {
-    border-radius: 100px;
-    padding: 15px 20px;
-    background-color: #53DC76;
-    font-size: 22px;
-    border: 1px solid #CDCDCD;
-    cursor: pointer;
-    position: absolute;
-    transform: translateY(-50%);
-    color: #FFFFFF;
-    top: 50%;
-}
-
-
-#prevButton {
-    left: 20px; 
-}
-
-#nextButton {
-    right: 20px; 
-}
-
-#prevButton:hover, #nextButton:hover {
-    background-color: #3CAD62;
-}
-
-#prevButton:active, #nextButton:active {
-    transform: translateY(-50%) scale(0.95); 
-}
-
-*/
-
-
-
-
-
-
-/* ------------------------------- BACK BUTTON ---------------------------------- */ 
+/* ------------------------------- Back button ---------------------------------- */ 
 
 .back-button {
     position: fixed;
@@ -1194,7 +1054,7 @@ html {
 
 
 
-/* ------------------------------- BACK TO TOP BUTTON ---------------------------------- */ 
+/* ------------------------------- Back to top button ---------------------------------- */ 
 
 .back-to-top-button {
     position: fixed;
@@ -1227,7 +1087,7 @@ html {
 
 
 
-/* ------------------------------- ABOUT PAGE CSS ---------------------------------- */ 
+/* ------------------------------- About page ---------------------------------- */ 
 
 .circular-image-container {
     display: flex;
@@ -1289,7 +1149,7 @@ html {
 
 
 
-/* ------------------------------- FOOTER CSS ---------------------------------- */ 
+/* ------------------------------- Footer ---------------------------------- */ 
 
 .footer-container {
     display: flex;
@@ -1348,7 +1208,7 @@ html {
 
 
 
-/* ------------------------------- LINK STYLING CSS ---------------------------------- */ 
+/* ------------------------------- Link styling ---------------------------------- */ 
 
 /* Special note about this - html takes styling from the web for <a> links, you need to make sure your CSS selectors are specific enough with something like .class-name a */ 
 
@@ -1503,7 +1363,7 @@ html {
 
 
 
-/* ------------------------------- Berkeleytime CSS ---------------------------------- */ 
+/* ------------------------------- Berkeleytime ---------------------------------- */ 
 
 .person {
     width: 20%; 
@@ -1525,7 +1385,7 @@ html {
   padding-left: 60px;
 }
 
-/* ------------------------------- Creative CSS ---------------------------------- */ 
+/* ------------------------------- Creative ---------------------------------- */ 
 
 .two-column-grid {
     display: grid;
@@ -1557,7 +1417,7 @@ html {
 
 
 
-/* ------------------------------- HOME PAGE CSS ---------------------------------- */ 
+/* ------------------------------- Home page ---------------------------------- */ 
 
 .home-grid {
     display: grid;
@@ -1606,20 +1466,6 @@ html {
     color: #10BD3D;
 }
 
-
-/*
-.project-right-align {
-    position: relative;
-    padding-top:20px;
-    height: auto; 
-    display: flex;
-    flex-direction:column; 
-    align-items: flex-end;
-}
-*/
-
-
-
  
 .project-text-column {
     width: 40%; /* Sets the width of each column */
@@ -1640,10 +1486,6 @@ html {
 }
 
 
-
-
-
-
 .blurb-text { /* Used in the text under intro blurb */
     font-weight: regular;
     font-size: 16px; /* This is the base font size that everything scales from */
@@ -1660,11 +1502,11 @@ html {
     text-align: center; /* Center text horizontally */
 }
 
+
 .caption-text span {
     display: inline-block; /* Allows width to be applied */
     width: 60%; /* Text takes up 50% of container width */
 }
-
 
 
 .button {
@@ -1690,7 +1532,7 @@ html {
     }
 
 
-
+/* ------------------------------- Shipped badge ---------------------------------- */ 
 
 .shipped-badge {
     border-radius: 20px;
@@ -1761,8 +1603,7 @@ html {
 
 
 
-
-/* ------------------------------- Next Project CSS ---------------------------------- */ 
+/* ------------------------------- Next Project ---------------------------------- */ 
 
 .next-proj-nav {
     width: 100%;
@@ -1789,7 +1630,6 @@ html {
     color: black;
 }
 
- 
 
 .next-proj-button-text {
     position: absolute;
@@ -1802,7 +1642,6 @@ html {
     transform: translateY(100%);
     text-align: center;
 }
-
 
 
 .next-proj-button.home:hover {
@@ -1843,10 +1682,8 @@ html {
 
 
 
-/*------------------------------- RESPONSIVE BREAKPOINTS ------------------------------- */
+/*------------------------------- Browswer full size breakpoints ------------------------------- */
 
-
-/* Browser full size */
 @media (min-width: 901px) {
     .top-aligned-column-home {
     width: 50%;
@@ -1858,14 +1695,11 @@ html {
     .title-unique {
         font-size: 28px;
     }
-
-
 }
 
 
+/*------------------------------- Browser minimize breakpoints ------------------------------- */
 
-
-/* Browser minimize */
 @media (max-width: 900px) {
 
     /* Hide button palooza */
@@ -1915,7 +1749,6 @@ html {
     .title-text, .one-word-header, .title-unique, .title-unique-about {
         font-size: 22px;
     }
-
 
 
     .paragraph, .paragraph-white, .paragraph-green, .paragraph-grey, .paragraph-grey-short, .paragraph-bold, .callout-text-standalone, .paragraph-grey-standalone, .paragraph-green a, .footer-paragraph a {
@@ -1979,12 +1812,12 @@ html {
         padding-right: 0;
     }
     
-
 }
 
 
 
-/*------------------------------- MOBILE ------------------------------- */
+/*------------------------------- Mobile breakpoints ------------------------------- */
+
 
 @media (max-width: 600px) {
 
@@ -2097,12 +1930,7 @@ html {
 
 
 
-
-
-
-
-/* ------------------------------- bt need to deprecate... ---------------------------------- */ 
-
+/* ------------------------------- Berkeleytime styling ---------------------------------- */ 
 
 
 .grey-with-gif {
@@ -2131,129 +1959,6 @@ html {
 }
 
 
-/*                                                                  doordash specific styling*/
-
-#app-triangle {
-    display: flex;
-    flex-direction: row;
-}
-
-#triangle {
-  max-width:300px;
-  max-height:250px;
-  width: auto;
-  height: auto;
-  padding-left: 60px;
-}
-
-.task-prompt {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    width: 120%;
-    margin-left: -10%;  /*lmao tryna override content hack*/
-
-}
-
-#col1 {
-    padding-right: 70px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#col2 {
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-h4 {
-
-    font-size: 20;
-    font-weight: bold;
-    line-height: 200%;
-}
-
-#dd-problem {
-  padding: 50px 50px 100px 0px;
-
-}
-
-
-
-/*                                                                  click button to top*/
-
-
-button.back-to-top{
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #fff;
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  color: transparent;
-  clear: both;
-  visibility: hidden;
-  position: fixed;
-  cursor: pointer;
-  display: block;
-  border: none;
-  right: 50px;
-  bottom: 75px;
-  font-size: 0px;
-  outline: 0 !important;
-  z-index: 99;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-button.back-to-top:hover,
-button.back-to-top:active,
-button.back-to-top:focus,{
-  outline: 0 !important;
-}
-button.back-to-top::before,
-button.back-to-top::after {
-  content: "";
-    display: block;
-    vertical-align: middle;
-    border-bottom: solid 10px #3B58ED;
-    border-left: solid 10px transparent;
-    line-height: 0;
-    border-right: solid 10px transparent;
-    height: 0;
-    margin: 18px auto 0;
-    width: 0;
-  border-radius:20px;
-  visibility: hidden;
-}
-button.back-to-top.show::after,
-button.back-to-top.show::before{
-  visibility: visible;
-}
-button.back-to-top::after {
-  border-bottom-color:#fff;
-      position: relative;
-  top:-24px;
-}
-button.back-to-top.show {
-  display: block;
-  background: #fff;
-  color: #00ab6c;
-  font-size: 25px;
-  right: 25px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  visibility: visible;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-}
 
 
 
