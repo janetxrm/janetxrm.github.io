@@ -385,10 +385,14 @@ li {
 .read-more-btn {
     cursor: pointer;
     border: none;
+    padding:0;
     background-color: #FFFFFF;
     font-size: 16px;
     display: inline;
+    font-weight: 550;
 }
+
+
 
 .short-text {
     display: block;
@@ -527,6 +531,14 @@ li {
     font-weight: 350;
     font-size: 16px; /* This is the base font size that everything scales from */
     color: #757575;
+    line-height:1.5;
+    }
+
+/* Grey paragraph text */
+.paragraph-footer {
+    font-weight: 300;
+    font-size: 14px; /* This is the base font size that everything scales from */
+    color: #949494;
     line-height:1.5;
     }
 
@@ -842,7 +854,7 @@ li {
 
 
 
-/* ---------------------------------- Al things spacing ----------------------------------- */ 
+/* ---------------------------------- All things spacing ----------------------------------- */ 
 
  .space-4 {
     height: 4px;
@@ -1212,6 +1224,10 @@ html {
 
 /* Special note about this - html takes styling from the web for <a> links, you need to make sure your CSS selectors are specific enough with something like .class-name a */ 
 
+
+
+
+
 /* About page and footer styling */
 .paragraph a {
     font-size: 16px;
@@ -1518,12 +1534,12 @@ html {
         font-size: 16px;
         text-align: center;
         text-decoration: none;
-        border-radius: 20px;
+        border-radius: 50px;
         transition: background-color 0.3s, color 0.3s;
         cursor: pointer;
         border: none;
         outline: none;
-        width: 20%;
+        width: auto;
         min-width: 100px
     }
 
@@ -1921,8 +1937,8 @@ html {
     }
 
     /* Space between home page blurb and "currently at" */
-    .space-8-mobile {
-        height: 8px;
+    .space-10-mobile {
+        height: 10px;
     }
 
 
