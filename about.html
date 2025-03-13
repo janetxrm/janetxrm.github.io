@@ -215,27 +215,16 @@
 ---------------------------------->
 		
 
-<!-----------------------------------------  Footer   ------------------------------------------------>	
+<!-----------------------------------------  Footer ------------------------------------------------>
 
-			<div class = "space-200"></div>
+  <div id="footer-container"></div>
 
-
-			<div class = "content-section-no-line">
-				<div class = "footer-column">
-					<img src="assets/squiggle.png" alt="graphic" width = 80vw>
-					<div class = "space-40"></div>
-					<div class = "blurb-text">© <span id="year"></span> Janet Xu</div>
-					<!-- Year will always display the current one -->
-					<script>
-					  document.getElementById('year').textContent = new Date().getFullYear();
-					</script>	
-
-					<div class = "blurb-text">janet16xu@gmail.com</div>
-					<div class = "space-40"></div>
-					<div class = "blurb-text">Made with love and lofi hip hop &#9834;</div>	
-					<div class = "space-40"></div>
-				 </div>	
-			 </div>	
+  <script>
+    // Fetch and insert footer content dynamically
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-container').innerHTML = data);
+  </script>
 
 
 
