@@ -217,14 +217,27 @@
 
 <!-----------------------------------------  Footer ------------------------------------------------>
 
-  <div id="footer-container"></div>
+ <div class="space-180"></div>
 
-  <script>
-    // Fetch and insert footer content dynamically
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer-container').innerHTML = data);
-  </script>
+  <div class="content-section">
+      <div class="two-columns-container">
+          <div class="top-aligned-column">
+              <div class="paragraph-footer">© <span id="year"></span> Janet Xu</div>
+              <script>
+                  document.getElementById('year').textContent = new Date().getFullYear();
+              </script>
+              <div class="space-30"></div>
+          </div>
+
+          <div class="top-aligned-column" style="width: 100%; text-align: right; padding-right: 0;">
+            <div class="paragraph-footer">janet16xu@gmail.com</div>
+            <div class = "space-4"></div>
+            <div class="paragraph-footer">Made with love and lofi hip hop &#9834;</div>
+            <div class="space-30"></div>
+          </div>
+      </div>  
+  </div>
+  
 
 
 
