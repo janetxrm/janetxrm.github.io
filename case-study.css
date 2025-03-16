@@ -291,10 +291,10 @@ li {
     justify-content: flex-start; /* Aligns the content at the top */
     }
 
-/* Increase width of about blurb */
- .top-aligned-column-about {
-    width: 40%; /* Sets the width of each column */
+ .top-aligned-column-100 {
+    width: 100%; /* Sets the width of each column */
     }
+
 
 
 /* Just makes the width wider from 40% to 50%. Used in ambient */
@@ -1753,9 +1753,6 @@ html {
         justify-content: flex-start;
     }  
 
-    .top-aligned-column-about {
-        width: 80%;
-    }
 
 
     .large-grey-header, .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a, .title-unique-about-green {
