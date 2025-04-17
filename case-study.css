@@ -265,6 +265,15 @@ li {
 }
 
 
+.role-column {
+    width: 40%; /* Sets the width of each column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content at the top */
+    text-align: right;
+}
+
+
  /* System */
 .top-aligned-column-dark {
     width: 40%; /* Sets the width of each column */
@@ -296,9 +305,8 @@ li {
     }
 
 
-
 /* Just makes the width wider from 40% to 50%. Used in ambient */
-.top-aligned-column-medium {
+.top-aligned-column-50 {
     width: 50%; 
     display: flex;
     flex-direction: column;
@@ -308,7 +316,7 @@ li {
 
 
 /* Just makes the width wider from 40% to 60%. Used in play */
-.top-aligned-column-wide {
+.top-aligned-column-60 {
     width: 60%; 
     display: flex;
     flex-direction: column;
@@ -1698,7 +1706,7 @@ html {
 
 
 
-/*------------------------------- Browswer full size breakpoints ------------------------------- */
+/*------------------------------- Browser full size breakpoints ------------------------------- */
 
 @media (min-width: 901px) {
     .top-aligned-column-home {
@@ -1739,12 +1747,16 @@ html {
         padding-right: 0px;
     }
 
-
     .top-aligned-column {
         flex-direction: column;
         width: 80vw;    
         padding-right: 0px;
     }
+
+    .top-aligned-column-60, .top-aligned-column-50 {
+        width: 90%;
+    }
+
 
     .top-aligned-column-home {
         width: 70%;
@@ -1753,7 +1765,10 @@ html {
         justify-content: flex-start;
     }  
 
-
+    .role-column {
+        text-align: left;
+        width: 100%;
+    }
 
     .large-grey-header, .callout-text, .callout-text-green, .callout-text-grey, .multi-word-header-grey, .callout-lines, .callout-text a, .title-unique-about-green {
         font-size: 18px;
