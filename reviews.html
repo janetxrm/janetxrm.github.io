@@ -1,0 +1,642 @@
+<!doctype html> 
+<html> 
+	<head> <!-- This is all metadata, like linking to Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="case-study.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="assets/favicon.png" type="image/png">
+		<title>Janet Xu | UX Designer</title>
+
+	<!-- Hotjar Tracking Code for https://janetxrm.github.io/ -->
+	<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5154002,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+
+	</head>
+
+
+
+
+	<body>
+                                                                           
+		<div class = "topnav">
+            <a class="active" href="index.html">JANET XU</span></a>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href= "about.html"> About</a></li>
+            <li style="float:right; padding-left: 35px; font-size: 14px"><a href="play.html"> Play</a></li>
+	        <li style="float:right; font-size: 14px"> <a href="index.html">Work </a></li>                 	
+	   </div>
+
+
+		<div class = "title-row">
+				<div class = "two-columns-container-row">
+							<div class = "bottom-aligned-column">
+						   		<div class = "title-text">Walmart reviews</div>
+						 	</div>	 	
+						 	<div class = "bottom-aligned-column">
+						   		<div class = "callout-text-grey">Review Insights at a Glance</div>
+						 	</div>	
+
+				</div>				
+		</div>
+
+
+
+
+	<!---------------------- Parallax hero img --------------------------->	
+
+  <div class="parallax-container">
+    <img src="assets/placeholder-img.jpg" alt="Parallax Image" class="parallax-image">
+</div>
+
+   
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var parallaxImage = document.querySelector('.parallax-image');
+            parallaxImage.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+        });
+    </script>
+
+
+
+
+
+
+
+<!---------------------- Project description --------------------------->
+
+			<div class = "content-section">
+				<div class = "two-columns-container">
+						<div class = "top-aligned-column">
+						<div class = "space-60"></div>
+				   		<div class = "callout-text">Designed a review insights system and defined how it surfaces across product pages and search.
+					   	</div>
+					 	</div>
+							 	
+				<div class = "top-aligned-column">
+		 				<div class = "line"></div>	
+		 				<div class = "space-10"></div>
+			 			<div class = "paragraph-grey">My role</div>
+			 			<div class = "space-10"></div>
+			 			<div class = "paragraph">Product design owner</div>
+			 			<div class = "space-40"></div>
+			 			<div class = "line"></div>	
+		 				<div class = "space-10"></div>
+			 			<div class = "paragraph-grey"> Duration </div>
+			 			<div class = "space-10"></div>
+			 			<div class = "paragraph"> 3 months </div>
+			 			<div class = "space-40"></div>
+			 			<div class = "line"></div>	
+		 				<div class = "space-10"></div>
+		 				<div class = "paragraph-grey">Team</div>
+		 				<div class = "space-10"></div>
+		 				<div class = "paragraph">1 product manager, 2 developers</div>
+	 			</div>		
+
+				</div>	
+			</div>
+
+
+		<div class = "space-180"></div>
+
+
+<!-----------------------  Problem  ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">BEFORE</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Problem</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Buried insights</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Review content is dense and unstructured. Shoppers waste time hunting for relevant feedback.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">No comparison</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Users must open multiple pages to compare items because search lacks review insights.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-100"></div>
+
+
+<!----------------------- Design principles  ---------------------------->
+
+<div class = "content-section">
+	<div class = "medium-grey-header">Design principles</div>
+	<div class = "space-20"></div>
+	<div class = "n-column-container">
+	 	<div class = "n-column">
+	 		<div class = "paragraph-bold">
+	 			Insights first vs top down reading
+	 		</div>
+	 		<div class = "space-10"></div>
+	 		<div class = "paragraph-grey">
+				Show the most meaningful review insights up front so users can understand product performance without scrolling.
+			</div>
+	 	</div>
+
+	 	<div class = "n-column">
+	 		<div class = "paragraph-bold">
+	 			Support quick comparison
+	 		</div>
+	 		<div class = "space-10"></div>
+	 		<div class = "paragraph-grey">
+	 			Enable shoppers to compare items efficiently by surfacing insights in search and reducing the need to open multiple pages.
+
+	 		</div>
+	 	</div>
+
+	 		 	<div class = "n-column">
+	 		<div class = "paragraph-bold">
+	 			Scale across categories
+	 		</div>
+	 		<div class = "space-10"></div>
+	 		<div class = "paragraph-grey">
+	 			Design modular insights that work across product types and edge cases, including low review volume.
+	 		</div>
+	 	</div>
+
+
+	</div>
+</div>
+
+<div class = "space-100"></div>
+
+
+
+<!-----------------------  Solution 1  ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">SOLUTION 1</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">AI-generated review summary</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Reveal insight details</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">The summary highlights most common review themes and expands to full insight descriptions.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Filter by theme</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Users select an insight to filter reviews to matching feedback.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+
+<!-----------------------  Solution 2  ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">SOLUTION 2</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Insight-first reviews</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Feature ratings</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Give users an immediate signal of how a product performs in key areas.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Fit insights</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Shows how an item fits based on customer feedback.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+
+<!-----------------------  Solution 3  ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">SOLUTION 3</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Category-driven information hierarchy</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Visuals first</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Product visuals are elevated to match their higher engagement for apparel.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Visuals deprioritized</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Review insights are elevated to the top of the page for faster understanding.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+<!-----------------------  Solution 4 ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">SOLUTION 4</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Signals in search</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Insights on tap</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Opens a bottom sheet to show key review insights for quick comparison.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Insights on hover</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Reveals review signals on hover so users can preview insights instantly.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+
+<!-----------------------  Scale to device ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">DESIGNED TO SCALE</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Device-driven hierarchy</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Lorem</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Lorem</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Lorem</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Lorem</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+
+<!-----------------------  Scale to product category ---------------------------->
+
+		<div class = "content-section">
+			<div class = "blue-text">DESIGNED TO SCALE</div>
+			<div class = "space-18"></div>
+			<div class = "medium-grey-header">Scaling one system across categories</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Lorem ipsum</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Lorem ipsum</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Lorem ipsum</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Lorem ipsum</div>
+					</div>
+		    	</div>
+		    	<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Lorem ipsum</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Lorem ipsum</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+
+
+
+<!-----------------------  Tradeoffs 
+
+		<div class = "content-section">
+			<div class = "medium-grey-header">Design Strategy and Tradeoffs</div>
+			<div class = "space-18"></div>
+			<div class = "paragraph">Each decision balanced speed, visibility, and platform constraints to keep insights discoverable across devices and categories.</div>
+			<div class = "space-40"></div>
+
+			<div class = "two-columns-container" style="background-color: #F8F8F8; border-radius: 15px; padding: 40px;">
+				<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+		      		<video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/revjews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Scannable summaries</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Bullets replace paragraphs so insights are quick to scan.</div>
+					</div>
+		      	</div>
+	      		<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Hover vs Bottom Sheet</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Desktop uses hover; mobile uses a bottom sheet to keep browsing uninterrupted.</div>
+					</div>
+		    	</div>
+		    	<div class = "top-aligned-column" style = "width: 50%; padding-right: 0; display: flex; align-items: center;">
+				    <video autoplay muted loop playsinline style = "max-height: 70vh;">
+				        <source src="assets/reviews/.mp4" type="video/mp4">
+				    </video>
+				    <div style = "width:50%">
+					    <div class = "space-20"></div>
+					    <div class = "blue-text-caption">Hierarchy by Category</div>
+					    <div class = "space-10"></div>
+					    <div class = "caption">Apparel prioritizes visuals (2–5× more interaction); other categories elevate review signals.</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+		<div class = "space-180"></div>
+---------------------------->
+
+<!----------------------- Impact ---------------------------->
+		<div class = "content-section">
+			<div class = "two-columns-container">
+				<div class = "top-aligned-column">
+					<div class = "large-grey-header"> Impact </div>
+				</div>
+
+				<div class = "top-aligned-column">
+		 			<div class = "paragraph-grey">The results a few months out from rolling out these updates were:</div>
+
+ 					<div class = "space-20"></div>
+			 			<div class = "callout-lines">15% <span class = "paragraph-green" style="vertical-align: middle;">&#9660;</span></div>
+			 			<div class = "paragraph">Reduced error rate of unintentional snoozing.</div>
+			 			<div class = "space-20"></div>
+			 			<div class = "callout-lines" >50 million <img src="assets/system/check.png" alt="Check Icon" class="icon"></div>
+			 			<div class = "paragraph">Devices worldwide were implemented with the redesign.</div>
+ 				</div>		
+			</div>
+		</div>
+		
+    
+    <div class = "space-180"></div>
+
+
+
+
+<!----------------------- Next project  ---------------------------->
+
+<div class="next-proj-nav">
+    <a href="bt.html" class="next-proj-button prev">
+        <span><--</span>
+        <span class="next-proj-button-text">Prev</span>
+    </a>
+
+
+	<a href="index.html" class="next-proj-button home">
+        <img src="assets/grid.png" style="width:30px">
+    </a>
+
+
+
+    <a href="system.html" class="next-proj-button next">
+        <span>--></span>
+        <span class="next-proj-button-text">Next</span>
+    </a>
+
+</div>
+
+
+<!-----------------------------------------  Footer ------------------------------------------------>
+ 
+ <div class="space-180"></div>
+
+  <div class="content-section">
+  	<div class = "line"></div>
+  	<div class = "space-40"></div>
+      <div class="two-columns-container">
+          <div class="top-aligned-column">
+              <div class="paragraph-footer">© <span id="year"></span> Janet Xu</div>
+              <script>
+                  document.getElementById('year').textContent = new Date().getFullYear();
+              </script>
+              <div class="space-30"></div>
+          </div>
+
+          <div class="top-aligned-column" style="width: 100%; text-align: right; padding-right: 0;">
+            <div class="paragraph-footer">janet16xu@gmail.com</div>
+            <div class = "space-4"></div>
+            <div class="paragraph-footer">Made with love and lofi hip hop &#9834;</div>
+            <div class="space-30"></div>
+          </div>
+      </div>  
+  </div>
+  
+
+
+<!-----------------------------------------  Old Footer 
+
+
+	<div class = "footer-container"> 
+		<div class = "footer-content">	
+			<div class = "footer-column">
+				<div class = "title-unique" style = "font-weight: 600">get in touch.</div>
+				<div class = "space-16"></div>
+    							        		
+				<a href= "mailto:janet16xu@gmail.com" target="_blank" class = "contact-me-button">send me an email</a>
+
+
+				<div class = "space-60"></div>
+
+				
+				<div class = "paragraph-unique-grey"> &copy; 2024 JANET XU </div> 
+        		<div class = "paragraph-unique-grey">Made with love and lofi hip hop &#9834;</div>
+    		</div>		
+
+			<div class = "space-300-w"></div>
+			<div class = "space-300-w"></div>
+			<div class = "space-300-w"></div>	
+						
+        		<div class = "footer-column">
+					<div class = "footer-links">
+						<div class = "space-8"></div>
+						<div class = "footer-paragraph"><a href = "https://www.linkedin.com/in/janet-xu/">LinkedIn &#8599;</a></div>
+						<div class = "space-20"></div>
+						<div class = "footer-paragraph"><a href="https://drive.google.com/file/d/1NjYTLK5vvmUoTCZ3ZGrhahvOKKIQL8Gd/view?usp=sharing" target="_blank"> Resume &#8599;</a></div> 				
+					</div>							
+				</div>
+
+		</div>
+			<div class = "space-20"></div>	
+	</div>
+				
+------------------------------------------------>
+
+						
+<!---------------------- Back button --------------------------->
+    <button id="backButton" class="back-button">
+        <span class = "back-button-arrow"> &larr;</span> <span class = "back-button-text">&nbsp;&nbsp;Back</span>
+    </button>
+
+
+<script>
+var backButton = document.getElementById("backButton");
+var scrollThreshold = 700;
+var isVisible = false;
+
+window.onscroll = function() {
+    if (window.scrollY > scrollThreshold && !isVisible) {
+        isVisible = true;
+        backButton.classList.add("slide-in");
+    } else if (window.scrollY <= scrollThreshold && isVisible) {
+        isVisible = false;
+        backButton.classList.remove("slide-in");
+    }
+};
+
+backButton.onclick = function() {
+    window.location.href = "index.html";
+};
+</script>
+					
+	
+
+<!---------------------- Highlight text ---------------------->
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const section = document.querySelector(".highlight-text");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Calculate a delay based on the scroll position
+                const scrollDelay = entry.boundingClientRect.top * 0.1; // Adjust multiplier as needed
+
+                setTimeout(() => {
+                    entry.target.classList.add("highlight");
+                }, Math.abs(scrollDelay)); // Ensure the delay is positive
+            } 
+        });
+    }, { threshold: 0.1 }); // Adjust threshold as needed, e.g., 0.95 for almost fully visible
+
+    observer.observe(section);
+});
+
+</script>				
+
+	
+
+    	</div> <!-- ending content -->
+
+	</body>
+
+</html>

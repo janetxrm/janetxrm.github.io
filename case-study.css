@@ -12,6 +12,9 @@ body {
 
 
 
+
+
+
 /* ------------------------------- Top nav styling ------------------------------- */
 
 
@@ -89,9 +92,24 @@ li {
 
 /*-------------------------------  General case study content styling ------------------------------- */
 
-
-/* Centers the whole page with left right margins, adds hella bottom margin and a top line */
+/* Removes the border-top line, used for the case study description */
 .content-section { 
+    width: 70%;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+}
+
+
+.line {
+    border-top: 1px solid #D6D6D6;
+}
+
+/* 
+.content-section-line { 
     border-top: 1px solid #D6D6D6;
     width: 70%;
     margin-left: 15vw;
@@ -99,20 +117,9 @@ li {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
+    padding-top: 30px; 
 }
-
-
-/* Removes the border-top line, used for the case study description */
-.content-section-no-line { 
-    width: 70%;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px; /* Adds more spacing between border-top and rest of content that follows */
-}
+*/
 
 
 /* Used in home testimonials */
@@ -169,7 +176,7 @@ li {
 
 
 /*  Used for standalone glory shots */
-.image-container {
+.image-container-70 {
     width: 70%;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -180,28 +187,33 @@ li {
 }
 
 
-/*  Good for to make glory shots thinner */
-.skinny-image-container {
+
+
+/*  Good for to make glory shots thinner .. not used anywhere?
+.image-container-40 {
     width: 40%;
     margin-left: 30vw;
     margin-right: 30vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
+    margin-top: 10px; 
 }
+*/
 
-.medium-image-container {
+/* not used anywhere?
+.image-container-60 {
     width: 60%;
     margin-left: 20vw;
     margin-right: 20vw;
     height: auto;
     display: flex;
     flex-direction: column;
-}
+} 
+*/
 
 /*  Used for double images and images in a single column. Just removes the margins from image-container */
-.full-width-image-container {
+.image-container-100 {
     width: 100%;
     height: auto;
     display: flex;
@@ -210,13 +222,12 @@ li {
 }
 
 
-/* Just so I can adjust the breakpoint for standalone images in 3D on mobile */
-.full-width-image-container-smaller {
+/* Just so I can adjust the breakpoint for standalone images. Used in alarm and about page. */
+.image-container-100-mobile {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 10px; /* Adds more spacing between border-top and rest of content that follows */
 }
 
 
@@ -261,7 +272,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns the content at the top */
-    padding-right: 100px; /* Shortens the width between the two columns */
+    padding-right: 100px; /* Adds splace between the two columns */
 }
 
 
@@ -500,38 +511,11 @@ li {
     line-height:1.5;
     }
 
-.paragraph-white {
+/* Text used under prototypes */
+.caption {
     font-weight: 350;
-    font-size: 14px; /* This is the base font size that everything scales from */
-    line-height:1.25;
-    color: #FFFFFF;
-    }
-
-.paragraph-white-bold {
-    font-weight: 550;
     font-size: 14px; /* This is the base font size that everything scales from */
     line-height:1.5;
-    color: #FFFFFF;
-    }
-
-.paragraph-white-22 {
-    font-weight: 550;
-    font-size: 22px; /* This is the base font size that everything scales from */
-    line-height:1.25;
-    color: #FFFFFF;
-    }
-
-
-.paragraph-about {
-    font-weight: 350;
-    font-size: 16px; /* This is the base font size that everything scales from */
-    line-height:1.75;
-    }
-
-.paragraph-bold {
-    font-weight: 550;
-    font-size: 16px; /* This is the base font size that everything scales from */
-    line-height:1.75;
     }
 
 /* Grey paragraph text */
@@ -550,7 +534,7 @@ li {
     line-height:1.5;
     }
 
-/* Grey paragraph text for system final designs impact text*/
+/* Used in berkeleytime */
 .paragraph-grey-short {
     font-weight: 350;
     font-size: 16px; /* This is the base font size that everything scales from */
@@ -571,20 +555,6 @@ li {
     padding-right:20%;
 }
 
-
-/* Grey paragraph text */
-.paragraph-grey-italic {
-    font-weight: 350;
-    font-size: 16px; /* This is the base font size that everything scales from */
-    color: #757575;
-    line-height:1.5;
-    font-style: italic;
-    }
-
-.line {
-    border-top: 1px solid #D6D6D6;
-}
-
 /* Green paragraph text */
 .paragraph-green {
     font-weight: 350;
@@ -593,6 +563,41 @@ li {
     line-height:1.5;
     }
 
+.paragraph-about {
+    font-weight: 350;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    line-height:1.75;
+    }
+
+.paragraph-bold {
+    font-weight: 550;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    line-height:1.75;
+    }
+
+/* Used in the system dark banner */
+.paragraph-white {
+    font-weight: 350;
+    font-size: 14px; /* This is the base font size that everything scales from */
+    line-height:1.25;
+    color: #FFFFFF;
+    }
+
+/* Used in the system dark banner */
+.paragraph-white-bold {
+    font-weight: 550;
+    font-size: 14px; /* This is the base font size that everything scales from */
+    line-height:1.5;
+    color: #FFFFFF;
+    }
+
+/* Used in the system dark banner */
+.paragraph-white-22 {
+    font-weight: 550;
+    font-size: 22px; /* This is the base font size that everything scales from */
+    line-height:1.25;
+    color: #FFFFFF;
+    }
 
 .alexa-text {
     font-weight: 550;
@@ -601,6 +606,37 @@ li {
     color: #1B86FF;
     line-height:1.5;
 }
+
+.blue-text {
+    font-weight: 700;
+    font-size: 16px; /* This is the base font size that everything scales from */
+    color: #1B86FF;
+    line-height:1.5;
+}
+
+.blue-text-caption {
+    font-weight: 600;
+    font-size: 14px; /* This is the base font size that everything scales from */
+    color: #1B86FF;
+    line-height:1.5;
+}
+
+/* Large grey header*/
+.large-grey-header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #999999;
+}
+
+
+.medium-grey-header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #999999;
+}
+
 
 /* Larger callout text, used for eye-catching highlights and project summary */ 
 .callout-text { 
@@ -616,45 +652,6 @@ li {
     font-weight: 300;
     font-size: 32px; /* This is the base font size that everything scales from */
     line-height:1.5;
-}
-
-
-.centered-text{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.callout-text-standalone-border {
-    font-size: 16px;
-    padding: 4vh 20vw;
-    border: 2px dashed #A09E9C;
-    text-align: center;
-    width: 100%;
-    line-height: 1.5;
-}
-
-
-/* Used in about page */
-.callout-text-standalone-white-italic {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 100;
-    padding: 4vh 20vw;
-    text-align: center;
-    width: 100%;
-    line-height: 1.5;
-}
-
-.callout-text-standalone-white {
-    color: #ffffff;
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 100;
-    padding: 4vh 20vw;
-    text-align: center;
-    width: 100%;
-    line-height: 1.5;
 }
 
 
@@ -680,19 +677,12 @@ li {
     font-size: 42px; /* This is the base font size that everything scales from */
     }
 
-/* Fairly large header, grey */
-.one-word-header-grey { 
-    font-weight: 0;
-    font-size: 48px; /* This is the base font size that everything scales from */
-    color: #757575;
-    }
-
-
 /* Smaller sized header */
 .multi-word-header {
     font-weight: 0;
     font-size: 22px; /* This is the base font size that everything scales from */
     }
+
 
 /* Smaller sized header, grey */
 .multi-word-header-grey {
@@ -701,29 +691,6 @@ li {
     color: #757575;
     }
 
-/* Large grey header*/
-.large-grey-header {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: #999999;
-}
-
-.large-grey-header-dark {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: #666666;
-}
-
-
-.large-white-header {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: #FFFFFF;
-}
-
 
 /* Title text for the entire case study */   
 .title-text { 
@@ -731,6 +698,132 @@ li {
     font-size: 2.8em; /* This is x amount bigger than the base font size from <p> */
     line-height: 1.2; /* Line height is x times the font size. Adjusted line height for larger text */
 }
+
+/* Used in home page project captions */
+.paragraph-unique-grey-home {
+    font-size: 16px; 
+    color: #757575;
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    line-height:1.5;
+    }
+
+
+/* Grey paragraph text .. not used 
+.paragraph-grey-italic {
+    font-weight: 350;
+    font-size: 16px;
+    color: #757575;
+    line-height:1.5;
+    font-style: italic;
+    }
+*/
+
+
+/* not used but may come in handy
+.centered-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+/* not used
+.callout-text-standalone-border {
+    font-size: 16px;
+    padding: 4vh 20vw;
+    border: 2px dashed #A09E9C;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+*/
+
+/* Used in OLD in footer copyright ... not used
+.paragraph-unique-grey {
+    font-size: 14px; 
+    color: #757575;
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 400; 
+    line-height:1.5;
+    }
+*/
+
+
+/* giant old header I used to have directly below first header .. not used
+.one-word-header-grey { 
+    font-weight: 0;
+    font-size: 48px;
+    color: #757575;
+    }
+*/
+
+
+/* not used?
+.large-grey-header-dark {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #666666;
+}
+*/
+
+
+/* not used?
+.connect-text {
+    text-align: left;
+    max-width: 30vw;
+    margin: 0 auto;             
+    display: flex;               
+    flex-direction: column;        
+}
+*/
+
+
+/* not used?
+.large-white-header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #FFFFFF;
+}
+*/
+
+/* Used in about page .. not used?
+.callout-text-standalone-white-italic {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 100;
+    padding: 4vh 20vw;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+*/
+
+/* not used?
+.callout-text-standalone-white {
+    color: #ffffff;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 100;
+    padding: 4vh 20vw;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+*/
+
+/* not used 
+.paragraph-unique {
+    font-size: 16px;
+    font-family: Atkinson Hyperlegible, sans-serif; 
+    font-weight: 350; 
+    line-height:1.5;
+    }
+*/
+
 
 
 
@@ -925,6 +1018,14 @@ li {
     width: 40px;
   }
 
+    .space-50 {
+        height: 50px;
+    }
+
+    .space-50-w {
+        width: 50px;
+    }
+
     .space-60 {
     height: 60px;
   }
@@ -1106,20 +1207,19 @@ html {
 
 
 
-
 /* ------------------------------- About page ---------------------------------- */ 
 
 .circular-image-container {
     display: flex;
     flex-direction: column;
-    width: 20vw; /* Set a responsive width (adjust as necessary) */
-    height: 20vw; /* Set the same value for height to make it a circle */
+    width: 30vw; /* Set a responsive width (adjust as necessary) */
+    height: 30vw; /* Set the same value for height to make it a circle */
     max-width: 400px; /* Optional: Set a maximum width */
     max-height: 400px; /* Optional: Set a maximum height */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
     border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);*/
 }
 
 
@@ -1129,43 +1229,6 @@ html {
     object-fit: cover; /* Ensures the image covers the container */
     border-radius: 400px; /* Optional: Add border-radius to the image itself */
 }
-
-
-/* Tiny grey paragrph text used in footer copyright*/
-.paragraph-unique-grey {
-    font-size: 14px; 
-    color: #757575;
-    font-family: Atkinson Hyperlegible, sans-serif; 
-    font-weight: 400; 
-    line-height:1.5;
-    }
-
-/* Used in home page project captions */
-.paragraph-unique-grey-home {
-    font-size: 16px; 
-    color: #757575;
-    font-family: Atkinson Hyperlegible, sans-serif; 
-    font-weight: 400; 
-    line-height:1.5;
-    }
-
-
-/* Unique font paragraph text used in about blurb */
-.paragraph-unique {
-    font-size: 16px; /* This is the base font size that everything scales from */
-    font-family: Atkinson Hyperlegible, sans-serif; 
-    font-weight: 350; 
-    line-height:1.5;
-    }
-
-.connect-text {
-    text-align: left;
-    max-width: 30vw;
-    margin: 0 auto;             
-    display: flex;               
-    flex-direction: column;        
-}
-
 
 
 
@@ -1409,7 +1472,7 @@ html {
   padding-left: 60px;
 }
 
-/* ------------------------------- Creative ---------------------------------- */ 
+/* ------------------------------- Play page---------------------------------- */ 
 
 .two-column-grid {
     display: grid;
@@ -1422,8 +1485,8 @@ html {
 .two-column-grid video {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
-
 
 
 .n-column-grid {
@@ -1870,7 +1933,7 @@ html {
     }
 
 
-    .content-section, .content-section-no-line, .content-section-50 {
+    .content-section, .content-section-50 {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%; 
@@ -1924,7 +1987,7 @@ html {
         padding-right: 10%;
     }
 
-    .full-width-image-container-smaller {
+    .image-container-100-mobile {
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
