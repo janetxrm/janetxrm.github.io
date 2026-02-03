@@ -267,12 +267,20 @@ li {
 
 
  /* This is one of the columns */
-.top-aligned-column {
+.top-aligned-column,
+.top-aligned-column-proto {
     width: 40%; /* Sets the width of each column */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Aligns the content at the top */
     padding-right: 100px; /* Adds splace between the two columns */
+}
+
+
+/* Only to round corners of prototypes */
+.top-aligned-column-proto img,
+.top-aligned-column-proto video {
+  border-radius: 15px;
 }
 
 
