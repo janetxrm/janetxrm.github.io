@@ -281,6 +281,15 @@ li {
 .top-aligned-column-proto img,
 .top-aligned-column-proto video {
   border-radius: 15px;
+  border: 1px solid #D2D2D2;
+}
+
+
+
+/* Literally just for review scale */
+.top-aligned-column-proto-no-border img,
+.top-aligned-column-proto-no-border video {
+  border-radius: 15px;
 }
 
 
