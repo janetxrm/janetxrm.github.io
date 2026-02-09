@@ -974,6 +974,11 @@ li {
 
 /* ---------------------------------- All things spacing ----------------------------------- */ 
 
+  .space-2 {
+    height: 2px;
+  }
+
+
  .space-4 {
     height: 4px;
   }
@@ -1634,6 +1639,21 @@ html {
     .button:hover {
         background-color: #555555;
     }
+
+/*
+.principle-number {
+    font-size: 14px;
+    background-color: #767676;
+    color: #FFFFFF;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+*/
 
 
 /* ------------------------------- Shipped badge ---------------------------------- */ 
