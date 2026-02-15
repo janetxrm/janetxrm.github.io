@@ -255,7 +255,7 @@ li {
 .n-column-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts based on available space */
-    gap: 100px; /* Adds space between columns */
+    gap: 1.5vw; /* Adds space between columns */
     text-align: left; /* Ensures text is left-aligned */
     max-width: 100%; /* Ensures it doesn't overflow */
 }
